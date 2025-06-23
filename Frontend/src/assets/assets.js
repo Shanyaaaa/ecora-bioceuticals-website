@@ -1,7 +1,6 @@
 import aminopetFront from './aminopet_front.png';
 import artimarinHome from './artimarin_home.png';
 import calcinexHome from './calcinex_home.jpg';
-import cardComponent from './card_component.png';
 import ecora from './ecora.png';
 import nanoBackHome from './nano_back_home.jpg';
 import nanoFrontHome from './nano_front_home.jpg'; 
@@ -13,9 +12,15 @@ import thromboFront from './thrombo-front.png';
 import  searchIcon  from './search_icon.png';
 import cartIcon from './cart_icon.png';
 import profileIcon from './profile_icon.png';
-import eg1 from './eg_1.png';
-import eg2 from './eg_2.png';
-import eg3 from './eg_3.png';
+import eg_1 from './eg_1.jpg';
+import eg_2 from './eg_2.jpg';
+import eg_3 from './eg_3.jpg';
+import doctors from './doctors.jpeg';
+import Dog from './dog.jpg';
+import fastDelivery from './fastdelivery.jpg';
+import Price from './price.jpg';
+import quality from './quality.png';
+
 
 
 
@@ -23,8 +28,7 @@ export const assets = {
   aminopetFront,
   artimarinHome,
   calcinexHome,
-  cardComponent,
-  ecora,
+    ecora,
   nanoBackHome,
   nanoFrontHome,
   petNeuronHome,
@@ -35,8 +39,14 @@ export const assets = {
   searchIcon,
   cartIcon,
   profileIcon,
-  eg1,
-  eg2,
-  eg3,
+  eg_1,
+  eg_2,
+  eg_3,
+  doctors,
+  Dog,
+  fastDelivery,
+  Price,
+  quality,
+
 };
 
