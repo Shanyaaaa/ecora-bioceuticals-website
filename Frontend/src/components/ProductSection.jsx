@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { assets } from "../assets/assets"; 
-const ProductSection = () => {
+import { assets } from "../assets/assets"; // Make sure asset paths are valid
+
+const BestSellingSection = () => {
   const [activeImageIndex, setActiveImageIndex] = useState({});
 
   const products = [
@@ -9,47 +10,36 @@ const ProductSection = () => {
       name: "Aminopet Syr. 200ml",
       price: "₹260.00",
       rating: 5,
-      images: ["/placeholder.svg", "/placeholder.svg"],
-      description: "Essential amino acid supplement for pets",
+      images: [assets.aminopetFront],
     },
     {
       id: 2,
       name: "Artimarin Susp. 200ml",
       price: "₹260.00",
       rating: 5,
-      images: ["/placeholder.svg", "/placeholder.svg"],
-      description: "Joint health support suspension",
+      images: [assets.artimarinHome],
     },
     {
       id: 3,
       name: "Calcinex Susp. 200ml",
       price: "₹210.00",
       rating: 5,
-      images: ["/placeholder.svg", "/placeholder.svg"],
-      description: "Calcium supplement for strong bones",
+      images: [assets.calcinexHome],
     },
     {
       id: 4,
       name: "Pet Neuron 200ml",
       price: "₹480.00",
       rating: 5,
-      images: ["/placeholder.svg", "/placeholder.svg"],
-      description: "Neurological health support formula",
+      images: [assets.petNeuronHome],
     },
   ];
 
-  const handleImageChange = (productId, imageIndex) => {
-    setActiveImageIndex((prev) => ({
-      ...prev,
-      [productId]: imageIndex,
-    }));
-  };
-
   const renderStars = (rating) =>
-    Array.from({ length: 5 }, (_, index) => (
+    Array.from({ length: 5 }, (_, i) => (
       <svg
-        key={index}
-        className={`w-5 h-5 ${index < rating ? "text-yellow-400" : "text-gray-300"}`}
+        key={i}
+        className={`w-4 h-4 ${i < rating ? "text-yellow-500" : "text-gray-300"}`}
         fill="currentColor"
         viewBox="0 0 20 20"
       >
@@ -58,83 +48,47 @@ const ProductSection = () => {
     ));
 
   return (
-    <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-        
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto rounded-full"></div>
-        </div>
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-gray-900 mb-8">Best Selling Products</h2>
 
-        {/* Products */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {products.map((product) => {
             const currentImageIndex = activeImageIndex[product.id] || 0;
+
             return (
-              <div
-                key={product.id}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group relative"
-              >
-                <div className="relative h-64 overflow-hidden">
+              <div key={product.id} className="text-center">
+                {/* Product Image */}
+                <div className="mb-4">
                   <img
                     src={product.images[currentImageIndex]}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="mx-auto h-64 object-contain transition-transform duration-300 hover:scale-110"
                   />
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                    {product.images.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => handleImageChange(product.id, index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                          index === currentImageIndex
-                            ? "bg-white scale-125"
-                            : "bg-white/50 hover:bg-white/75"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors duration-300">
-                    {product.name}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-2">{product.description}</p>
-                  <div className="flex items-center mb-4">
-                    <div className="flex space-x-1">{renderStars(product.rating)}</div>
-                    <span className="ml-2 text-sm text-gray-600">({product.rating}.0)</span>
-                  </div>
-                  <div className="mb-6">
-                    <span className="text-2xl font-bold text-gray-900">{product.price}</span>
-                  </div>
-                  <a href="/products">
-                    <button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 px-6 rounded-xl hover:from-pink-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                      SHOP NOW
-                    </button>
-                  </a>
-                </div>
+                {/* Name */}
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">{product.name}</h3>
 
-                <div className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  BESTSELLER
-                </div>
+                {/* Price */}
+                <p className="text-xl font-bold text-gray-800 mb-2">{product.price}</p>
+
+                {/* Rating */}
+                <div className="flex justify-center gap-1 mb-3">{renderStars(product.rating)}</div>
+
+                {/* Shop Now Button */}
+                <a href="/products">
+                  <button className="bg-pink-700 text-white font-bold px-5 py-2 rounded-md hover:bg-pink-800 transition">
+                    SHOP NOW
+                  </button>
+                </a>
               </div>
             );
           })}
-        </div>
-
-        {/* View All */}
-        <div className="text-center mt-12">
-          <a href="/products">
-            <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-4 px-8 rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              VIEW ALL PRODUCTS
-            </button>
-          </a>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProductSection;
+export default BestSellingSection;

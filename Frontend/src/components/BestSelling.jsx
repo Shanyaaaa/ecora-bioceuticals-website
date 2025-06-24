@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { assets } from "../assets/assets"; // Assuming assets are imported correctly
+import React, { useState } from "react"
+import { assets } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
+
 
 const BestSellingSection = () => {
   const [activeImageIndex, setActiveImageIndex] = useState({});
@@ -10,7 +12,7 @@ const BestSellingSection = () => {
       name: "MPS Nanocurcumin",
       price: "₹1,250.00",
       rating: 5,
-      images: ["/nano_front_home?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+      images: [assets.nanoFrontHome, "/placeholder.svg"],
       description: "100% Water Soluble & Bio-Available Nano Curcumin",
     },
     {
@@ -18,7 +20,7 @@ const BestSellingSection = () => {
       name: "Thrombo-Fe Syrup",
       price: "₹380.00",
       rating: 5,
-      images: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+      images: [assets.thromboFront, "/placeholder.svg"],
       description: "Iron supplement for pets",
     },
     {
@@ -26,7 +28,7 @@ const BestSellingSection = () => {
       name: "SAMe-Liv Syrup",
       price: "₹400.00",
       rating: 5,
-      images: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+      images: [assets.sameLivFront, "/placeholder.svg"],
       description: "World's No.1 Liver Support Formula",
     },
     {
@@ -34,7 +36,7 @@ const BestSellingSection = () => {
       name: "SAMe-Liv Elite",
       price: "₹750.00",
       rating: 5,
-      images: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+      images: [ assets.SameEliteFront, "/placeholder.svg"],
       description: "Premium liver support supplement",
     },
   ];
@@ -81,7 +83,7 @@ const BestSellingSection = () => {
                 {/* Product Image */}
                 <div className="relative h-64 overflow-hidden">
                   <img
-                    src={product.images[currentImageIndex] || "/placeholder.svg"}
+                    src={product.images[currentImageIndex]}
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />

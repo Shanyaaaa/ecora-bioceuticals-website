@@ -98,10 +98,10 @@ export default function Footer() {
           </p>
 
           <div className="flex space-x-4">
-            <a href="#" className="text-pink-100 hover:text-white transition-colors duration-200" aria-label="Facebook">
+            <a href="https://www.facebook.com/people/Ecora-Bioceuticals-Pvt-Ltd/100089639846317/" className="text-pink-100 hover:text-white transition-colors duration-200" aria-label="Facebook">
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#" className="text-pink-100 hover:text-white transition-colors duration-200" aria-label="Instagram">
+            <a href="https://www.instagram.com/ecora.bioceuticals/?hl=en" className="text-pink-100 hover:text-white transition-colors duration-200" aria-label="Instagram">
               <Instagram className="w-5 h-5" />
             </a>
           </div>

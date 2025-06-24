@@ -12,14 +12,19 @@ import thromboFront from './thrombo-front.png';
 import  searchIcon  from './search_icon.png';
 import cartIcon from './cart_icon.png';
 import profileIcon from './profile_icon.png';
-import eg_1 from './eg_1.jpg';
-import eg_2 from './eg_2.jpg';
+import eg_1 from './eg_1.jpeg';
+import eg_2 from './eg_2.jpeg';
 import eg_3 from './eg_3.jpg';
 import doctors from './doctors.jpeg';
 import Dog from './dog.jpg';
 import fastDelivery from './fastdelivery.jpg';
 import Price from './price.jpg';
 import quality from './quality.png';
+import AboutEcora from './aboutus.jpg';
+import Vision from './vision.jpg';
+import SameEliteFront from './same_elite_front.jpg';
+import SameEliteBack from './same_elite_back.jpg';
+
 
 
 
@@ -47,6 +52,10 @@ export const assets = {
   fastDelivery,
   Price,
   quality,
+  AboutEcora,
+  Vision,
+  SameEliteFront,
+  SameEliteBack,
 
 };
 

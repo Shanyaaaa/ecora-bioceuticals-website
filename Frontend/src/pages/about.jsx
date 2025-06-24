@@ -1,12 +1,17 @@
 import React from 'react';
+import AboutUs from '../components/AboutUs'; // ✅ Ensure this import is correct
+import Navbar from '../components/navbar';
+import Footer from '../components/footer'; // ✅ Ensure this import is correct
 
 const About = () => {
   return (
     <div>
+    <Navbar />
+    < AboutUs />
+    <Footer />
      
 
-      <h1>About Page</h1>
-      <p>This is the about page of our website.</p>
+
     </div>
   );
 };

@@ -27,32 +27,60 @@ const reviews = [
     name: "Neha Desai",
     text: "Loved the natural ingredients. My senior dog has more mobility now.",
   },
+  {
+    id: 6,
+    name: "Kunal Joshi",
+    text: "Calcinex helped my puppy with bone development. He's much stronger now!",
+  },
+  {
+    id: 7,
+    name: "Anjali Kapoor",
+    text: "The pet neuron supplement calmed my anxious rescue. We noticed a real difference in days.",
+  },
+  {
+    id: 8,
+    name: "Deepak Nair",
+    text: "Artimarin worked wonders on my lab's arthritis. He's playing fetch again!",
+  },
+  {
+    id: 9,
+    name: "Sneha Patil",
+    text: "I was skeptical at first, but Aminopet truly boosted my dog's appetite and energy.",
+  },
+  {
+    id: 10,
+    name: "Mohit Rawat",
+    text: "Our vet recommended Pet Neuron and it made a visible improvement in our dog's coordination.",
+  },
 ];
 
 const ReviewSection = () => {
   return (
     <div className="bg-gray-100 py-16 overflow-hidden">
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
         What Pet Owners Say
       </h2>
-      
-      <div className="relative">
-        <div className="flex animate-marquee whitespace-nowrap">
+
+      <div className="relative w-full overflow-x-hidden">
+        <div className="flex animate-marquee whitespace-nowrap gap-6 px-4">
           {[...reviews, ...reviews].map((review, idx) => (
-            <div 
-              key={`review-${idx}`}
-              className="inline-block w-72 mx-4 bg-white p-6 rounded-xl shadow-lg flex-shrink-0 hover:shadow-xl transition-shadow duration-300"
-            >
-              <p className="text-gray-700 italic mb-4 h-20 overflow-hidden">"{review.text}"</p>
-              <div className="flex justify-center mb-2">
-                <div className="flex gap-1 text-yellow-400">
+            <div
+            key={`review-${idx}`}
+          className="w-72 bg-white p-5 rounded-xl shadow-md flex-shrink-0 hover:shadow-xl transition duration-300 flex flex-col overflow-hidden"
+         >
+         <div className="flex-grow overflow-hidden">
+           <p className="text-gray-700 text-sm italic whitespace-normal overflow-hidden">
+             "{review.text}"
+            </p>
+            </div>
+
+              <div className="flex flex-col items-center mt-4">
+                <div className="flex gap-1 text-yellow-400 mb-1">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} size={14} />
                   ))}
                 </div>
-              </div>
-              <div className="text-center">
-                <span className="font-semibold text-purple-600">{review.name}</span>
+                <span className="font-semibold text-purple-600 text-sm">{review.name}</span>
               </div>
             </div>
           ))}
@@ -61,13 +89,15 @@ const ReviewSection = () => {
 
       <style jsx>{`
         @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
         .animate-marquee {
-          animation: marquee 20s linear infinite;
-          display: inline-block;
-          white-space: nowrap;
+          animation: marquee 25s linear infinite;
         }
       `}</style>
     </div>

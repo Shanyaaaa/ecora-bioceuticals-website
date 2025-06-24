@@ -9,26 +9,17 @@ import Login from './pages/Login';
 import Orders from './pages/Orders';
 import PlaceOrder from './pages/PlaceOrder';
 import Navbar from './components/navbar';
-import SlideImg from './components/slideImg';
-import Card from './components/card';
-import BestSellingSection from './components/BestSelling';
-import ProductSection from './components/ProductSection';
-import ReviewSection from './components/Reviews';
-import Faq from './components/Faq';
 import Footer from './components/footer';
+import home from './pages/Home';
+import Symptoms from './pages/symptoms';
 
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <SlideImg />
-      <Card />
-      <BestSellingSection />
-      <ProductSection />
-      <ReviewSection />
-      <Faq />
-      <Footer />
+      {/* <Home /> */}
+
+      
 
 
 
@@ -50,6 +41,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/place-order' element={<PlaceOrder />} />
+        <Route path='/products/symptoms' element={<Symptoms />} />
       </Routes>
     </div>
   );
