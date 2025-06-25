@@ -40,27 +40,27 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Information</h3>
             <ul className="space-y-3">
               <li>
-                <a href="ShippingPolicy" className="text-pink-100 hover:text-white transition-colors duration-200">
+                <a href="/ShippingPolicies" className="text-pink-100 hover:text-white transition-colors duration-200">
                   Shipping Policies
                 </a>
               </li>
               <li>
-                <a href="TermsOfUse" className="text-pink-100 hover:text-white transition-colors duration-200">
+                <a href="/TermsOfUse" className="text-pink-100 hover:text-white transition-colors duration-200">
                   Terms of use
                 </a>
               </li>
               <li>
-                <a href="ReturnPolicy" className="text-pink-100 hover:text-white transition-colors duration-200">
+                <a href="/RefundAndReturn" className="text-pink-100 hover:text-white transition-colors duration-200">
                   Refund and Returns Policy
                 </a>
               </li>
               <li>
-                <a href="PrivacyPolicy" className="text-pink-100 hover:text-white transition-colors duration-200">
+                <a href="/PrivacyPolicy" className="text-pink-100 hover:text-white transition-colors duration-200">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="ContactFooter" className="text-pink-100 hover:text-white transition-colors duration-200">
+                <a href="/contact" className="text-pink-100 hover:text-white transition-colors duration-200">
                   Contact us
                 </a>
               </li>

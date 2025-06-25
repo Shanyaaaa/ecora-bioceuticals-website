@@ -10,12 +10,11 @@ import Orders from './pages/Orders';
 import PlaceOrder from './pages/PlaceOrder';
 import Symptoms from './pages/Symptoms'; // Capitalized for consistency
 
-// Footer components - verify these paths exist
-import ShippingPolicy from './pages/footer/ShippingPolicies'; 
+
+import ShippingPolicies from './pages/footer/ShippingPolicies'; 
 import PrivacyPolicy from './pages/footer/PrivacyPolicy';
-import TermsOfUse from './pages/footer/Terms'; 
-import ReturnPolicy from './pages/footer/RefundAndReturn'; 
-import Contactfooter from './pages/footer/Contactfooter'; 
+import TermsOfUse from './pages/footer/TermsOfUse'; 
+import RefundAndReturn from './pages/footer/RefundAndReturn'; // Changed 'RefundAndReturn' to match file name
 
 const App = () => {
   return (
@@ -30,11 +29,11 @@ const App = () => {
         <Route path='/orders' element={<Orders />} />
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/products/symptoms' element={<Symptoms />} />
-        <Route path='/ShippingPolicy' element={<ShippingPolicy />} />
+        <Route path='/ShippingPolicies' element={<ShippingPolicies />} />
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
         <Route path='/TermsOfUse' element={<TermsOfUse />} />
-        <Route path='/ReturnPolicy ' element={<ReturnPolicy />} />
-        <Route path='/ContactFooter' element={<Contactfooter />} />
+        <Route path='/RefundAndReturn' element={<RefundAndReturn />} />
+      
       </Routes>
     </div>
   );
