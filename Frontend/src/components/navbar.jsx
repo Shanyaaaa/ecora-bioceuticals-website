@@ -41,7 +41,7 @@ const Navbar = () => {
       )}
 
       {/* 🧭 Navbar Content */}
-      <div className='bg-[#d0b590] w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]'>
+      <div className='bg-[#e3b6e8] w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]'>
         <div className='max-w-screen-xl mx-auto w-full flex items-center justify-between py-5 px-4 font-playfair'>
 
           {/* Logo */}

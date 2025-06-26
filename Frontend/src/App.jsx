@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/home';
 import Product from './pages/product';
 import About from './pages/About'; // Note: Capitalized to match likely file name
 import Contact from './pages/Contact';
@@ -8,7 +8,8 @@ import Cart from './pages/Cart';
 import Login from './pages/Login';
 import Orders from './pages/Orders';
 import PlaceOrder from './pages/PlaceOrder';
-import Symptoms from './pages/Symptoms'; // Capitalized for consistency
+import Symptoms from './pages/Symptoms';
+import EcoraVideo from './components/EcoraVideo'; // Capitalized for consistency
 
 
 import ShippingPolicies from './pages/footer/ShippingPolicies';
@@ -35,6 +36,8 @@ const App = () => {
           <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
           <Route path='/TermsOfUse' element={<TermsOfUse />} />
           <Route path='/RefundAndReturn' element={<RefundAndReturn />} />
+          
+        <Route path='/EcoraVideo' element={<EcoraVideo />} />
         </Routes>
       </ShopContextProvider>
     </div>

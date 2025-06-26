@@ -7,6 +7,7 @@ import ProductSection from '../components/ProductSection'
 import ReviewSection from '../components/Reviews'
 import Faq from '../components/Faq'
 import Footer from '../components/footer'
+import EcoraVideo from '../components/EcoraVideo'
 
 
 
@@ -16,7 +17,10 @@ const home = () => {
       <Navbar />
       <SlideImg />
       <Card />
+      
+
       <BestSellingSection />
+      <EcoraVideo />
       <ProductSection />
       <ReviewSection />
       <Faq />

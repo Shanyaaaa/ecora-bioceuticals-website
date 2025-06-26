@@ -26,6 +26,10 @@ import Vision from './vision.jpg';
 import SameEliteFront from './same_elite_front.jpg';
 import SameEliteBack from './same_elite_back.jpg';
 import calcinexTab1 from './calcinextab-1.jpg';
+import TeamMember1 from './team-member-1.jpeg';
+import TeamMember2 from './team-member-2.jpeg';
+import TeamMember3 from './team-member-3.jpeg';
+import TeamMember4 from './team-member-4.jpeg';
 
 // ✅ Export products separately
 export const products = [
@@ -86,4 +90,9 @@ export const assets = {
   SameEliteFront,
   SameEliteBack,
   calcinexTab1,
+  TeamMember1,
+  TeamMember2,
+  TeamMember3,
+  TeamMember4,
+
 };
