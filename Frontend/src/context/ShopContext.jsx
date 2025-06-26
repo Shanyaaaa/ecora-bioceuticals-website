@@ -1,5 +1,7 @@
 import React, { createContext } from 'react';
-import { productsAssets } from "../products-assets/products-assets";
+import { products } from '../assets/assets'; 
+
+
 
 export const ShopContext = createContext();
 
@@ -7,8 +9,7 @@ const ShopContextProvider = (props) => {
   const currency = '₹';
   const deliveryCharges = 50;
 
-  const products = productsAssets;  
-
+  // No need to reassign using assets
   const value = {
     products,
     currency,

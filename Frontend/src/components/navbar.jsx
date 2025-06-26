@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className='relative z-50'>
       {/* 🔍 Fullscreen Search Overlay */}
       {showFullSearch && (
-        <div className='fixed top-0 left-0 w-full h-[120px] bg-[#ca588b] z-50 flex flex-col items-center justify-center'>
+        <div className='fixed top-0 left-0 w-full h-[120px] bg-[#321a6d] z-50 flex flex-col items-center justify-center'>
           <div className='w-[90%] max-w-2xl relative flex items-center'>
             <input
               type='text'
@@ -41,7 +41,7 @@ const Navbar = () => {
       )}
 
       {/* 🧭 Navbar Content */}
-      <div className='bg-[#ca588b] w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]'>
+      <div className='bg-[#d0b590] w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]'>
         <div className='max-w-screen-xl mx-auto w-full flex items-center justify-between py-5 px-4 font-playfair'>
 
           {/* Logo */}
@@ -130,7 +130,7 @@ const Navbar = () => {
                 {productsDropdownOpen && (
                   <div className='ml-4 mt-2 flex flex-col gap-2 text-sm'>
                     <NavLink to='/products/symptoms' onClick={() => setMenuOpen(false)} className='hover:text-gray-900'>Shop by Symptoms</NavLink>
-                    <NavLink to='/products/all' onClick={() => setMenuOpen(false)} className='hover:text-gray-900'>All Products</NavLink>
+                    <NavLink to='/products' onClick={() => setMenuOpen(false)} className='hover:text-gray-900'>All Products</NavLink>
                   </div>
                 )}
               </div>
