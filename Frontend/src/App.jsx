@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home'; 
-import Product from './pages/Product';
+import Home from './pages/Home';
+import Product from './pages/product';
 import About from './pages/About'; // Note: Capitalized to match likely file name
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
@@ -11,30 +11,32 @@ import PlaceOrder from './pages/PlaceOrder';
 import Symptoms from './pages/Symptoms'; // Capitalized for consistency
 
 
-import ShippingPolicies from './pages/footer/ShippingPolicies'; 
+import ShippingPolicies from './pages/footer/ShippingPolicies';
 import PrivacyPolicy from './pages/footer/PrivacyPolicy';
-import TermsOfUse from './pages/footer/TermsOfUse'; 
+import TermsOfUse from './pages/footer/TermsOfUse';
 import RefundAndReturn from './pages/footer/RefundAndReturn'; // Changed 'RefundAndReturn' to match file name
+import ShopContextProvider from './context/ShopContext';
 
 const App = () => {
   return (
     <div>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/product/:productId' element={<Product />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/orders' element={<Orders />} />
-        <Route path='/place-order' element={<PlaceOrder />} />
-        <Route path='/products/symptoms' element={<Symptoms />} />
-        <Route path='/ShippingPolicies' element={<ShippingPolicies />} />
-        <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
-        <Route path='/TermsOfUse' element={<TermsOfUse />} />
-        <Route path='/RefundAndReturn' element={<RefundAndReturn />} />
-      
-      </Routes>
+      <ShopContextProvider>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/products' element={<Product />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/orders' element={<Orders />} />
+          <Route path='/place-order' element={<PlaceOrder />} />
+          <Route path='/products/symptoms' element={<Symptoms />} />
+          <Route path='/ShippingPolicies' element={<ShippingPolicies />} />
+          <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
+          <Route path='/TermsOfUse' element={<TermsOfUse />} />
+          <Route path='/RefundAndReturn' element={<RefundAndReturn />} />
+        </Routes>
+      </ShopContextProvider>
     </div>
   );
 };

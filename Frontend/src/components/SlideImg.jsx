@@ -36,15 +36,7 @@ const SlideImg = () => {
               draggable={false}
             />
 
-    ?
-            <div className="absolute inset-0 flex items-center justify-center z-20">
-              <button
-                onClick={() => navigate('/products')}
-                className="mt-65 px-5 py-2 bg-red-500 text-black font-semibold rounded-full shadow-lg backdrop-blur-md hover:bg-white hover:scale-105 transition-all duration-300"
-              >
-                Shop Now
-              </button>
-            </div>
+           
           </div>
          
         ))}
