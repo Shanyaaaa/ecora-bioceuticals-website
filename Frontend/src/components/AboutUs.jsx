@@ -176,9 +176,7 @@ export default function AboutUs() {
             At Ecora Bioceuticals Pvt. Ltd, our story is built on passion, science, and a deep love for animals.
             We've grown from a small idea into a leading force in pet wellness, committed to redefining how pet care is delivered—one supplement at a time.
           </p>
-          <h4 className="text-xl font-semibold text-black mb-3">
-            Meet Our Founders
-          </h4>
+         
           
           <Button onClick={() => navigate("/Founder")}>Meet Our Founders</Button>
 

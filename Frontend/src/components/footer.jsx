@@ -1,10 +1,19 @@
-import { Facebook, Instagram } from "lucide-react"
+import { Facebook, Instagram } from "lucide-react";
+import { assets } from "../assets/assets"; 
 
 export default function Footer() {
   return (
-    <footer className="bg-pink-600 text-white">
-      {/* Help Section */}
-      <div className="text-center py-8 border-b border-pink-500">
+   
+    <footer className="bg-blue-600 text-white">
+      {/* Help Section with Logo */}
+      <div className="text-center py-8 border-b border--500 relative">
+        {/* Logo in top-left corner */}
+        <img
+          src={assets.ecora}
+          alt="Ecora Logo"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 h-10 w-auto object-contain"
+        />
+
         <h2 className="text-2xl font-semibold mb-2">How Can We Help?</h2>
         <p className="text-pink-100">Monday – Saturday 10am – 6pm IST</p>
       </div>
@@ -81,10 +90,6 @@ export default function Footer() {
                   Order History
                 </a>
               </li>
-             
-              <li>
-
-              </li>
             </ul>
           </div>
         </div>
@@ -108,5 +113,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -37,6 +37,7 @@ import ObesitySupportTab from './ObesitySupportTab-1.jpg';
 import OmegaPetEliteCap from './OmegaPetEliteCap-1.jpg';
 import SporipetTab from './SporipetTab-1.jpg';
 import sameLivSyrup from './SameLivSyrup-1.jpg';
+import Founder from './founder.png';
 
 // ✅ Exporting all products
 export const products = [
@@ -213,4 +214,5 @@ export const assets = {
   OmegaPetEliteCap,
   SporipetTab,
   sameLivSyrup,
+  Founder,
 };

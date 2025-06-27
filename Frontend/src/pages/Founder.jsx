@@ -1,71 +1,74 @@
 import React from "react";
-import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { assets } from "../assets/assets";
-
-const founders = [
-  {
-    name: "Dr. Arjun Mehta",
-    title: "Veterinary Scientist & Co-Founder",
-    image: assets.TeamMember1,
-    bio: "With a Ph.D. in veterinary sciences, Dr. Mehta brings over 15 years of experience in pet wellness, R&D, and ethical care.",
-  },
-];
 
 const AboutFounders = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-purple-100 py-12 px-4 sm:px-6 lg:px-20">
-      <motion.div
-        className="text-center mb-16"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-purple-800 mb-4">
-          Meet Our Founders
-        </h1>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          The driving force behind our mission to redefine pet wellness.
-        </p>
-      </motion.div>
+    <>
+      <Navbar />
 
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-20 lg:gap-x-10">
-  {founders.map((founder, index) => (
-    <motion.div
-      key={index}
-      className="relative flex flex-col lg:flex-row items-center lg:items-stretch w-full max-w-5xl"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.3, duration: 0.6 }}
-      viewport={{ once: true }}
-    >
-      {/* Text Card */}
-      <motion.div
-        className="lg:w-1/2 bg-white rounded-2xl shadow-xl z-20 p-8 relative"
-        whileHover={{ scale: 1.03, boxShadow: "0px 8px 24px rgba(128, 90, 213, 0.3)" }}
-        transition={{ duration: 0.3 }}
-      >
-        <h2 className="text-2xl font-bold text-purple-700 mb-2">{founder.name}</h2>
-        <h3 className="text-sm text-gray-500 mb-4">{founder.title}</h3>
-        <p className="text-gray-600 text-base leading-relaxed">{founder.bio}</p>
-      </motion.div>
+      <div className="bg-[#e7ece8] min-h-screen py-16 px-6 lg:px-24">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-start gap-12">
 
-      {/* Image Card */}
-      <motion.div
-        className="lg:w-1/2 h-[400px] w-full bg-pink-200 rounded-2xl shadow-lg overflow-hidden flex items-center justify-center mt-6 lg:mt-0 lg:ml-6"
-        whileHover={{ scale: 1.05, y: -10 }}
-        transition={{ duration: 0.4 }}
-      >
-        <img
-          src={founder.image}
-          alt={founder.name}
-          className="h-full object-cover"
-        />
-      </motion.div>
-    </motion.div>
-  ))}
-</div>
+          {/* Left Image Section */}
+          <div className="relative w-[240px] self-start">
+            <div className="overflow-hidden rounded-xl shadow-md">
+              <img
+                src={assets.Founder}
+                alt="Founder Vishal Kumar"
+                className="w-full h-[320px] object-cover"
+              />
+            </div>
+          </div>
 
-    </div>
+          {/* Right Text Section in 3D Card Style */}
+          <div className="flex-1">
+            <div className="bg-white rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.15)] p-8 transition-transform duration-300 hover:scale-[1.01]">
+
+              <h2 className="text-3xl font-semibold text-purple-800">Our Story</h2>
+              <p className="uppercase tracking-widest text-sm text-gray-500 mb-6">
+                About Vishal Kumar
+              </p>
+
+              <div className="text-gray-700 text-base leading-relaxed space-y-4">
+                <p>
+                  <strong>Mr. Vishal Kumar</strong> is the Founder and Director of <strong>Ecora Bioceuticals Pvt. Ltd.</strong>, formerly operating as <strong>MPS Animal Healthcare</strong>. A zoologist by education and a passionate advocate for animal wellness, he has dedicated <strong><em>over two decades</em></strong> to improving the healthcare across India.
+                </p>
+
+                <p>
+                  His journey began in <strong>1997</strong>, when he entered the field of Healthcare with a deep respect for nature, science, and the well-being. From the very beginning, Mr. Kumar recognized the importance of creating products that were not only effective but also <strong><em>affordable and trustworthy</em></strong>.
+                </p>
+
+                <p>
+                  That belief led to the founding of <strong>Ecora</strong> in <strong>2014</strong>—a company built on the principle that <strong><em>premium quality should not come at a premium price</em></strong>. His vision was to deliver high-quality, science-driven supplements using top-tier ingredients, while ensuring they remain accessible to both pet parents and livestock caregivers.
+                </p>
+
+                <p>
+                  Under his leadership, Ecora has grown into a trusted name among veterinarians, breeders, and pet owners alike—a reflection of his <strong>unwavering commitment to quality, integrity, and compassion</strong>.
+                </p>
+
+                <p>
+                  What distinguishes Mr. Kumar is his ability to blend innovation with empathy. Whether consulting with veterinary professionals or overseeing production personally, he brings a <strong><em>deep sense of responsibility and care</em></strong> to every product Ecora creates.
+                </p>
+
+                <p>
+                  Today, Ecora stands as a symbol of trust and excellence in the animal healthcare industry. For him, this work is far more than a business—it is a <strong><em>lifelong mission rooted in science, sincerity, and the belief that every animal deserves the best</em></strong>.
+                </p>
+              </div>
+
+              {/* Signature Section */}
+              <div className="pt-6 mt-6 border-t border-gray-200">
+                <p className="font-cursive text-lg text-gray-800">Mr. Vishal Kumar</p>
+                <p className="text-sm text-gray-600">Founder and Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </>
   );
 };
 
