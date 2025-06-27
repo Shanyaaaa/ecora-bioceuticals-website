@@ -8,8 +8,8 @@ import Cart from './pages/Cart';
 import Login from './pages/Login';
 import Orders from './pages/Orders';
 import PlaceOrder from './pages/PlaceOrder';
-import Symptoms from './pages/Symptoms';
-import EcoraVideo from './components/EcoraVideo'; // Capitalized for consistency
+import EcoraVideo from './components/EcoraVideo';
+import Founder from './pages/Founder'; // Note: Capitalized to match likely file name
 
 
 import ShippingPolicies from './pages/footer/ShippingPolicies';
@@ -31,11 +31,12 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/place-order' element={<PlaceOrder />} />
-          <Route path='/products/symptoms' element={<Symptoms />} />
+      
           <Route path='/ShippingPolicies' element={<ShippingPolicies />} />
           <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
           <Route path='/TermsOfUse' element={<TermsOfUse />} />
           <Route path='/RefundAndReturn' element={<RefundAndReturn />} />
+          <Route path='/Founder' element={<Founder />} />
           
         <Route path='/EcoraVideo' element={<EcoraVideo />} />
         </Routes>
