@@ -115,18 +115,67 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'Artimarin Suspension',
-    name: 'Artimarin Suspension for Pets – 200ml | Advanced Liver Support Formula',
-    description:
-      'Supports liver detox, improves digestion, and helps manage liver-related conditions.',
-    price: 290,
-    image: [artimarinHome,ArtimarinSus2,ArtimarinSus3,ArtimarinSus4,ArtimarinSus5],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Disorders', 'Digestive Health', 'Infectious Diseases'],
-    conditions: ['Liver Health', 'Digestive Health', 'Immune Support'], // ← Liver Disorders, Digestive Health, Infectious Diseases
-    sizes: ['200ml'],
-    bestseller: true,
-  },
+  
+  _id: 'Artimarin Suspension',
+  name: 'Artimarin Suspension for Pets – 200ml | Advanced Liver Support Formula',
+  description: 'Supports liver detox, improves digestion, and helps manage liver-related conditions.',
+  price: 290,
+  image: [artimarinHome, ArtimarinSus2, ArtimarinSus3, ArtimarinSus4, ArtimarinSus5],
+  category: 'Cats,Dogs',
+  subCategory: ['Liver Disorders', 'Digestive Health', 'Infectious Diseases'],
+  conditions: ['Liver Health', 'Digestive Health', 'Immune Support'],
+  sizes: ['200ml'],
+  bestseller: true,
+
+  // ✅ NEW FIELD
+  details: [
+    {
+      title: 'Ingredients (Per 10 ml)',
+      content: [
+        'Silymarin : 140 mg',
+        'N-Acetylcysteine : 200 mg',
+        'Artichoke : 70 mg',
+        'L-Ornithine L-Aspartate : 50 mg',
+        'CoenzymeQ10 : 10 mg',
+        'Inositol : 10 mg',
+        'Vit.B1 : 1.4mg',
+        'Vit.B2 : 1.6mg',
+        'Vit.B6 : 1.2mg'
+      ]
+    },
+    {
+      title: 'Suggested in',
+      content: [
+        'Animal suffering from liver disorders',
+        'Animal recuperating from infectious disease',
+        'Drug-induced toxicity in liver',
+        'Gall Stones',
+        'Irritable Bowel Syndrome',
+        'Supportive therapy in liver cirrhosis, fibrosis, hepatitis, jaundice'
+      ]
+    },
+    {
+      title: 'Ingredient Benefits',
+      content: [
+        'Silymarin protects liver cells, regenerates tissue, and has antioxidant/anti-inflammatory effects.',
+        'Artichoke supports bile production and protects against oxidative stress.',
+        'NAC replenishes glutathione, detoxifies drugs like acetaminophen, and supports immune health.',
+        'Coenzyme Q10 protects mitochondria, supports metabolism and combats oxidative liver damage.',
+        'L-Ornithine L-Aspartate aids ammonia clearance and supports liver-brain axis in hepatic encephalopathy.'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['Per box contains 3×10 Chewable Tablets']
+    },
+    {
+      title: 'Dosage',
+      content: ['1 to 2 tablets three times a day or as directed by the veterinarian.']
+    }
+  ]
+},
+
+  
   {
     _id: 'Sporipet Tab',
     name: 'Sporipet Gut Health & Immunity Support for Pets – 30 Tablets',

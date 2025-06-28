@@ -5,19 +5,63 @@ import Footer from '../components/Footer';
 import { products } from '../assets/assets';
 import { Maximize2, X } from 'lucide-react';
 
+// Reusable Tab
+const Tab = ({ label, isActive, onClick }) => (
+  <button
+    onClick={onClick}
+    className={`py-2 px-4 border-b-2 transition ${
+      isActive ? 'border-blue-600 text-blue-600 font-semibold' : 'border-transparent text-gray-600 hover:text-blue-600'
+    }`}
+  >
+    {label}
+  </button>
+);
+
+// Dropdown for each detail
+const DropdownSection = ({ title, content }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border rounded mb-3 overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex justify-between items-center px-4 py-3 bg-gray-100 hover:bg-gray-200"
+      >
+        <h3 className="text-sm font-medium">{title}</h3>
+        <span>{open ? '-' : '+'}</span>
+      </button>
+      {open && (
+        <div className="px-4 py-2 text-sm text-gray-700 space-y-1">
+          {content.map((item, idx) => (
+            <p key={idx}>• {item}</p>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const ProductById = () => {
   const { id } = useParams();
   const product = products.find((p) => p._id === id);
 
   const [mainImage, setMainImage] = useState(product?.image?.[0] || '');
   const [isZoomed, setIsZoomed] = useState(false);
+  const [tab, setTab] = useState('Description');
+  const [reviews, setReviews] = useState([]);
+  const [textReview, setTextReview] = useState('');
+  const [rating, setRating] = useState(0);
+
+  const submitReview = (e) => {
+    e.preventDefault();
+    if (textReview.trim()) {
+      setReviews([...reviews, { rating, text: textReview }]);
+      setTextReview('');
+      setRating(0);
+    }
+  };
 
   if (!product) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <h2 className="text-2xl text-red-500">Product Not Found</h2>
-      </div>
-    );
+    return <div className="min-h-screen flex justify-center items-center">Product not found.</div>;
   }
 
   return (
@@ -37,6 +81,7 @@ const ProductById = () => {
         </div>
       )}
 
+      {/* IMAGE & INFO */}
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
         {/* LEFT: Image Gallery */}
         <div className="flex flex-col lg:flex-row gap-4">
@@ -102,11 +147,88 @@ const ProductById = () => {
           </div>
 
           <p className="mt-4 text-sm text-gray-500">
-            Categories: {product.category.split(',').map((c, i) => (
-              <span key={i} className="text-blue-600">{c}{i !== product.category.split(',').length - 1 && ', '}</span>
+            Categories:{' '}
+            {product.category.split(',').map((c, i) => (
+              <span key={i} className="text-blue-600">
+                {c}
+                {i !== product.category.split(',').length - 1 && ', '}
+              </span>
             ))}
           </p>
         </div>
+      </div>
+
+      {/* TABS SECTION */}
+      <div className="max-w-6xl mx-auto px-4 pb-20">
+        <div className="flex border-b mb-6">
+          {['Description', 'Additional Info', `Reviews (${reviews.length})`].map((label, i) => (
+            <Tab key={i} label={label} isActive={tab === label.split(' ')[0]} onClick={() => setTab(label.split(' ')[0])} />
+          ))}
+        </div>
+
+        {/* TAB CONTENT */}
+        {tab === 'Description' && (
+          <div>
+            {product.details?.map((section, index) => (
+              <DropdownSection key={index} title={section.title} content={section.content} />
+            ))}
+          </div>
+        )}
+
+        {tab === 'Additional' && (
+          <div className="text-gray-700 space-y-2">
+            <p>Shipping: Free across India</p>
+            <p>Stock Status: Available</p>
+          </div>
+        )}
+
+        {tab === 'Reviews' && (
+          <div>
+            {reviews.length === 0 ? (
+              <p className="text-gray-600 mb-4">There are no reviews yet.</p>
+            ) : (
+              <ul className="mb-6 space-y-3">
+                {reviews.map((rev, i) => (
+                  <li key={i} className="p-4 border rounded bg-white shadow-sm">
+                    <p className="text-yellow-500">{"★".repeat(rev.rating)}</p>
+                    <p className="text-gray-800">{rev.text}</p>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <form onSubmit={submitReview} className="space-y-4">
+              <h3 className="font-semibold text-lg">Submit a review</h3>
+              <div className="flex gap-2 items-center">
+                <span className="text-sm">Your Rating:</span>
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <button
+                    type="button"
+                    key={star}
+                    onClick={() => setRating(star)}
+                    className={`text-xl ${star <= rating ? 'text-yellow-500' : 'text-gray-400'}`}
+                  >
+                    ★
+                  </button>
+                ))}
+              </div>
+              <textarea
+                className="w-full border rounded p-2"
+                rows="4"
+                placeholder="Your review..."
+                value={textReview}
+                onChange={(e) => setTextReview(e.target.value)}
+                required
+              />
+              <button
+                type="submit"
+                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        )}
       </div>
 
       <Footer />
