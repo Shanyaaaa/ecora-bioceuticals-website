@@ -1,39 +1,30 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { assets } from '../assets/assets';
+import { products } from '../assets/assets';
 import { Maximize2, X } from 'lucide-react';
 
 const ProductById = () => {
-  const product = {
-    name: "Aminopet 200ml Syrup",
-    price: 260,
-    description: [
-      "Synergistic blend of Essential amino acids & Multivitamin with added advantage of Grape seed & Stinging nettle extract",
-      "Promotes growth in young animals",
-      "Prevents deficiencies in geriatric animals",
-      "Breeding, pregnant and nursing animals",
-      "Inappetance and nutritional deficiencies",
-    ],
-    categories: ["Cat", "Dog"],
-    rating: 5,
-    images: [
-      assets.aminopetFront,
-      assets.aminopetSide,
-      assets.aminopetBack,
-      assets.aminopetBox,
-      assets.aminopetBottle,
-    ],
-  };
+  const { id } = useParams();
+  const product = products.find((p) => p._id === id);
 
-  const [mainImage, setMainImage] = useState(product.images[0]);
+  const [mainImage, setMainImage] = useState(product?.image?.[0] || '');
   const [isZoomed, setIsZoomed] = useState(false);
+
+  if (!product) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <h2 className="text-2xl text-red-500">Product Not Found</h2>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-gray-50">
       <Navbar />
 
-      {/* Zoomed Fullscreen Modal */}
+      {/* Zoom Modal */}
       {isZoomed && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
           <img src={mainImage} alt="zoomed" className="max-w-[90%] max-h-[90%] object-contain" />
@@ -49,9 +40,8 @@ const ProductById = () => {
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
         {/* LEFT: Image Gallery */}
         <div className="flex flex-col lg:flex-row gap-4">
-          {/* Thumbnails */}
           <div className="flex lg:flex-col gap-2">
-            {product.images.map((img, i) => (
+            {product.image.map((img, i) => (
               <img
                 key={i}
                 src={img}
@@ -62,7 +52,6 @@ const ProductById = () => {
             ))}
           </div>
 
-          {/* Main Image with Zoom Button */}
           <div className="relative">
             <img
               src={mainImage}
@@ -83,13 +72,11 @@ const ProductById = () => {
         <div className="flex-1">
           <p className="text-sm text-gray-500">Home / Dog / {product.name}</p>
           <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-1">{product.name}</h1>
-          <p className="text-gray-600 text-sm mb-1">{product.categories.join(', ')}</p>
+          <p className="text-gray-600 text-sm mb-1">{product.category}</p>
 
           <div className="flex items-center mb-3">
             {Array.from({ length: 5 }, (_, i) => (
-              <span key={i} className={i < product.rating ? 'text-yellow-400' : 'text-gray-300'}>
-                ★
-              </span>
+              <span key={i} className="text-yellow-400">★</span>
             ))}
             <span className="ml-2 text-sm text-gray-600">(1 customer review)</span>
           </div>
@@ -99,9 +86,7 @@ const ProductById = () => {
           </p>
 
           <ul className="list-disc ml-6 text-gray-700 text-sm mb-6 space-y-1">
-            {product.description.map((line, i) => (
-              <li key={i}>{line}</li>
-            ))}
+            <li>{product.description}</li>
           </ul>
 
           <div className="flex items-center gap-4">
@@ -117,8 +102,8 @@ const ProductById = () => {
           </div>
 
           <p className="mt-4 text-sm text-gray-500">
-            Categories: {product.categories.map((c, i) => (
-              <span key={i} className="text-blue-600">{c}{i !== product.categories.length - 1 && ', '}</span>
+            Categories: {product.category.split(',').map((c, i) => (
+              <span key={i} className="text-blue-600">{c}{i !== product.category.split(',').length - 1 && ', '}</span>
             ))}
           </p>
         </div>

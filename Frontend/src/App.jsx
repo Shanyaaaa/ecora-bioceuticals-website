@@ -30,7 +30,7 @@ const App = () => {
         {/* <SearchBar /> Ensure this is the correct path */}
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/product/:ProductId' element={<ProductById />} />
+          <Route path="/product/:id" element={<ProductById />} />
           <Route path='/products/:id' element={<Product />} />
             <Route path='/products' element={<Product />} />
           <Route path='/about' element={<About />} />

@@ -16,10 +16,17 @@ const Product = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   const conditions = [
-    "Nervine Care", "Dermatitis", "Joint Support", "Digestive Health", "Calcium Support",
-    "Liver Health", "Deworming", "Digestion", "Gut Health", "Skin and Coat",
-    "Growth and Development", "Pain Management", "Immune Support", "Bacterial Infections"
-  ];
+  "Nervine Care",
+  "Joint Support",
+  "Digestive Health",
+  "Calcium Support",
+  "Liver Health",
+  "Gut Health",
+  "Skin and Coat",
+  "Immune Support",
+  "Weight Management",
+  "Heart & Brain Health",
+];
 
   useEffect(() => {
     let temp = [...products];
