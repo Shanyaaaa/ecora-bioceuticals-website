@@ -1,19 +1,22 @@
-import React, { createContext } from 'react';
-import { products } from '../assets/assets'; 
-
-
+import React, { createContext, useState } from 'react';
+import { products } from '../assets/assets';
 
 export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
   const currency = '₹';
   const deliveryCharges = 50;
+  const [search, setSearch] = useState('');
+  const [showSearch, setShowSearch] = useState(true);
 
-  // No need to reassign using assets
   const value = {
     products,
     currency,
     deliveryCharges,
+    search,
+    setSearch,
+    showSearch,
+    setShowSearch,
   };
 
   return (

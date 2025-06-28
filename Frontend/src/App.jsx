@@ -9,7 +9,11 @@ import Login from './pages/Login';
 import Orders from './pages/Orders';
 import PlaceOrder from './pages/PlaceOrder';
 import EcoraVideo from './components/EcoraVideo';
-import Founder from './pages/Founder'; // Note: Capitalized to match likely file name
+import Founder from './pages/Founder';
+import ProductById from './pages/ProductById'; // path as per your file
+
+
+// import SearchBar from './components/SearchBar'; // Ensure this is the correct path
 
 
 import ShippingPolicies from './pages/footer/ShippingPolicies';
@@ -21,10 +25,14 @@ import ShopContextProvider from './context/ShopContext';
 const App = () => {
   return (
     <div>
+    
       <ShopContextProvider>
+        {/* <SearchBar /> Ensure this is the correct path */}
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/products' element={<Product />} />
+          <Route path='/product/:ProductId' element={<ProductById />} />
+          <Route path='/products/:id' element={<Product />} />
+            <Route path='/products' element={<Product />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/cart' element={<Cart />} />

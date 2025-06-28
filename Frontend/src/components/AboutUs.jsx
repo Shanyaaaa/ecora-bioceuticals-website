@@ -93,7 +93,7 @@ export default function AboutUs() {
       </div>
 
       {/* Our Vision Section */}
-      <div className="max-w-6xl mx-auto mt-20 px-6 grid md:grid-cols-2 gap-2 items-center">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-2 items-center">
         <div data-aos="fade-right">
           <h2 className="text-3xl font-bold text-pink-700 mb-4 underline underline-offset-4 decoration-pink-500">
             Our Vision

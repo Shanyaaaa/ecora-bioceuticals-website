@@ -39,6 +39,7 @@ import SporipetTab from './SporipetTab-1.jpg';
 import sameLivSyrup from './SameLivSyrup-1.jpg';
 import Founder from './founder.png';
 
+
 // ✅ Exporting all products
 export const products = [
   {
