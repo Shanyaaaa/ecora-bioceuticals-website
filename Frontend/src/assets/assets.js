@@ -69,6 +69,9 @@ import CoproTab3 from './CoproTab-3.jpg';
 import CoproTab4 from './CoproTab-4.jpg';
 import CoproTab5 from './CoproTab-5.jpg';
 import FurTab from './FurTab-1.jpg';
+import FurTab2 from './FurTab-2.png';
+import FurTab3 from './FurTab-3.png';
+import FurTab4 from './FurTab-4.jpg';
 import ObesitySupportTab from './ObesitySupportTab-1.jpg';
 import ObesitySupportTab2 from './ObesitySupportTab-2.jpg';
 import ObesitySupportTab3 from './ObesitySupportTab-3.jpg';
@@ -203,7 +206,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: 'MPS Obesity Support ',
+    _id:'MPS Obesity Support',
     name: 'MPS Obesity Support Tablet 60’s',
     description:
       'Supports fat metabolism, energy, and appetite control.',
@@ -216,12 +219,12 @@ export const products = [
     bestseller: false,
   },
   {
-    _id:'MPS Furtab ',
+    _id:'MPS Furtab',
     name: 'MPS Furtab Supplement for Pets – 60 Tabs',
     description:
       'Biotin + Omegas for healthy coat and reduced skin inflammation.',
     price: 490,
-    image:[FurTab],
+    image:[FurTab,FurTab2,FurTab3,FurTab4],
     category: 'Cats,Dogs',
     subCategory: ['Skin Inflammation', 'Poor Coat Quality'],
     conditions: ['Skin and Coat'], // ← Skin Inflammation, Poor Coat Quality
@@ -379,6 +382,9 @@ export const assets = {
   CoproTab5,
   
   FurTab,
+  FurTab2,
+  FurTab3,
+  FurTab4,
   ObesitySupportTab,
   ObesitySupportTab2,
   ObesitySupportTab3,
