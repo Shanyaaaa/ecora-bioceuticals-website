@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { products } from '../assets/assets';
 import { Maximize2, X } from 'lucide-react';
+import Suggestions from '../components/Suggestion';
 
 // Reusable Tab
 const Tab = ({ label, isActive, onClick }) => (
@@ -230,7 +231,8 @@ const ProductById = () => {
           </div>
         )}
       </div>
-
+      
+<Suggestions currentProduct={product} />
       <Footer />
     </div>
   );

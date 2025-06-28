@@ -102,18 +102,83 @@ import { Import } from 'lucide-react';
 // ✅ Exporting all products
 export const products = [
   {
-    _id: 'Calcinex Tab',
-    name: 'Calcinex Tab 70’s – Advanced Calcium Supplement for Pets',
-    description:
-      '"Calcinex Tab is an advanced calcium supplement enriched with Vitamin D3 and K2-MK7, designed to promote strong bones, healthy teeth, and joint support. Ideal for both growing and aging pets, it aids in managing rickets, osteoporosis, and fracture recovery."',
-    price: 450,
-    image: [calcinexTab1, calcinexTab2, calcinexTab3, calcinexTab4, calcinexTab5],
-    category: 'Cats,Dogs',
-    subCategory: ['Rickets', 'Osteoporosis', 'Fractures', 'Joint Pain'],
-    conditions: ['Calcium Support', 'Joint Support'], // ← was: ['Rickets', 'Osteoporosis', 'Fractures', 'Joint Pain']    
-    sizes: ['70 Tabs'],
-    bestseller: false,
-  },
+  _id: 'Calcinex Tab',
+  name: 'Calcinex Tab 70’s – Advanced Calcium Supplement for Pets',
+  description:
+    '"Calcinex Tab is an advanced calcium supplement enriched with Vitamin D3 and K2-MK7, designed to promote strong bones, healthy teeth, and joint support. Ideal for both growing and aging pets, it aids in managing rickets, osteoporosis, and fracture recovery."',
+  price: 450,
+  image: [calcinexTab1, calcinexTab2, calcinexTab3, calcinexTab4, calcinexTab5],
+  category: 'Cats,Dogs',
+  subCategory: ['Rickets', 'Osteoporosis', 'Fractures', 'Joint Pain'],
+  conditions: ['Calcium Support', 'Joint Support'],
+  sizes: ['70 Tabs'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Superior source of calcium for both growing and aging pets',
+        'Supports healing in rickets, osteoporosis, and osteomalacia',
+        'Aids faster recovery from bone fractures',
+        'Contains Vitamin K2-MK7 to reduce risk of calcification and promote healthy calcium distribution',
+        'Improves bone mass density and skeletal strength'
+      ],
+    },
+    {
+      title: 'Ingredients (Per Tablet)',
+      content: [
+        'Elemental Calcium (MCHC): 672 mg',
+        'Elemental Phosphorous: 520 mg',
+        'Elemental Magnesium: 0.64 mg',
+        'Calcitriol: 0.15 mcg',
+        'Vitamin A: 1000 IU',
+        'Vitamin K2-MK7: 5 mcg',
+        'Ca : P Ratio = 1.2 : 1'
+      ],
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Dogs:',
+        'Upto 20 kg: ½ tablet daily',
+        '20 kg – 40 kg: 1 tablet daily',
+        '> 40 kg: 2 tablets daily',
+        'Cats:',
+        '< 5 kg: ¼ tablet daily',
+        '> 5 kg: ½ tablet daily',
+        'Or as directed by the veterinarian'
+      ],
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'As a calcium source for young and geriatric animals',
+        'Rickets – bone malformation from poor calcium/phosphorus',
+        'Osteoporosis – low bone density',
+        'Osteomalacia – soft bones',
+        'Fracture healing support',
+        'For robust growth and skeletal development in young pets'
+      ],
+    },
+    {
+      title: 'Benefits of Ingredients',
+      content: [
+        'MCHC: A bioavailable bone-complex with proteins and growth factors for enhanced bone healing',
+        'Calcium: Essential for bone growth, muscle function, nerve transmission, and coagulation',
+        'Phosphorus: Works with calcium for bones; supports metabolism and cell function',
+        'Calcitriol: Active Vitamin D3 for calcium absorption, prevents osteoporosis, hip dysplasia, and bone diseases',
+        'Vitamin B6: Supports amino acid metabolism, red blood cell production, immune and cardiac functions',
+        'Vitamin A (Retinol): Antioxidant, good for eyes, immune system, and fetal development',
+        'Vitamin C (Ascorbic Acid): Supports collagen synthesis, bone health, antioxidant defense, immunity',
+        'Vitamin K2-MK7: Guides calcium to bones and teeth, prevents calcification of arteries and kidneys'
+      ],
+    },
+    {
+      title: 'Packing',
+      content: ['70 Chewable Tablets per Bottle']
+    }
+  ]
+},
   {
   
   _id: 'Artimarin Suspension',
@@ -176,124 +241,629 @@ export const products = [
 },
 
   
-  {
-    _id: 'Sporipet Tab',
-    name: 'Sporipet Gut Health & Immunity Support for Pets – 30 Tablets',
-    description:
-      '1.25 billion spores with probiotics and prebiotics. Enhances digestion and immunity.',
-    price: 495,
-    image: [SporipetTab,SporipetTab2,SporipetTab3,SporipetTab4,SporipetTab5],
-    category: 'Cats,Dogs',
-    subCategory: ['Diarrhoea', 'IBS', 'Gas', 'Bloating', 'Heartburn', 'Leaky Gut'],
-    conditions: ['Gut Health', 'Digestive Health', 'Immune Support'], // ← Diarrhoea, IBS, Gas, Bloating, Heartburn, Leaky Gut
-    sizes: ['30 Tabs'],
-    bestseller: true,
-  },
-  {
-    _id: 'Same-Liv Elite Syrup',
-    name: 'Same-Liv Elite Syrup Pet Supplement for Liver (100ml)',
-    description:
-      'Powerful liver support for infection recovery and detoxification.',
-    price: 750,
-    image: [SameEliteFront,SameEliteBack,SameLivElite2,SameLivElite3,SameLivElite4],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Disorders', 'Infectious Diseases', 'Inappetence'],
-    conditions: ['Liver Health', 'Immune Support'], // ← Liver Disorders, Infectious Diseases, Inappetence
-    sizes: ['100ml'],
-    bestseller: true,
-  },
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [sameLivFront,sameLivBack,SameLivSyrup2,SameLivSyrup3,SameLivSyrup4],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'], // ← Liver Cirrhosis, Fibrosis, IBD, Hepatitis
-    sizes: ['100ml'],
-    bestseller: false,
-  },
-  {
-    _id: 'Calmora Tablets',
-    name: 'Calmora Tablets for Pets – Complete Nervine Care | 30 Tablets',
-    description:
-      'Calming formula for anxiety, stress, and behavior management.',
-    price: 450,
-    image: [CalmoraTab, CalmoraTab2,CalmoraTab3,CalmoraTab4,CalmoraTab5],
-    category: 'Cats,Dogs',
-    subCategory: ['Nervine care, Anxiety', 'Stress', 'Behavioral Issues'],
-    conditions: ['Nervine Care'], // ← Nervine care, Anxiety, Stress, Behavioral Issues
-    sizes: ['30 Tabs'],
-    bestseller: true,
-  },
-  {
-    _id: 'Copro FB Tabs',
-    name: 'Copro FB Tabs for Pets | Coprophagia Control & Digestive Support | 30 Tablets',
-    description:
-      'Discourages stool eating and improves breath and digestion.',
-    price: 350,
-    image: [CoproTab,CoproTab2,CoproTab3,CoproTab4,CoproTab5],
-    category: 'Cats,Dogs',
-    subCategory: ['Coprophagia', 'Bad Breath'],
-    conditions: ['Digestive Health'], // ← Coprophagia, Bad Breath
-    sizes: ['30 Tabs'],
-    bestseller: false,
-  },
-  {
-    _id: 'Omega Pet Elite Softgel Capsules',
-    name: 'Omega Pet Elite Softgel Capsules | Rich in Omega-3 for Pets | 30 Softgels',
-    description:
-      'Deep sea fish oil supports joints, skin, and heart health.',
-    price: 1490,
-    image: [OmegaPetEliteCap,OmegaPetEliteCap2,OmegaPetEliteCap3,OmegaPetEliteCap5,OmegaPetEliteCap4],
-    category: 'Cats,Dogs',
-    subCategory: ['Joint Inflammation', 'Skin Issues', 'Heart & Brain Health'],
-    conditions: ['Joint Support', 'Skin and Coat', 'Heart & Brain Health'], // ← Joint Inflammation, Skin Issues, Heart & Brain Health    
-    sizes: ['30 Softgels'],
-    bestseller: true,
-  },
-  {
-    _id:'MPS Obesity Support',
-    name: 'MPS Obesity Support Tablet 60’s',
-    description:
-      'Supports fat metabolism, energy, and appetite control.',
-    price: 680,
-    image: [ObesitySupportTab,ObesitySupportTab2,ObesitySupportTab3,ObesitySupportTab4,ObesitySupportTab5],
-    category: 'Cats,Dogs',
-    subCategory: ['Obesity', 'Low Energy', 'Overeating'],
-    conditions: ['Weight Management'], // ← Obesity, Low Energy, Overeating
-    sizes: ['60 Tabs'],
-    bestseller: false,
-  },
-  {
-    _id:'MPS Furtab',
-    name: 'MPS Furtab Supplement for Pets – 60 Tabs',
-    description:
-      'Biotin + Omegas for healthy coat and reduced skin inflammation.',
-    price: 490,
-    image:[FurTab,FurTab2,FurTab3,FurTab4],
-    category: 'Cats,Dogs',
-    subCategory: ['Skin Inflammation', 'Poor Coat Quality'],
-    conditions: ['Skin and Coat'], // ← Skin Inflammation, Poor Coat Quality
-    sizes: ['60 Tabs'],
-    bestseller: true,
-  },
-  {
+ {
+  _id: 'Sporipet Tab',
+  name: 'Sporipet Gut Health & Immunity Support for Pets – 30 Tablets',
+  description:
+    '1.25 billion spores with probiotics and prebiotics. Enhances digestion and immunity.',
+  price: 495,
+  image: [SporipetTab, SporipetTab2, SporipetTab3, SporipetTab4, SporipetTab5],
+  category: 'Cats,Dogs',
+  subCategory: ['Diarrhoea', 'IBS', 'Gas', 'Bloating', 'Heartburn', 'Leaky Gut'],
+  conditions: ['Gut Health', 'Digestive Health', 'Immune Support'],
+  sizes: ['30 Tabs'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports healthy digestion and bowel movement',
+        'Boosts foundational immunity, especially in puppies and geriatric pets',
+        'Relieves symptoms of diarrhoea, IBS, gas, and bloating',
+        'Restores intestinal microflora balance after antibiotic use',
+        'Promotes gut health and vitality at all life stages'
+      ]
+    },
+    {
+      title: 'Compositions (Per Tablet)',
+      content: [
+        'Lactobacillus Acidophillus: 0.32 billion spores',
+        'Lactobacillus Rhamnosus: 0.31 billion spores',
+        'Bifidobacterium Longum: 0.31 billion spores',
+        'Total: 1.25 billion spores',
+        'Zinc Sulphate: 10 mg',
+        'Fructo Oligo Sachharides (Prebiotic): 100 mg'
+      ]
+    },
+    {
+      title: 'Benefits of Ingredients',
+      content: [
+        'Lactobacillus acidophilus: Boosts growth and long-term immunity in puppies; reduces allergies and diseases in later life',
+        'Lactobacillus rhamnosus: Stabilizes intestinal microflora, supports regular bowel movement and gut comfort',
+        'Bifidobacterium bifidum: Promotes balanced gut flora and enhances immune response',
+        'Saccharomyces boulardii: Helps manage diarrhoea from colitis, IBD, IBS and antibiotics; not affected by antibiotics',
+        'Zinc Sulphate: Helps in gut lining repair and supports immunity',
+        'Fructo Oligo Saccharides (FOS): Prebiotic fiber that nourishes probiotics for better colonization and effectiveness'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Cats, Small & Medium Dogs: 1 tablet twice a day',
+        'Large Dogs: 2 tablets twice a day',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Puppies for foundational gut health and immunity',
+        'Adult pets for digestive vitality and wellness',
+        'Geriatric pets to maintain gut flora and prevent microflora imbalance',
+        'Diarrhoea management',
+        'Leaky Gut Syndrome',
+        'Irritable Bowel Syndrome (IBS)'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['3×10 Chewable Tablets']
+    }
+  ]
+},
 
+  {
+  _id: 'Same-Liv Elite Syrup',
+  name: 'Same-Liv Elite Syrup Pet Supplement for Liver (100ml)',
+  description:
+    'Powerful liver support for infection recovery and detoxification.',
+  price: 750,
+  image: [
+    SameEliteFront,
+    SameEliteBack,
+    SameLivElite2,
+    SameLivElite3,
+    SameLivElite4
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Liver Disorders', 'Infectious Diseases', 'Inappetence'],
+  conditions: ['Liver Health', 'Immune Support'],
+  sizes: ['100ml'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Advanced liver detox and recovery formula for pets',
+        'Supports regeneration of liver cells and bile flow',
+        'Improves energy metabolism and digestive function',
+        'Beneficial in managing liver cirrhosis, hepatitis, and IBS',
+        'Ideal for pets recovering from infections or drug-induced toxicity'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        'SAMe (S-Adenosylmethionine, 300 mg): Supports liver detox, cell regeneration, and mood balance',
+        'Silybin (A+B, 20 mg): Antioxidant from milk thistle that promotes liver cell recovery',
+        'Ursodiol (300 mg): Enhances bile flow and fat digestion, supports liver and GI health',
+        'L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): BCAAs that aid in muscle repair, endurance and recovery',
+        'L-Carnitine (50 mg): Boosts mitochondrial fat metabolism and supports heart function'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '0–5 kg: 2.5 ml per day',
+        '5–15 kg: 5 ml per day',
+        '15–25 kg: 7.5 ml per day',
+        '25–40 kg: 10 ml per day',
+        '40–50 kg: 15 ml per day',
+        'Above 50 kg: 20 ml per day',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Pets with liver disorders and dysfunction',
+        'Recovery from infectious diseases',
+        'Pets with loss of appetite (inappetence)',
+        'Supportive therapy for cirrhosis, fibrosis, hepatitis, IBS',
+        'Drug-induced liver toxicity'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Veterinary-formulated with optimal therapeutic ingredients',
+        'High-quality, bioavailable compounds for maximum effect',
+        'Comprehensive support for liver health, energy, and immunity',
+        'Backed by research and trusted by veterinarians'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['100 ml Syrup Bottle']
+    }
+  ]
+},
+
+  {
+  _id: 'Same-Liv Syrup',
+  name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
+  description:
+    'Effective for chronic liver conditions and appetite loss.',
+  price: 450,
+  image: [
+    sameLivFront,
+    sameLivBack,
+    SameLivSyrup2,
+    SameLivSyrup3,
+    SameLivSyrup4
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
+  conditions: ['Liver Health'],
+  sizes: ['100ml'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Power-packed formula for liver support and appetite regulation',
+        'Ideal for pets with chronic liver disorders or recovering from infections',
+        'Promotes liver cell regeneration and detoxification',
+        'Improves energy metabolism, heart health, and exercise capacity',
+        'Helps manage IBD, cirrhosis, and hepatitis'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
+        'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
+        'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
+        'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
+        'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '0–5 kg: 2.5 ml per day',
+        '5–15 kg: 5 ml per day',
+        '15–25 kg: 7.5 ml per day',
+        '25–40 kg: 10 ml per day',
+        '40–50 kg: 15 ml per day',
+        'Above 50 kg: 20 ml per day',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Pets with liver disorders or chronic liver diseases',
+        'Recovery from infections and poor appetite (inappetence)',
+        'Drug-induced liver damage',
+        'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Formulated by veterinary nutrition experts',
+        'High-grade, research-supported ingredients',
+        'Covers liver, digestive, immune, and muscular health',
+        'Safe and effective daily support for long-term use'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['100 ml Syrup Bottle']
+    }
+  ]
+},
+
+  {
+  _id: 'Calmora Tablets',
+  name: 'Calmora Tablets for Pets – Complete Nervine Care | 30 Tablets',
+  description:
+    'Calming formula for anxiety, stress, and behavior management.',
+  price: 450,
+  image: [CalmoraTab, CalmoraTab2, CalmoraTab3, CalmoraTab4, CalmoraTab5],
+  category: 'Cats,Dogs',
+  subCategory: ['Nervine care, Anxiety', 'Stress', 'Behavioral Issues'],
+  conditions: ['Nervine Care'],
+  sizes: ['30 Tabs'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Calms pets during stressful events like travel, fireworks, or grooming',
+        'Helps manage anxiety, stress, and behavioral challenges',
+        'Promotes relaxation without sedation or drowsiness',
+        'Supports emotional balance and overall nervous system health'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        'Hemp Seed Oil (250 mg): Promotes calm behavior and reduces anxiety without THC effects',
+        'Hemp Seed Powder (150 mg): Supports emotional well-being with essential fatty acids',
+        'Chamomile Extract (60 mg): Natural sedative, soothes stress and tension',
+        'Passion Flower Extract (50 mg): Reduces nervousness, tension, and overactivity',
+        'Valerian Root (44 mg): Known for relaxing effects and aiding restful calm',
+        'L-Tryptophan (34 mg): Boosts serotonin production, helps reduce aggression and anxiety',
+        'Ginger Root Extract (26 mg): Eases nausea, useful in motion sickness and upset stomachs'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '1 tablet per 10 kg body weight',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Stressful events (fireworks, vet visits, travel, separation)',
+        'Anxiety and behavioral issues',
+        'Motion sickness or nausea',
+        'Daily calmness and relaxation support'
+      ]
+    },
+    {
+      title: 'Why Choose Calmora?',
+      content: [
+        'Blend of botanicals and nutraceuticals for safe anxiety relief',
+        'Non-sedative and non-addictive formula',
+        'Vet-approved dosage and formulation',
+        'Effective for dogs and cats of all breeds'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['30 Chewable Tablets']
+    }
+  ]
+},
+
+  {
+  _id: 'Copro FB Tabs',
+  name: 'Copro FB Tabs for Pets | Coprophagia Control & Digestive Support | 30 Tablets',
+  description:
+    'Discourages stool eating and improves breath and digestion.',
+  price: 350,
+  image: [CoproTab, CoproTab2, CoproTab3, CoproTab4, CoproTab5],
+  category: 'Cats,Dogs',
+  subCategory: ['Coprophagia', 'Bad Breath'],
+  conditions: ['Digestive Health'],
+  sizes: ['30 Tabs'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Discourages stool eating (coprophagia) in dogs',
+        'Supports healthy digestion and nutrient absorption',
+        'Improves breath freshness with natural herbs like parsley',
+        'Aids gut balance with probiotics and enzyme support',
+        'Relieves gastric discomfort and promotes bowel regularity'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'Makes stool unappealing using Monosodium Glutamate and Oleoresin Capsicum',
+        'Improves digestion with a proprietary enzyme blend (Amylase, Lipase, Protease)',
+        'Includes Bacillus Coagulans probiotic and FOS prebiotics for gut health',
+        'Reduces nutrient deficiency-driven stool eating',
+        'Promotes calm gut and relieves gas via Chamomile and parsley'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Functions',
+      content: [
+        'Monosodium Glutamate (MSG): Makes stool taste unpleasant',
+        'Oleoresin Capsicum: Causes mild irritation to deter stool consumption',
+        'Proprietary Enzyme Blend: Supports digestion and nutrient breakdown',
+        'Bacillus Coagulans: Promotes healthy gut flora and nutrient absorption',
+        'Fructooligosaccharides (FOS): Prebiotic that supports beneficial bacteria',
+        'Parsley: Freshens breath and supports immune, liver, and vision health',
+        'Chamomile: Natural relaxant; eases bowel spasms, gas, and gastric discomfort'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'For dogs over 12 weeks of age',
+        'Give as directed by a veterinarian',
+        'Typically effective in 2–4 weeks of consistent use'
+      ]
+    },
+    {
+      title: 'Why Dogs Eat Stool (Coprophagia)',
+      content: [
+        'Behavioral: Boredom, stress, attention-seeking, kennel habits',
+        'Medical: Pancreatic insufficiency, parasites, poor diet, malabsorption',
+        'Instinctual: Mimics maternal cleanup behavior in puppies',
+        'Nutrient deficiency: Seeking undigested food content from stool'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['30 Chewable Tablets']
+    }
+  ]
+},
+{
+  _id: 'Omega Pet Elite Softgel Capsules',
+  name: 'Omega Pet Elite Softgel Capsules | Rich in Omega-3 for Pets | 30 Softgels',
+  description:
+    'Deep sea fish oil supports joints, skin, and heart health.',
+  price: 1490,
+  image: [OmegaPetEliteCap, OmegaPetEliteCap2, OmegaPetEliteCap3, OmegaPetEliteCap5, OmegaPetEliteCap4],
+  category: 'Cats,Dogs',
+  subCategory: ['Joint Inflammation', 'Skin Issues', 'Heart & Brain Health'],
+  conditions: ['Joint Support', 'Skin and Coat', 'Heart & Brain Health'],
+  sizes: ['30 Softgels'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Triple-strength formula delivering 1000mg Omega-3s per serving',
+        'Reduces joint inflammation and promotes mobility',
+        'Supports heart rhythm, cholesterol levels, and blood pressure',
+        'Improves cognitive function and supports brain development',
+        'Enhances vision and eye health through high DHA content',
+        'Improves skin barrier and reduces oxidative skin damage'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'Provides direct EPA and DHA from deep sea fish oil—superior to plant-based ALA',
+        'EPA helps control inflammation and may improve mood',
+        'DHA supports brain, eye, and neural function',
+        'Purified fish oil ensures minimal contaminants from wild, deep-ocean sources',
+        'Delivers 300% potency compared to regular fish oil supplements'
+      ]
+    },
+    {
+      title: 'Each Softgel Contains',
+      content: [
+        'EPA (Eicosapentaenoic Acid): 600 mg',
+        'DHA (Docosahexaenoic Acid): 400 mg'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '1 to 2 softgels daily for large and giant breed puppies, adults, and senior dogs',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'All inflammation associated with Joints, Heart, Brain, Eyes, Skin & Coat'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['30 Softgels']
+    }
+  ]
+},
+
+  {
+  _id: 'MPS Obesity Support',
+  name: 'MPS Obesity Support Tablet 60’s',
+  description:
+    'Supports fat metabolism, energy, and appetite control.',
+  price: 680,
+  image: [ObesitySupportTab, ObesitySupportTab2, ObesitySupportTab3, ObesitySupportTab4, ObesitySupportTab5],
+  category: 'Cats,Dogs',
+  subCategory: ['Obesity', 'Low Energy', 'Overeating'],
+  conditions: ['Weight Management'],
+  sizes: ['60 Tabs'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Enhances fat burning and converts fat cells into energy',
+        'Optimizes calorie intake and supports healthy metabolism',
+        'Improves stamina and supports active lifestyle in aging pets',
+        'Aids in weight loss and reduces symptoms related to overeating'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'Garcinia Cambogia: Suppresses appetite, blocks fat production, and increases serotonin levels',
+        'L-Carnitine: Transports fatty acids to mitochondria to burn fat and support muscle recovery',
+        'Coenzyme Q10: Boosts mitochondrial energy production, enhancing stamina and alertness',
+        'Lipase: Breaks down fats into energy-dense molecules for sustained energy and reduced bloating'
+      ]
+    },
+    {
+      title: 'Each Tablet Contains',
+      content: [
+        'Garcinia Cambogia: 32 mg',
+        'Lipase (50000 Units): 16 mg',
+        'L-Carnitine: 100 mg',
+        'Coenzyme Q10: 10 mg'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Small breed dogs / Cats: 1 tablet daily',
+        'Large breed dogs: 1–2 tablets daily',
+        'Giant breed dogs: 2 tablets daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'Pets with obesity or excessive weight gain',
+        'Low energy and lethargy',
+        'Overeating and poor appetite control'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['60 Tablets']
+    }
+  ]
+},
+{
+  _id: 'MPS Furtab',
+  name: 'MPS Furtab Supplement for Pets – 60 Tabs',
+  description:
+    'Biotin + Omegas for healthy coat and reduced skin inflammation.',
+  price: 490,
+  image: [FurTab, FurTab2, FurTab3, FurTab4],
+  category: 'Cats,Dogs',
+  subCategory: ['Skin Inflammation', 'Poor Coat Quality'],
+  conditions: ['Skin and Coat'],
+  sizes: ['60 Tabs'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Reduces itchiness, dandruff, and inflammation in pets with skin conditions',
+        'Supports natural anti-inflammatory response through EPA & DHA',
+        'Promotes a soft, shiny coat and healthy skin',
+        'Strengthens nails and reduces hair loss and alopecia',
+        'Ideal for dermatic conditions and show animals'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'Omega-3 (EPA & DHA): Supports inflammation control via Resolvins and Protectins',
+        'Omega-6 (GLA): Vital for cell membrane function and skin health',
+        'Omega-9: Helps regulate cholesterol and supports heart health',
+        'Biotin: Essential for healthy skin, hair growth, and metabolism',
+        'Zinc: Heals skin, reduces redness and irritation, and aids immune function',
+        'Vitamin A, E, B2, B5, B6 & Niacinamide: Provide overall coat nourishment and skin healing'
+      ]
+    },
+    {
+      title: 'Each Tablet Contains',
+      content: [
+        'Omega 3: 300 mg (EPA 180 mg, DHA 120 mg)',
+        'Omega 6 (GLA): 50 mg',
+        'Omega 9 (Oleic Acid): 50 mg',
+        'Biotin: 3000 mcg',
+        'Zinc: 10 mg',
+        'Vitamin A: 500 IU',
+        'Vitamin E: 10 IU',
+        'Vitamin B2: 1 mg',
+        'Vitamin B5: 1 mg',
+        'Vitamin B6: 0.1 mg',
+        'Niacinamide: 1.14 mg'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Dogs:',
+        '< 20 kg: 1 tablet daily',
+        '20–40 kg: 2 tablets daily',
+        '> 40 kg: 3 tablets daily',
+        'For maintenance: half of the above dose',
+        'Cats:',
+        '< 5 kg: ¼ tablet daily',
+        '> 5 kg: ½ tablet daily',
+        'For maintenance: half of the above dose',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'Dry or dull coat',
+        'Hair loss or non-specific alopecia',
+        'Dry skin & dandruff',
+        'Dermatic conditions & inflammation',
+        'Enhancing coat of show animals'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['60 Tablets']
+    }
+  ]
+},
+
+  {
   _id: 'MPS NanoCurcumin',
   name: 'MPS NanoCurcumin for Pets – 30ml',
   description:
     'Nano-formulated curcumin for enhanced stability, absorption, and cellular delivery. Supports chronic disease and cancer management through improved bioavailability.',
   price: 1250,
-  image: [nanoFrontHome,nanoBackHome,NanoCur1,NanoCur2],
+  image: [nanoFrontHome, nanoBackHome, NanoCur1, NanoCur2],
   category: 'Cats,Dogs',
   subCategory: ['Chronic Inflammation', 'Cancer Support'],
   conditions: ['Immune Support', 'Anti-inflammatory'],
   sizes: ['30ml'],
   bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Enhanced absorption of curcumin via nanoparticle delivery system.',
+        'Strong anti-inflammatory effects by suppressing NF-kB pathway.',
+        'Helps improve glycemic control and support diabetes management.',
+        'Promotes apoptosis in cancer cells and inhibits tumor growth.',
+        'Reduces cancer cell division, metastasis, and enzyme activity involved in cancer.',
+        'Improves sensitivity to radiation and chemotherapy in cancer treatment.',
+        'Strengthens immune system by modulating immune responses.'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'NanoCurcumin encapsulates curcumin in nanoparticles for better cellular uptake.',
+        'Delivers curcumin directly to target tissues with improved stability and solubility.',
+        'Modifies inflammatory and immune response pathways at the molecular level.',
+        'Blocks proliferation of cancer cells by regulating gene expression and methylation.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '2.5 ml to 5 ml twice a day',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'Chronic inflammatory disorders',
+        'Cancer support and tumor suppression',
+        'Immune boosting and infection resistance',
+        'Type-1 and Type-2 Diabetes',
+        'Diabetic Neuropathy',
+        'General antioxidant support'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['100 ml Syrup']
+    }
+  ]
 },
+
   
 {
   _id: 'Thrombo-Fe Syrup',
@@ -301,12 +871,62 @@ export const products = [
   description:
     'Iron-rich formula supporting blood health, platelet production, and recovery from tick fever, anaemia, or post-surgical trauma. Helpful in cases of Echrlichiosis and Babesiosis.',
   price: 380,
-  image: [thromboFront,Thrombo2,Thrombo3,Thrombo4,Thrombo5], // or thromboBack if preferred
+  image: [thromboFront, Thrombo2, Thrombo3, Thrombo4, Thrombo5],
   category: 'Cats,Dogs',
   subCategory: ['Anaemia', 'Low Platelet Count', 'Blood Parasites'],
   conditions: ['Blood Health', 'Recovery Support'],
   sizes: ['200ml'],
   bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Promotes healthy platelet production and prevents clotting issues',
+        'Aids recovery post-surgery, trauma, or tick-borne diseases',
+        'Improves red blood cell count and combats anemia',
+        'Supports immune function and detoxification',
+        'Antibacterial, anti-inflammatory, and antiviral effects'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'Carica Papaya Leaf Extract: Boosts platelet count, rich in antioxidants and enzymes',
+        'Tinospora Cordifolia (Giloy): Corrects anemia, removes toxins, and enhances immunity',
+        'Boerhavia Diffusa (Punarnava): Acts as a liver tonic and reduces inflammation',
+        'Swertia Chirata: Antiviral and platelet protective agent',
+        'Folic Acid (B9): Supports cell division, blood formation, and neurological health',
+        'Cyanocobalamin (B12): Crucial for RBC production, nerve function, and metabolism',
+        'Riboflavin (B2), Niacinamide (B3), Pyridoxine (B6): Support red blood cell formation and energy metabolism'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '< 10 kg: 2.5 ml daily',
+        '10–15 kg: 5 ml daily',
+        '15–25 kg: 7.5 ml daily',
+        '25–35 kg: 10 ml daily',
+        '> 35 kg: 12.5 ml daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'Tick fever recovery',
+        'Anaemia and iron deficiency',
+        'Low platelet count support',
+        'Post-surgery or trauma recovery',
+        'Infectious disease recovery',
+        'Blood parasite diseases like Ehrlichiosis and Babesiosis'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['150ml + 50ml Free = 200ml Bottle']
+    }
+  ]
 },
 
 {
@@ -315,13 +935,67 @@ export const products = [
   description:
     'Synergistic blend of essential amino acids, vitamins, grape seed, and nettle extract. Promotes growth in young pets and supports health during pregnancy, ageing, or inappetence.',
   price: 260,
-  image: [aminopetFront,Aminopet2,Aminopet3,Aminopet4,Aminopet5],
+  image: [aminopetFront, Aminopet2, Aminopet3, Aminopet4, Aminopet5],
   category: 'Cats,Dogs',
   subCategory: ['Growth Support', 'Geriatric Nutrition', 'Breeding Health'],
   conditions: ['Nutritional Support'],
   sizes: ['200ml'],
   bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Promotes healthy growth in puppies and kittens',
+        'Prevents nutritional deficiencies in geriatric animals',
+        'Supports breeding, pregnant, and lactating pets',
+        'Improves appetite and corrects dietary insufficiencies',
+        'Maintains strong bones, muscles, and tissue health',
+        'Boosts energy, vitality, and immune response'
+      ]
+    },
+    {
+      title: 'Core Ingredients',
+      content: [
+        'Essential Amino Acids: Leucine, Isoleucine, Valine, Arginine, Methionine, Histidine, Phenylalanine, Threonine, Tryptophan, Lysine, Taurine (for cats)',
+        'Multivitamins: Vitamins A, B1, B2, B3, B5, B6, B9, B12, C, D3, E',
+        'Grape Seed Extract: Powerful antioxidant and circulatory booster',
+        'Stinging Nettle Extract: Rich in bioavailable nutrients, supports hormonal and immune systems'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'Amino acids help in protein synthesis for organ and tissue development',
+        'B-vitamins support metabolism, nerve function, and red blood cell production',
+        'Vitamin D3 ensures calcium and phosphorus absorption for bone strength',
+        'Grape seed and nettle extract boost immunity, circulation, and reduce allergic stress'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '0.5 ml per kg body weight once daily',
+        'Can be given directly or mixed with food',
+        'Shake well before use',
+        'Or use as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'Growth and development of young pets',
+        'Geriatric animals needing nutritional reinforcement',
+        'Pregnant and lactating animals',
+        'Poor appetite or recovery from nutritional deficiency'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['200 ml Syrup Bottle']
+    }
+  ]
 },
+
 
 {
   _id: 'Calcinex Suspension',
@@ -329,26 +1003,133 @@ export const products = [
   description:
     'Liquid calcium supplement with Vitamin K2-MK7 for pets of all ages. Supports bone health, fracture healing, and conditions like rickets and osteoporosis.',
   price: 210,
-  image: [calcinexHome,Calcinex2,Calcinex3,Calcinex4,Calcinex5],
+  image: [calcinexHome, Calcinex2, Calcinex3, Calcinex4, Calcinex5],
   category: 'Cats,Dogs',
   subCategory: ['Rickets', 'Fractures', 'Osteoporosis'],
   conditions: ['Calcium Support', 'Bone Health'],
   sizes: ['200ml'],
   bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Superior source of bioavailable calcium (MCHC-based)',
+        'Supports skeletal development in young and aging pets',
+        'Helps manage rickets, osteomalacia, and osteoporosis',
+        'Promotes faster fracture healing',
+        'Includes Vitamin K2-MK7 to prevent calcium misplacement (arteries, kidneys)',
+        'Ideal for pregnant, lactating, and recovering animals'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'For Dogs:',
+        '• Upto 20 kg – ½ tablet daily',
+        '• 20 kg – 40 kg – 1 tablet daily',
+        '• > 40 kg – 2 tablets daily',
+        '',
+        'For Cats:',
+        '• < 5 kg – ¼ tablet daily',
+        '• > 5 kg – ½ tablet daily',
+        '',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'Calcium deficiency in growing and aging animals',
+        'Rickets (bone malformation from Ca & P deficiency)',
+        'Osteoporosis (decreased bone density)',
+        'Osteomalacia (softening of bones)',
+        'Fracture healing and recovery support',
+        'Overall skeletal strength and growth'
+      ]
+    },
+    {
+      title: 'Core Ingredients & Functions',
+      content: [
+        'MCHC (Microcrystalline Hydroxyapatite Complex): Bioavailable bone matrix containing calcium, phosphorus, trace minerals, and collagen proteins. Promotes bone growth and healing.',
+        'Calcium: Vital for bones, blood clotting, nerve signaling, and muscle function.',
+        'Phosphorus: Partners with calcium in bone structure and supports metabolic functions.',
+        'Calcitriol: Active form of Vitamin D3. Enhances absorption of calcium and phosphorus.',
+        'Vitamin A (Retinol): Supports immunity, bone metabolism, and vision.',
+        'Vitamin B6 (Pyridoxine): Assists in protein metabolism and red blood cell production.',
+        'Vitamin C (Ascorbic Acid): Enhances collagen synthesis, immunity, and osteoblast function.',
+        'Vitamin K2-MK7: Prevents calcium deposition in soft tissues; directs calcium to bones.'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['200 ml Suspension']
+    }
+  ]
 },
- {
+
+{
   _id: 'Pet Neuron Syrup',
   name: 'Pet Neuron Syrup – 200ml | Nervine Care & Cognitive Support',
   description:
     'Ayurvedic nervine formula that calms the nervous system and aids recovery from stress, neurological disorders, partial paralysis, and memory issues.',
   price: 480,
-  image: [petNeuronHome,PetNeuron2,PetNeuron3,PetNeuron4,PetNeuron5],
+  image: [petNeuronHome, PetNeuron2, PetNeuron3, PetNeuron4, PetNeuron5],
   category: 'Cats,Dogs',
   subCategory: ['Neurological Issues', 'Anxiety', 'Cognitive Deficiency'],
   conditions: ['Nervine Care', 'Cognitive Support'],
   sizes: ['200ml'],
   bestseller: true,
-},
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Relieves stress, anxiety, and nervous tension',
+        'Supports recovery in cases of neurological disorders or partial paralysis',
+        'Improves memory, learning ability, and brain function',
+        'Reduces inflammation and calms nerve-related pain',
+        'Promotes behavioral balance and calmness'
+      ]
+    },
+    {
+      title: 'Core Herbal Ingredients & Functions',
+      content: [
+        'Shankhpushpi (400mg): Enhances dopamine, reduces anxiety, improves brain clarity',
+        'Ashwagandha (200mg): Boosts memory and relieves stress; works like a natural antidepressant',
+        'Brahmi (400mg): Lowers cortisol levels and supports cognitive function',
+        'Mulethi (200mg): Anti-inflammatory and adaptogenic, soothes nervous system',
+        'Jatamansi (200mg): Antioxidant-rich, improves memory, reduces nervous hyperactivity',
+        'Vacha (200mg): Neuroprotective, supports learning and cell repair',
+        'Vidanga (200mg): Uplifts mood, helps manage depression symptoms',
+        'Shatapushpa (100mg): Anticonvulsant and neuroprotective activity',
+        'Dhania (200mg): Mild calming and digestive aid (Coriandrum sativum)'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Cats: 3ml twice daily',
+        'Puppies: 5ml twice daily',
+        'Adult Dogs: 10ml twice daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Suggested In',
+      content: [
+        'Neurological disorders and epilepsy',
+        'Partial paralysis and nerve inflammation',
+        'Stress, anxiety, dullness, and behavioral imbalance',
+        'Cognitive issues such as poor memory or learning delays',
+        'Pain related to nerve damage or inflammation'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['200 ml Syrup Bottle']
+    }
+  ]
+}
+
 
 ];
 
