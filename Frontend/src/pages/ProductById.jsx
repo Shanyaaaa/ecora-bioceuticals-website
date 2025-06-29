@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { products } from '../assets/assets';
 import { Maximize2, X } from 'lucide-react';
 import Suggestions from '../components/Suggestion';
-import ReviewSection from '../components/ReviewSection'; // ✅ Import ReviewSection
+import ReviewSection from '../components/ReviewSection';
 
 const Tab = ({ label, isActive, onClick }) => (
   <button
@@ -42,11 +42,17 @@ const DropdownSection = ({ title, content }) => {
 
 const ProductById = () => {
   const { id } = useParams();
-  const product = products.find((p) => p._id === id);
-
-  const [mainImage, setMainImage] = useState(product?.image?.[0] || '');
+  const [product, setProduct] = useState(null);
+  const [mainImage, setMainImage] = useState('');
   const [isZoomed, setIsZoomed] = useState(false);
   const [tab, setTab] = useState('Description');
+
+  // Update product and image on ID change
+  useEffect(() => {
+    const found = products.find((p) => p._id === id);
+    setProduct(found);
+    setMainImage(found?.image?.[0] || '');
+  }, [id]);
 
   if (!product) {
     return <div className="min-h-screen flex justify-center items-center">Product not found.</div>;
@@ -69,9 +75,9 @@ const ProductById = () => {
         </div>
       )}
 
-      {/* Product Content */}
+      {/* IMAGE & INFO */}
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
-        {/* Left Image Gallery */}
+        {/* LEFT: Image Gallery */}
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="flex lg:flex-col gap-2">
             {product.image.map((img, i) => (
@@ -100,7 +106,7 @@ const ProductById = () => {
           </div>
         </div>
 
-        {/* Right Info */}
+        {/* RIGHT: Product Info */}
         <div className="flex-1">
           <p className="text-sm text-gray-500">Home / Dog / {product.name}</p>
           <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-1">{product.name}</h1>
@@ -145,7 +151,7 @@ const ProductById = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
+      {/* TABS SECTION */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
         <div className="flex border-b mb-6">
           {['Description', 'Additional Info', 'Reviews'].map((label, i) => (
@@ -173,9 +179,7 @@ const ProductById = () => {
           </div>
         )}
 
-        {tab === 'Reviews' && (
-          <ReviewSection productId={product._id} />
-        )}
+        {tab === 'Reviews' && <ReviewSection productId={product._id} />}
       </div>
 
       <Suggestions currentProduct={product} />
