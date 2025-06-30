@@ -1,3 +1,4 @@
+// ShopContext.jsx
 import React, { createContext, useEffect, useState } from 'react';
 import { products } from '../assets/assets';
 
@@ -12,19 +13,47 @@ const ShopContextProvider = ({ children }) => {
     return savedCart ? JSON.parse(savedCart) : {};
   });
 
-  useEffect(() => {
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
-  }, [cartItems]);
-
   const addToCart = (productId, quantity = 1) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [productId]: (prev[productId] || 0) + quantity,
-    }));
+    setCartItems(prev => {
+      const updated = {
+        ...prev,
+        [productId]: (prev[productId] || 0) + quantity,
+      };
+      localStorage.setItem('cartItems', JSON.stringify(updated));
+      return updated;
+    });
+  };
+
+  const updateCartItem = (productId, quantity) => {
+    setCartItems(prev => {
+      const updated = { ...prev, [productId]: quantity };
+      localStorage.setItem('cartItems', JSON.stringify(updated));
+      return updated;
+    });
+  };
+
+  const removeFromCart = (productId) => {
+    setCartItems(prev => {
+      const updated = { ...prev };
+      delete updated[productId];
+      localStorage.setItem('cartItems', JSON.stringify(updated));
+      return updated;
+    });
   };
 
   const getCartCount = () =>
     Object.values(cartItems).reduce((total, qty) => total + qty, 0);
+
+  const getCartSubtotal = () => {
+    return Object.entries(cartItems).reduce((total, [id, qty]) => {
+      const product = products.find(p => p._id === id);
+      return product ? total + product.price * qty : total;
+    }, 0);
+  };
+
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  }, [cartItems]);
 
   return (
     <ShopContext.Provider
@@ -35,7 +64,10 @@ const ShopContextProvider = ({ children }) => {
         cartItems,
         setCartItems,
         addToCart,
+        updateCartItem,
+        removeFromCart,
         getCartCount,
+        getCartSubtotal,
       }}
     >
       {children}
