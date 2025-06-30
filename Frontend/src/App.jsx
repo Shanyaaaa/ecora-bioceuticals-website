@@ -18,6 +18,7 @@ import RefundAndReturn from './pages/footer/RefundAndReturn';
 import ShopContextProvider from './context/ShopContext';
 import ScrollToTop from './components/ScrollToTop'; 
 
+
 const App = () => {
   return (
     <ShopContextProvider>
@@ -31,13 +32,15 @@ const App = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<Login />} />
         <Route path='/orders' element={<Orders />} />
-        <Route path='/place-order' element={<PlaceOrder />} />
+       
         <Route path='/ShippingPolicies' element={<ShippingPolicies />} />
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
         <Route path='/TermsOfUse' element={<TermsOfUse />} />
         <Route path='/RefundAndReturn' element={<RefundAndReturn />} />
         <Route path='/Founder' element={<Founder />} />
         <Route path='/EcoraVideo' element={<EcoraVideo />} />
+        <Route path="/placeorder" element={<PlaceOrder />} />
+
       </Routes>
     </ShopContextProvider>
   );

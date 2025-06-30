@@ -132,11 +132,13 @@ const Cart = () => {
               <span>Total</span>
               <span className="text-purple-700">₹{total.toFixed(2)}</span>
             </div>
-            <Link to="/checkout">
-              <button className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
-                Proceed to Checkout
-              </button>
+            <Link to="/placeorder">
+            <button className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+               Proceed to Checkout
+             </button>
             </Link>
+
+              
             <Link to="/products">
               <button className="w-full text-purple-600 border border-purple-300 py-2 rounded-lg font-medium hover:bg-purple-50 transition">
                 Continue Shopping

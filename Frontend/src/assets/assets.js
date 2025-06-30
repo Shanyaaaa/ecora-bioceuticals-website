@@ -95,6 +95,8 @@ import SameLivSyrup3 from './SameLivSyrup-4.jpg';
 import SameLivSyrup4 from './SameLivSyrup-5.jpg';
 
 import Founder from './founder.png';
+import Payment from './payment.gif';
+import Razorpay from './Razorpay.png';
 import { Import } from 'lucide-react';
 
 
@@ -1231,4 +1233,6 @@ export const assets = {
   SporipetTab4,
   SporipetTab5,
   Founder,
+  Payment,
+  Razorpay
 };
