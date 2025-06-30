@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+// All imports stay the same
+import React, { useState, useEffect, useContext } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { products } from '../assets/assets';
 import { Maximize2, X } from 'lucide-react';
 import Suggestions from '../components/Suggestion';
 import ReviewSection from '../components/ReviewSection';
+import { ShopContext } from '../Context/ShopContext';
 
 const Tab = ({ label, isActive, onClick }) => (
   <button
@@ -42,17 +44,26 @@ const DropdownSection = ({ title, content }) => {
 
 const ProductById = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState('');
   const [isZoomed, setIsZoomed] = useState(false);
   const [tab, setTab] = useState('Description');
+  const [quantity, setQuantity] = useState(1);
+  const [showViewCart, setShowViewCart] = useState(false);
 
-  // Update product and image on ID change
+  const { addToCart } = useContext(ShopContext);
+
   useEffect(() => {
     const found = products.find((p) => p._id === id);
     setProduct(found);
     setMainImage(found?.image?.[0] || '');
   }, [id]);
+
+  const handleAddToCart = () => {
+    addToCart(product._id, quantity);
+    setShowViewCart(true);
+  };
 
   if (!product) {
     return <div className="min-h-screen flex justify-center items-center">Product not found.</div>;
@@ -61,6 +72,21 @@ const ProductById = () => {
   return (
     <div className="bg-gray-50">
       <Navbar />
+
+      {/* ✅ View Cart Banner */}
+      {showViewCart && (
+        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 mx-auto max-w-6xl mt-4 rounded-md flex justify-between items-center">
+          <div>
+            <p className="font-medium">✅ Added <span className="font-bold">{product.name}</span> × {quantity} to cart.</p>
+          </div>
+          <button
+            onClick={() => navigate('/cart')}
+            className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition ml-4"
+          >
+            View Cart
+          </button>
+        </div>
+      )}
 
       {/* Zoom Modal */}
       {isZoomed && (
@@ -130,11 +156,15 @@ const ProductById = () => {
           <div className="flex items-center gap-4">
             <input
               type="number"
-              defaultValue={1}
+              value={quantity}
               min={1}
+              onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
               className="w-16 text-center border border-gray-300 rounded-md px-2 py-1"
             />
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+            <button
+              onClick={handleAddToCart}
+              className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+            >
               ADD TO CART
             </button>
           </div>
