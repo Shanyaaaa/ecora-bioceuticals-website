@@ -50,6 +50,7 @@ const Navbar = () => {
 
             {/* Profile Icon Dropdown */}
             <div className='relative group'>
+                <Link to="/login">
               <img
                 src={assets.profileIcon}
                 alt='profile'
@@ -60,6 +61,7 @@ const Navbar = () => {
                 <p className='hover:text-blue-500 cursor-pointer'>Orders</p>
                 <p className='hover:text-blue-500 cursor-pointer'>Logout</p>
               </div>
+              </Link>
             </div>
 
             {/* Mobile Menu Toggle */}
