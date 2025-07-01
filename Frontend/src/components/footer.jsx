@@ -4,7 +4,8 @@ import { assets } from "../assets/assets";
 export default function Footer() {
   return (
    
-    <footer className="bg-white text-black">
+    <footer className="bg-[#b6aaa1] text-black">
+
       {/* Help Section with Logo */}
       <div className="text-center py-8 border-b border--500 relative">
         {/* Logo in top-left corner */}
@@ -96,7 +97,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-pink-500 py-6">
+      <div className="border-t border-black py-6">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-black text-sm mb-4 md:mb-0">
             Copyright © 2024 ecorabioceuticals. Powered by ecorabioceuticals.

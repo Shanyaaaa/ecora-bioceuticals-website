@@ -11,7 +11,8 @@ const Navbar = () => {
 
   return (
     <div className='relative z-50 font-roboto'>
-      <div className=' bg-white text-gray-900 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]'>
+    <div className='bg-[#b6aaa1] text-gray-900 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]'>
+
         <div className='max-w-screen-xl mx-auto w-full flex items-center justify-between py-5 px-4'>
 
           {/* Logo */}
