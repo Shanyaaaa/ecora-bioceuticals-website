@@ -8,11 +8,30 @@ const createToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET)
 }
 
-const loginUser = async(req,res) => {
 
+//ROUTE FOR USER LOGIN
+const loginUser = async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        const user = await userModel.findOne({ email });
+        if (!user) {
+            return res.json({ success:false, message: "User doesn't exists"})
+        }
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) {
+            return res.json({ success:false, message: "Invalid password" });
+        }
+        else{
+            const token = createToken(user._id);
+            res.json({ success: true, token: token });
+        }
+        
+    }
+    catch (err) {
+        console.error(err);
+        res.json({ success: false, message: error.message });
+    }
 }
-
-
 
 //ROUTE FOR USER REGISTERATION
 
