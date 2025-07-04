@@ -13,41 +13,17 @@ const Product = () => {
   const [showSearchBox, setShowSearchBox] = useState(false);
   const [selectedPriceFilter, setSelectedPriceFilter] = useState("");
   const [selectedConditions, setSelectedConditions] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   const conditions = [
-  "Nervine Care",
-  "Joint Support",
-  "Digestive Health",
-  "Calcium Support",
-  "Liver Health",
-  "Gut Health",
-  "Skin and Coat",
-  "Immune Support",
-  "Cardiovascular Health",
-  "Deworming",
-  "Hip Support",
-  "Allergy Relief",
-  "Cancer Support",
-  "Pain Relief",
-  "Obesity Support",
-  "Lung Health",
-  "Urinary Tract Support",
-  "Multivitamin Support",
-  "Kidney Support",
-  "Eye Health",
-  "Brain Health",
-  "Pancreas Health",
-  "Healing",
-  "Blood Health",
-  "Growth and Development",
-  "Coprophagia Support",
-  "Bacterial Infection",
-  "Antibiotic Therapy",
-  
-
-
-];
+    "Nervine Care", "Joint Support", "Digestive Health", "Calcium Support", "Liver Health",
+    "Gut Health", "Skin and Coat", "Immune Support", "Cardiovascular Health", "Deworming",
+    "Hip Support", "Allergy Relief", "Cancer Support", "Pain Relief", "Obesity Support",
+    "Lung Health", "Urinary Tract Support", "Multivitamin Support", "Kidney Support", "Eye Health",
+    "Brain Health", "Pancreas Health", "Healing", "Blood Health", "Growth and Development",
+    "Coprophagia Support", "Bacterial Infection", "Antibiotic Therapy"
+  ];
 
   useEffect(() => {
     let temp = [...products];
@@ -64,6 +40,13 @@ const Product = () => {
       );
     }
 
+    if (selectedCategory) {
+      temp = temp.filter(
+        (product) =>
+          product.category?.toLowerCase() === selectedCategory.toLowerCase()
+      );
+    }
+
     if (selectedPriceFilter === "lowToHigh") {
       temp.sort((a, b) => a.price - b.price);
     } else if (selectedPriceFilter === "highToLow") {
@@ -71,7 +54,7 @@ const Product = () => {
     }
 
     setFilteredProducts(temp);
-  }, [products, searchInput, selectedConditions, selectedPriceFilter]);
+  }, [products, searchInput, selectedConditions, selectedPriceFilter, selectedCategory]);
 
   const handleConditionChange = (condition) => {
     setSelectedConditions((prev) =>
@@ -85,14 +68,15 @@ const Product = () => {
     setSearchInput("");
     setSelectedConditions([]);
     setSelectedPriceFilter("");
+    setSelectedCategory("");
   };
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Navbar />
 
-      {/* Search Toggle Top Right */}
-      <div className="flex justify-end items-center p-4 px-6 relative">
+      {/* Search Bar */}
+      <div className="flex justify-end items-center p-4 px-6">
         {showSearchBox ? (
           <div className="relative w-full sm:w-1/2 md:w-1/3">
             <input
@@ -131,17 +115,22 @@ const Product = () => {
             <Filter className="w-5 h-5" />
             Filters
           </span>
-          {showFilter ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+          {showFilter ? (
+            <ChevronUp className="w-5 h-5" />
+          ) : (
+            <ChevronDown className="w-5 h-5" />
+          )}
         </button>
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row gap-4 pt-4 px-3 sm:px-4 md:px-6 lg:px-8 max-w-6xl mx-auto w-full">
+      <div className="flex flex-col lg:flex-row gap-4 pt-4 px-4 md:px-6 max-w-7xl mx-auto w-full">
 
-        {/* Filters */}
+        {/* Filter Sidebar */}
         <div className={`w-full lg:w-72 ${showFilter ? "block" : "hidden lg:block"}`}>
           <div className="bg-white rounded-xl shadow-md border border-gray-200 p-5 sticky top-4">
 
+            {/* Close Button on Mobile */}
             <div className="flex items-center justify-between mb-4 lg:hidden">
               <h2 className="text-xl font-semibold">Filters</h2>
               <button onClick={() => setShowFilter(false)} className="p-2 hover:bg-gray-100 rounded-full">
@@ -151,7 +140,7 @@ const Product = () => {
 
             <h2 className="hidden lg:block text-2xl font-bold mb-6 text-gray-800">Filters</h2>
 
-            {/* PRICE */}
+            {/* Price Filter */}
             <details className="mb-6 group border border-gray-100 rounded-lg">
               <summary className="flex items-center justify-between p-3 text-gray-800 font-medium cursor-pointer group-open:font-semibold group-open:text-purple-700 hover:bg-gray-50 rounded-lg">
                 <span>Price</span>
@@ -159,7 +148,7 @@ const Product = () => {
               </summary>
               <div className="px-4 pb-4 space-y-2">
                 {["lowToHigh", "highToLow"].map((value) => (
-                  <label key={value} className="flex items-center gap-2 cursor-pointer text-sm text-gray-700 hover:text-gray-900">
+                  <label key={value} className="flex items-center gap-2 text-sm text-gray-700 hover:text-gray-900 cursor-pointer">
                     <input
                       type="radio"
                       name="price"
@@ -174,7 +163,30 @@ const Product = () => {
               </div>
             </details>
 
-            {/* CONDITIONS */}
+            {/* Category Filter */}
+            <details className="mb-6 group border border-gray-100 rounded-lg">
+              <summary className="flex items-center justify-between p-3 text-gray-800 font-medium cursor-pointer group-open:font-semibold group-open:text-purple-700 hover:bg-gray-50 rounded-lg">
+                <span>Category</span>
+                <ChevronDown className="w-4 h-4 group-open:rotate-180 transition-transform" />
+              </summary>
+              <div className="px-4 pb-4 space-y-2">
+                {["Dogs", "Cats", "Dogs & Cats"].map((category) => (
+                  <label key={category} className="flex items-center gap-2 text-sm text-gray-700 hover:text-gray-900 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="category"
+                      className="accent-purple-600"
+                      value={category}
+                      checked={selectedCategory === category}
+                      onChange={(e) => setSelectedCategory(e.target.value)}
+                    />
+                    {category}
+                  </label>
+                ))}
+              </div>
+            </details>
+
+            {/* Conditions Filter */}
             <details className="mb-6 group border border-gray-100 rounded-lg">
               <summary className="flex items-center justify-between p-3 text-gray-800 font-medium cursor-pointer group-open:font-semibold group-open:text-purple-700 hover:bg-gray-50 rounded-lg">
                 <span>Condition</span>
@@ -182,7 +194,7 @@ const Product = () => {
               </summary>
               <div className="px-4 pb-4 max-h-[180px] overflow-y-auto space-y-2 custom-scroll">
                 {conditions.map((condition) => (
-                  <label key={condition} className="flex items-center gap-2 cursor-pointer text-sm text-gray-700 hover:text-gray-900">
+                  <label key={condition} className="flex items-center gap-2 text-sm text-gray-700 hover:text-gray-900 cursor-pointer">
                     <input
                       type="checkbox"
                       className="accent-purple-600"
@@ -196,15 +208,15 @@ const Product = () => {
             </details>
 
             <button
-              className="w-full mt-2 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-100 transition"
               onClick={clearFilters}
+              className="w-full mt-2 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-100 transition"
             >
               Clear All Filters
             </button>
           </div>
         </div>
 
-        {/* Products */}
+        {/* Product Grid */}
         <div className="flex-1">
           <div className="mb-6 text-center">
             <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-2">
