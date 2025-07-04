@@ -610,7 +610,7 @@ export const products = [
   image: [OmegaPetEliteCap, OmegaPetEliteCap2, OmegaPetEliteCap3, OmegaPetEliteCap5, OmegaPetEliteCap4],
   category: 'Cats,Dogs',
   subCategory: ['Joint Inflammation', 'Skin Issues', 'Heart & Brain Health'],
-  conditions: ['Joint Support', 'Skin and Coat', 'Cardiovascular Health','Brain Health'],
+  conditions: ['Joint Support', 'Skin and Coat', 'Cardiovascular Health','Brain Health','Eye Health'],
   sizes: ['30 Softgels'],
   bestseller: true,
   details: [
