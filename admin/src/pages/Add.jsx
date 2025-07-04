@@ -53,7 +53,7 @@ const Add = () => {
             <select className="w-full px-3 py-3">
               <option value="Dogs">Dogs</option>
               <option value="Cats">Cats</option>
-              <option value="Dogs and Cats">Dogs and Cats</option>
+              <option value="Dogs,Cats">Dogs and Cats</option>
 
             </select>
           </div>

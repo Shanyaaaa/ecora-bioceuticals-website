@@ -24,8 +24,29 @@ const Product = () => {
   "Gut Health",
   "Skin and Coat",
   "Immune Support",
-  "Weight Management",
-  "Heart & Brain Health",
+  "Cardiovascular Health",
+  "Deworming",
+  "Hip Support",
+  "Allergy Relief",
+  "Cancer Support",
+  "Pain Relief",
+  "Obesity Support",
+  "Lung Health",
+  "Urinary Tract Support",
+  "Multivitamin Support",
+  "Kidney Support",
+  "Eye Health",
+  "Brain Health",
+  "Pancreas Health",
+  "Healing",
+  "Blood Health",
+  "Growth and Development",
+  "Coprophagia Support",
+  "Bacterial Infection",
+  "Antibiotic Therapy",
+  
+
+
 ];
 
   useEffect(() => {

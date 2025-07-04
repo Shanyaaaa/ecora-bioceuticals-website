@@ -329,7 +329,7 @@ export const products = [
   ],
   category: 'Cats,Dogs',
   subCategory: ['Liver Disorders', 'Infectious Diseases', 'Inappetence'],
-  conditions: ['Liver Health', 'Immune Support'],
+  conditions: ['Liver Health'],
   sizes: ['100ml'],
   bestseller: true,
   details: [
@@ -542,7 +542,7 @@ export const products = [
   image: [CoproTab, CoproTab2, CoproTab3, CoproTab4, CoproTab5],
   category: 'Cats,Dogs',
   subCategory: ['Coprophagia', 'Bad Breath'],
-  conditions: ['Digestive Health'],
+  conditions: ['Digestive Health','Coprophagia Support'],
   sizes: ['30 Tabs'],
   bestseller: false,
   details: [
@@ -610,7 +610,7 @@ export const products = [
   image: [OmegaPetEliteCap, OmegaPetEliteCap2, OmegaPetEliteCap3, OmegaPetEliteCap5, OmegaPetEliteCap4],
   category: 'Cats,Dogs',
   subCategory: ['Joint Inflammation', 'Skin Issues', 'Heart & Brain Health'],
-  conditions: ['Joint Support', 'Skin and Coat', 'Heart & Brain Health'],
+  conditions: ['Joint Support', 'Skin and Coat', 'Cardiovascular Health','Brain Health'],
   sizes: ['30 Softgels'],
   bestseller: true,
   details: [
@@ -671,7 +671,7 @@ export const products = [
   image: [ObesitySupportTab, ObesitySupportTab2, ObesitySupportTab3, ObesitySupportTab4, ObesitySupportTab5],
   category: 'Cats,Dogs',
   subCategory: ['Obesity', 'Low Energy', 'Overeating'],
-  conditions: ['Weight Management'],
+  conditions: ['Obesity Support'],
   sizes: ['60 Tabs'],
   bestseller: false,
   details: [
@@ -816,7 +816,7 @@ export const products = [
   image: [nanoFrontHome, nanoBackHome, NanoCur1, NanoCur2],
   category: 'Cats,Dogs',
   subCategory: ['Chronic Inflammation', 'Cancer Support'],
-  conditions: ['Immune Support', 'Anti-inflammatory'],
+  conditions: ['Immune Support', 'Pain Relief','Cancer Support'],
   sizes: ['30ml'],
   bestseller: false,
   details: [
@@ -876,7 +876,7 @@ export const products = [
   image: [thromboFront, Thrombo2, Thrombo3, Thrombo4, Thrombo5],
   category: 'Cats,Dogs',
   subCategory: ['Anaemia', 'Low Platelet Count', 'Blood Parasites'],
-  conditions: ['Blood Health', 'Recovery Support'],
+  conditions: ['Blood Health'],
   sizes: ['200ml'],
   bestseller: true,
   details: [
@@ -940,7 +940,7 @@ export const products = [
   image: [aminopetFront, Aminopet2, Aminopet3, Aminopet4, Aminopet5],
   category: 'Cats,Dogs',
   subCategory: ['Growth Support', 'Geriatric Nutrition', 'Breeding Health'],
-  conditions: ['Nutritional Support'],
+  conditions: ['Growth and Development'],
   sizes: ['200ml'],
   bestseller: true,
   details: [
@@ -1078,7 +1078,7 @@ export const products = [
   image: [petNeuronHome, PetNeuron2, PetNeuron3, PetNeuron4, PetNeuron5],
   category: 'Cats,Dogs',
   subCategory: ['Neurological Issues', 'Anxiety', 'Cognitive Deficiency'],
-  conditions: ['Nervine Care', 'Cognitive Support'],
+  conditions: ['Nervine Care'],
   sizes: ['200ml'],
   bestseller: true,
   details: [
