@@ -28,7 +28,7 @@ const addProduct = async (req, res) => {
             category,
             conditions,
             bestseller: bestseller == 'true'? true:false,
-            images: imagesUrl,
+            image: imagesUrl,
             date: Date.now()
         }
         

@@ -1,115 +1,129 @@
-// import axios from 'axios';
-// import React, { useEffect, useState } from 'react';
-// import { backendUrl, currency } from '../App';
-// import { toast } from 'react-toastify';
 
-// const List = ({ token }) => {
-//   const [list, setList] = useState([]);
-
-//   const fetchList = async () => {
-//     try {
-//       const response = await axios.get(`${backendUrl}/api/product/list`);
-//       if (response.data.success) {
-//         setList(response.data.products);
-//       } else {
-//         toast.error(response.data.message);
-//       }
-//     } catch (error) {
-//       console.error(error);
-//       toast.error(error.message);
-//     }
-//   };
-
-//   useEffect(() => {
-//     fetchList();
-//   }, []);
-
-//   const removeProduct = async (id) => {
-//     try {
-//       const response = await axios.post(
-//         `${backendUrl}/api/product/remove`,
-//         { id },
-//         {
-//           headers: {
-//             token: token,
-//           },
-//         }
-//       );
-
-//       if (response.data.success) {
-//         toast.success(response.data.message);
-//         await fetchList();
-//       } else {
-//         toast.error(response.data.message);
-//       }
-//     } catch (error) {
-//       console.error(error);
-//       toast.error(error.message);
-//     }
-//   };
-
-//   return (
-//     <>
-//       <p className="mb-4 text-lg font-semibold">All Products List</p>
-//       <div className="flex flex-col gap-4">
-//         {/* Table header for larger screens */}
-//         <div className="hidden md:grid grid-cols-5 items-center py-2 px-4 border-b-2 bg-gray-100 text-sm font-semibold text-gray-700">
-//           <span className="text-center">Image</span>
-//           <span className="text-center">Name</span>
-//           <span className="text-center">Category</span>
-//           <span className="text-center">Price</span>
-//           <span className="text-center">Action</span>
-//         </div>
-
-//         {/* Product list */}
-//         {list.map((item, index) => (
-//           <div
-//             className="flex flex-col md:grid md:grid-cols-5 items-center gap-2 p-4 border text-sm text-gray-700"
-//             key={index}
-//           >
-//             {/* Image */}
-//             <div className="flex justify-center">
-//               <img className="w-16 h-16 object-cover rounded-md" src={item.image[0]} alt={item.name} />
-//             </div>
-
-//             {/* Name */}
-//             <p className="text-center font-medium truncate">{item.name}</p>
-
-//             {/* Category */}
-//             <p className="text-center">{item.category}</p>
-
-//             {/* Price */}
-//             <p className="text-center">
-//               {currency}
-//               {item.price}
-//             </p>
-
-//             {/* Action */}
-//             <button
-//               onClick={() => removeProduct(item._id)}
-//               className="text-center text-red-600 hover:text-red-800 cursor-pointer"
-//             >
-//               Remove
-//             </button>
-//           </div>
-//         ))}
-//       </div>
-//     </>
-//   );
-// };
-
-// export default List;
-
-
-
-import React from 'react'
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import { backendUrl, currency } from '../App';
+import { toast } from 'react-toastify';
 
 const List = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const [list, setList] = useState([]);
 
-export default List
+  const fetchList = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        toast.error('Authentication token not found');
+        return;
+      }
+
+      const response = await axios.get(`${backendUrl}/api/product/list`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (response.data.success) {
+        setList(response.data.products);
+      } else {
+        toast.error(response.data.message);
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error(error.response?.data?.message || error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchList();
+  }, []);
+
+  console.log('Fetched Products:', list);
+
+  const removeProduct = async (id) => {
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        toast.error('Authentication token not found');
+        return;
+      }
+
+      const response = await axios.post(
+        `${backendUrl}/api/product/remove`,
+        { id },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (response.data.success) {
+        toast.success(response.data.message);
+        await fetchList();
+      } else {
+        toast.error(response.data.message);
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error(error.response?.data?.message || error.message);
+    }
+  };
+
+  return (
+    <>
+      <p className="mb-2">All Products List</p>
+      <div className="flex flex-col gap-2">
+        {/* Header Row */}
+        <div className="hidden md:grid grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center py-1 px-2 border bg-gray-100 text-sm">
+          <b>Image</b>
+          <b>Name</b>
+          <b>Category</b>
+          <b>Price</b>
+          <b className="text-center">Action</b>
+        </div>
+
+        {/* Product Rows */}
+        {list.map((item, index) => (
+          <div
+            key={index}
+            className="grid grid-cols-[1fr_3fr_1fr] md:grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center gap-2 py-1 px-2 border text-sm"
+          >
+            {/* ✅ Safe image rendering */}
+            {item.images?.[0] ? (
+              <img
+                className="w-12"
+                src={
+                  item.images[0].startsWith('http')
+                    ? item.images[0]
+                    : `${backendUrl}/${item.images[0]}`
+                }
+                alt={item.name}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://dummyimage.com/60x60/cccccc/000000&text=No+Image';
+                }}
+              />
+            ) : (
+              <img
+                className="w-12"
+                src="https://dummyimage.com/60x60/cccccc/000000&text=No+Image"
+                alt="No Image"
+              />
+            )}
+
+            <p>{item.name}</p>
+            <p>{item.category}</p>
+            <p>{currency}{item.price}</p>
+            <p
+              onClick={() => removeProduct(item._id)}
+              className="text-right md:text-center cursor-pointer text-lg text-red-500 hover:scale-105 transition"
+            >
+              ✕
+            </p>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default List;
