@@ -14,8 +14,6 @@ const Button = ({ children, ...props }) => (
   </button>
 );
 
-
-
 export default function AboutUs() {
   const navigate = useNavigate();
 
@@ -27,15 +25,13 @@ export default function AboutUs() {
     <div className="min-h-screen bg-white pb-20">
       {/* Hero Section */}
       <div className="relative">
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="w-full h-full bg-gradient-to-br from-pink-300 to-pink-400"
-            style={{
-              clipPath: "ellipse(120% 100% at 50% 0%)",
-              height: "85vh",
-            }}
-          />
-        </div>
+        <div
+          className="absolute inset-0 w-full bg-[#b6aaa1]"
+          style={{
+            clipPath: "ellipse(120% 100% at 50% 0%)",
+            height: "85vh",
+          }}
+        />
 
         <div className="relative z-10 pt-16 pb-32">
           <div className="max-w-6xl mx-auto px-6">
@@ -48,7 +44,6 @@ export default function AboutUs() {
               <h1 className="text-5xl md:text-7xl font-bold text-black mb-6">About us</h1>
             </div>
 
-            {/* Intro Paragraph */}
             <p
               className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed text-center"
               data-aos="fade-up"
@@ -59,7 +54,7 @@ export default function AboutUs() {
               promote health, vitality, and happiness.
             </p>
 
-            {/* Team Images with Staggered Effects */}
+            {/* Team Images */}
             <div className="flex flex-wrap justify-center gap-6 mt-10 max-w-6xl mx-auto">
               <div
                 className="w-[260px] aspect-square rounded-2xl overflow-hidden"
@@ -80,11 +75,7 @@ export default function AboutUs() {
                   data-aos="fade-up"
                   data-aos-delay={200 + i * 100}
                 >
-                  <img
-                    src={img}
-                    alt={`Team Member ${i + 2}`}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={img} alt={`Team Member ${i + 2}`} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
@@ -92,10 +83,10 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Our Vision Section */}
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-2 items-center">
+      {/* Vision Section */}
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mt-10">
         <div data-aos="fade-right">
-          <h2 className="text-3xl font-bold text-pink-700 mb-4 underline underline-offset-4 decoration-pink-500">
+          <h2 className="text-3xl font-bold text-yellow-700 mb-4 underline underline-offset-4 decoration-yellow-400">
             Our Vision
           </h2>
           <p className="text-gray-600 mb-3">
@@ -110,7 +101,7 @@ export default function AboutUs() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center" data-aos="fade-left">
+        <div className="flex justify-center" data-aos="fade-left">
           <div className="w-[300px] rounded-xl overflow-hidden shadow-lg group">
             <img
               src={assets.Vision}
@@ -121,9 +112,9 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Our Mission Section */}
-      <div className="max-w-6xl mx-auto mt-20 px-6 grid md:grid-cols-2 gap-6 items-center">
-        <div className="flex flex-col items-center" data-aos="fade-right">
+      {/* Mission Section */}
+      <div className="max-w-6xl mx-auto mt-20 px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div className="flex justify-center" data-aos="fade-right">
           <div className="w-[300px] rounded-xl overflow-hidden shadow-lg group">
             <img
               src={assets.AboutEcora}
@@ -131,12 +122,10 @@ export default function AboutUs() {
               className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
             />
           </div>
-      
-            <span className="text-xs text-gray-500">Ecora Team</span>
-          </div>
-        
+        </div>
+
         <div data-aos="fade-left">
-          <h2 className="text-3xl font-bold text-pink-700 mb-4 underline underline-offset-4 decoration-pink-500">
+          <h2 className="text-3xl font-bold text-yellow-700 mb-4 underline underline-offset-4 decoration-yellow-800">
             Our Mission
           </h2>
           <p className="text-gray-600 mb-3">
@@ -151,46 +140,43 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us */}
       <div className="max-w-6xl mx-auto mt-20 px-6 text-center" data-aos="zoom-in">
         <h2 className="text-3xl font-bold text-black mb-4">Why Choose Us</h2>
         <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
           Choosing Ecora Bioceuticals Pvt. Ltd means choosing a partner who cares deeply about your pet’s well-being.
           We are committed to quality, transparency, and innovation. Our supplements are made from the highest quality
-          ingredients, sourced responsibly, and rigorously tested to ensure safety and efficacy. We work with
-          veterinarians, nutritionists, and scientists to create formulations that address specific health needs,
-          ensuring your pets get the nutrients they need to live their best lives.
+          ingredients, sourced responsibly, and rigorously tested to ensure safety and efficacy.
         </p>
         <blockquote className="text-gray-800 italic border-l-4 border-gray-400 pl-4 max-w-xl mx-auto">
           “With us, you can trust that every product is made with love and expertise, putting your pet’s health first.”
         </blockquote>
       </div>
 
-      {/* Company Overview + Meet Founders Card */}
+      {/* Who We Are */}
       <div className="max-w-6xl mx-auto mt-16 px-6" data-aos="fade-up">
-        <div className="bg-pink-100 rounded-2xl shadow-md p-8 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-pink-700 mb-4">
-            Who We Are
-          </h3>
+        <div className="bg-[#ecdcc1] rounded-2xl shadow-md p-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-yellow-700 mb-4">Who We Are</h3>
           <p className="text-gray-700 max-w-3xl mx-auto mb-6">
             At Ecora Bioceuticals Pvt. Ltd, our story is built on passion, science, and a deep love for animals.
             We've grown from a small idea into a leading force in pet wellness, committed to redefining how pet care is delivered—one supplement at a time.
           </p>
-         
-          
-          <Button onClick={() => navigate("/Founder")}>Meet Our Founders</Button>
-
+          <Button onClick={() => navigate("/Founder")}>Meet Our Founder</Button>
         </div>
       </div>
 
       {/* Closing Statement */}
       <div className="pt-20 px-6" data-aos="fade-up">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-black">
-            From boosting immunity to all health needs, we are here to help your pets thrive.
-          </h2>
+        <div className="max-w-5xl mx-auto text-center border-t border-gray-300 pt-10">
+          <p className="text-lg md:text-xl text-gray-700 italic font-medium leading-relaxed">
+            “From boosting immunity to meeting all health needs, <br />
+            we’re here to help your pets thrive every step of the way.”
+          </p>
+          <div className="w-16 h-1 bg-yellow-400 mt-4 mx-auto rounded-full" />
         </div>
       </div>
+
     </div>
+
   );
 }

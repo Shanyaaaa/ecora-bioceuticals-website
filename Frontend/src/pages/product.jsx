@@ -3,12 +3,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductItem from "../components/ProductItem";
 import { ShopContext } from "../context/ShopContext";
-import { Filter, ChevronDown, ChevronUp, X, Search } from "lucide-react";
+import { Search, X } from "lucide-react";
 
 const Product = () => {
   const { products } = useContext(ShopContext);
 
-  const [showFilter, setShowFilter] = useState(false);
   const [searchInput, setSearchInput] = useState("");
   const [showSearchBox, setShowSearchBox] = useState(false);
   const [selectedPriceFilter, setSelectedPriceFilter] = useState("");
@@ -25,6 +24,11 @@ const Product = () => {
     "Coprophagia Support", "Bacterial Infection", "Antibiotic Therapy"
   ];
 
+  const normalizeConditions = (conds) => {
+    if (!conds) return [];
+    return Array.isArray(conds) ? conds : conds.split(",").map((c) => c.trim());
+  };
+
   useEffect(() => {
     let temp = [...products];
 
@@ -35,9 +39,12 @@ const Product = () => {
     }
 
     if (selectedConditions.length > 0) {
-      temp = temp.filter((product) =>
-        selectedConditions.some((cond) => product.conditions?.includes(cond))
-      );
+      temp = temp.filter((product) => {
+        const conds = normalizeConditions(product.conditions);
+        return selectedConditions.some((cond) =>
+          conds.map((c) => c.toLowerCase()).includes(cond.toLowerCase())
+        );
+      });
     }
 
     if (selectedCategory) {
@@ -72,113 +79,86 @@ const Product = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-white text-gray-900">
       <Navbar />
 
-      {/* Search Bar */}
-      <div className="flex justify-end items-center p-4 px-6">
-        {showSearchBox ? (
-          <div className="relative w-full sm:w-1/2 md:w-1/3">
-            <input
-              type="text"
-              placeholder="Search product..."
-              value={searchInput}
-              onChange={(e) => setSearchInput(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-full shadow-sm outline-none focus:ring-2 focus:ring-pink-500"
-            />
-            <X
-              className="absolute top-2.5 right-3 w-5 h-5 text-gray-500 cursor-pointer hover:text-red-500"
-              onClick={() => {
-                setShowSearchBox(false);
-                setSearchInput("");
-              }}
-            />
-          </div>
-        ) : (
-          <button
-            onClick={() => setShowSearchBox(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-white border rounded-full shadow-sm hover:bg-gray-100"
-          >
-            <Search className="w-4 h-4 text-gray-600" />
-            <span className="text-sm font-medium text-gray-700">Search</span>
-          </button>
-        )}
-      </div>
+      {/* Top Header with Search */}
+      <div className="flex flex-col items-center justify-center text-center mt-6">
+        <div className="flex items-center justify-between flex-wrap w-full max-w-6xl px-4 mx-auto mb-4">
+          <h1 className="text-2xl font-bold text-gray-800 ml-125">All Products</h1>
 
-      {/* Mobile Filter Toggle */}
-      <div className="sticky top-0 z-10 bg-white border-b border-gray-200 px-4 py-3 sm:hidden">
-        <button
-          onClick={() => setShowFilter(!showFilter)}
-          className="flex items-center justify-between w-full text-left"
-        >
-          <span className="flex items-center gap-2 text-lg font-semibold">
-            <Filter className="w-5 h-5" />
-            Filters
-          </span>
-          {showFilter ? (
-            <ChevronUp className="w-5 h-5" />
-          ) : (
-            <ChevronDown className="w-5 h-5" />
-          )}
-        </button>
-      </div>
-
-      {/* Main Content */}
-      <div className="flex flex-col lg:flex-row gap-4 pt-4 px-4 md:px-6 max-w-7xl mx-auto w-full">
-
-        {/* Filter Sidebar */}
-        <div className={`w-full lg:w-72 ${showFilter ? "block" : "hidden lg:block"}`}>
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-5 sticky top-4">
-
-            {/* Close Button on Mobile */}
-            <div className="flex items-center justify-between mb-4 lg:hidden">
-              <h2 className="text-xl font-semibold">Filters</h2>
-              <button onClick={() => setShowFilter(false)} className="p-2 hover:bg-gray-100 rounded-full">
-                <X className="w-5 h-5" />
+          <div className="relative mt-2 sm:mt-0">
+            {showSearchBox ? (
+              <div className="relative w-64">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  value={searchInput}
+                  onChange={(e) => setSearchInput(e.target.value)}
+                  className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full shadow-sm focus:ring-2 focus:ring-amber-500 outline-none"
+                />
+                <X
+                  className="absolute top-2.5 right-3 w-5 h-5 text-gray-500 cursor-pointer hover:text-red-500"
+                  onClick={() => {
+                    setShowSearchBox(false);
+                    setSearchInput("");
+                  }}
+                />
+              </div>
+            ) : (
+              <button
+                onClick={() => setShowSearchBox(true)}
+                className="flex items-center gap-2 border px-4 py-2 rounded-full shadow-sm hover:bg-gray-100"
+              >
+                <Search className="w-4 h-4" />
+                <span className="text-sm font-medium">Search</span>
               </button>
-            </div>
+            )}
+          </div>
+        </div>
+      </div>
 
-            <h2 className="hidden lg:block text-2xl font-bold mb-6 text-gray-800">Filters</h2>
+      {/* Main Section */}
+      <div className="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto w-full px-4 pb-10">
+        {/* Filter Section */}
+        <aside className="w-full lg:w-64">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-5">
+            <h2 className="text-lg font-semibold mb-4">Filters</h2>
 
-            {/* Price Filter */}
-            <details className="mb-6 group border border-gray-100 rounded-lg">
-              <summary className="flex items-center justify-between p-3 text-gray-800 font-medium cursor-pointer group-open:font-semibold group-open:text-purple-700 hover:bg-gray-50 rounded-lg">
-                <span>Price</span>
-                <ChevronDown className="w-4 h-4 group-open:rotate-180 transition-transform" />
-              </summary>
-              <div className="px-4 pb-4 space-y-2">
-                {["lowToHigh", "highToLow"].map((value) => (
-                  <label key={value} className="flex items-center gap-2 text-sm text-gray-700 hover:text-gray-900 cursor-pointer">
-                    <input
-                      type="radio"
-                      name="price"
-                      className="accent-purple-600"
-                      value={value}
-                      checked={selectedPriceFilter === value}
-                      onChange={(e) => setSelectedPriceFilter(e.target.value)}
-                    />
-                    {value === "lowToHigh" ? "Low to High" : "High to Low"}
-                  </label>
-                ))}
+            {/* Price */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-sm font-medium mb-2">Price</summary>
+              <div className="space-y-1 ml-2 mt-2">
+                <label className="text-sm block">
+                  <input type="radio" name="price" value="lowToHigh" className="mr-1"
+                    checked={selectedPriceFilter === "lowToHigh"}
+                    onChange={(e) => setSelectedPriceFilter(e.target.value)}
+                  />
+                  Low to High
+                </label>
+                <label className="text-sm block">
+                  <input type="radio" name="price" value="highToLow" className="mr-1"
+                    checked={selectedPriceFilter === "highToLow"}
+                    onChange={(e) => setSelectedPriceFilter(e.target.value)}
+                  />
+                  High to Low
+                </label>
               </div>
             </details>
 
-            {/* Category Filter */}
-            <details className="mb-6 group border border-gray-100 rounded-lg">
-              <summary className="flex items-center justify-between p-3 text-gray-800 font-medium cursor-pointer group-open:font-semibold group-open:text-purple-700 hover:bg-gray-50 rounded-lg">
-                <span>Category</span>
-                <ChevronDown className="w-4 h-4 group-open:rotate-180 transition-transform" />
-              </summary>
-              <div className="px-4 pb-4 space-y-2">
+            {/* Category */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-sm font-medium mb-2">Category</summary>
+              <div className="space-y-1 ml-2 mt-2">
                 {["Dogs", "Cats", "Dogs & Cats"].map((category) => (
-                  <label key={category} className="flex items-center gap-2 text-sm text-gray-700 hover:text-gray-900 cursor-pointer">
+                  <label key={category} className="text-sm block">
                     <input
                       type="radio"
                       name="category"
-                      className="accent-purple-600"
                       value={category}
                       checked={selectedCategory === category}
                       onChange={(e) => setSelectedCategory(e.target.value)}
+                      className="mr-1"
                     />
                     {category}
                   </label>
@@ -186,20 +166,17 @@ const Product = () => {
               </div>
             </details>
 
-            {/* Conditions Filter */}
-            <details className="mb-6 group border border-gray-100 rounded-lg">
-              <summary className="flex items-center justify-between p-3 text-gray-800 font-medium cursor-pointer group-open:font-semibold group-open:text-purple-700 hover:bg-gray-50 rounded-lg">
-                <span>Condition</span>
-                <ChevronDown className="w-4 h-4 group-open:rotate-180 transition-transform" />
-              </summary>
-              <div className="px-4 pb-4 max-h-[180px] overflow-y-auto space-y-2 custom-scroll">
+            {/* Conditions */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-sm font-medium mb-2">Conditions</summary>
+              <div className="space-y-1 ml-2 mt-2 max-h-40 overflow-y-auto custom-scroll">
                 {conditions.map((condition) => (
-                  <label key={condition} className="flex items-center gap-2 text-sm text-gray-700 hover:text-gray-900 cursor-pointer">
+                  <label key={condition} className="text-sm block">
                     <input
                       type="checkbox"
-                      className="accent-purple-600"
                       checked={selectedConditions.includes(condition)}
                       onChange={() => handleConditionChange(condition)}
+                      className="mr-1"
                     />
                     {condition}
                   </label>
@@ -209,25 +186,16 @@ const Product = () => {
 
             <button
               onClick={clearFilters}
-              className="w-full mt-2 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-100 transition"
+              className="w-full mt-4 py-2 text-sm border border-gray-300 rounded hover:bg-gray-100"
             >
               Clear All Filters
             </button>
           </div>
-        </div>
+        </aside>
 
         {/* Product Grid */}
-        <div className="flex-1">
-          <div className="mb-6 text-center">
-            <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-2">
-              — All Products —
-            </h1>
-            <p className="text-sm text-gray-600">
-              Showing {filteredProducts.length} results
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <section className="flex-1">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {filteredProducts.map((item) => (
               <ProductItem
                 key={item._id}
@@ -239,7 +207,10 @@ const Product = () => {
               />
             ))}
           </div>
-        </div>
+          {filteredProducts.length === 0 && (
+            <p className="text-center mt-8 text-sm text-gray-500">No products match your filters.</p>
+          )}
+        </section>
       </div>
 
       <Footer />

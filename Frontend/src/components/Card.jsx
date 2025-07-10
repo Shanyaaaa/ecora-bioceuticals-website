@@ -1,162 +1,121 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import { assets } from '../assets/assets';
 
 const InfoSection = () => {
   const sectionRef = useRef(null);
-  const [inView, setInView] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(false);
+  const controls = useAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
       if (sectionRef.current) {
         const rect = sectionRef.current.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight * 0.75 && rect.bottom >= 0;
-        
-        if (isInView && !isScrolling) {
-          setIsScrolling(true);
-          setInView(true);
-          
-          // Reset the scaling effect after animation completes
-          setTimeout(() => setIsScrolling(false), 1000);
+        const isVisible = rect.top < window.innerHeight * 0.75 && rect.bottom >= 0;
+        if (isVisible) {
+          controls.start({ opacity: 1, y: 0 });
         }
       }
     };
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-        }
-      },
-      { threshold: 0.2 }
-    );
-
     window.addEventListener('scroll', handleScroll);
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      observer.disconnect();
-    };
-  }, [isScrolling]);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [controls]);
 
   const cardData = [
     {
       icon: assets.doctors,
       text: 'Trusted by 50+ Doctors',
       alt: 'Trust Icon',
-      bgColor: 'from-amber-50 to-amber-100',
-      textColor: 'text-amber-800'
     },
     {
       icon: assets.fastDelivery,
       text: 'Free and Fast Express Delivery',
       alt: 'Fast Delivery',
-      bgColor: 'from-blue-50 to-blue-100',
-      textColor: 'text-blue-800'
     },
     {
       icon: assets.quality,
       text: '100% Premium Quality',
       alt: 'Quality Icon',
-      bgColor: 'from-emerald-50 to-emerald-100',
-      textColor: 'text-emerald-800'
     },
     {
       icon: assets.Price,
       text: 'Best Affordable & Competitive Price',
       alt: 'Price Icon',
-      bgColor: 'from-purple-50 to-purple-100',
-      textColor: 'text-purple-800'
-    }
+    },
   ];
 
   return (
-    <div
+    <motion.div
       ref={sectionRef}
-      className={`transition-all duration-1000 ease-in-out ${
-        inView ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-      } flex flex-col lg:flex-row justify-between items-center gap-8 mt-20 px-4 sm:px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-80`}
+      initial={{ opacity: 0, y: 40 }}
+      animate={controls}
+      transition={{ duration: 1, ease: 'easeOut' }}
+      className="flex flex-col lg:flex-row justify-between items-center gap-10 mt-20 px-4 sm:px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-80"
     >
-      {/* Outer Div - Left Card */}
-      <div 
-        className={`flex-1 w-full bg-gradient-to-br from-white to-blue-50 shadow-2xl rounded-2xl p-8 max-w-md h-[500px] flex flex-col justify-center items-center transition-all duration-1000 ${
-          isScrolling ? 'scale-105' : 'scale-100'
-        } hover:ring-4 hover:ring-blue-200 hover:shadow-blue-300/50 relative overflow-hidden group`}
+      {/* LEFT: Hero Card */}
+      <motion.div
+        whileHover={{ scale: 1.05, rotate: -1 }}
+        transition={{ type: 'spring', stiffness: 200, damping: 12 }}
+        className="flex-1 w-full bg-[#b6aaa1] shadow-2xl rounded-2xl p-8 max-w-md h-[500px] flex flex-col justify-center items-center relative overflow-hidden"
       >
-        <img
+        <motion.img
           src={assets.Dog}
           alt="Dog with Owner"
-          className={`rounded-lg shadow-md mb-6 w-full max-w-xs object-contain transition-all duration-700 ${
-            inView ? 'scale-100' : 'scale-90'
-          } ${isScrolling ? 'scale-110' : ''} group-hover:scale-105`}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="rounded-lg shadow-md mb-6 w-full max-w-xs object-contain"
         />
-        <div className="space-y-3 text-center relative z-10">
-          <p className="text-2xl lg:text-3xl font-bold italic font-['Playfair_Display'] tracking-wide text-gray-800">
+        <div className="space-y-3 text-center text-white z-10">
+          <p className="text-2xl lg:text-3xl font-bold italic font-['Playfair_Display'] tracking-wide">
             Crafted for Health,
           </p>
-          <p className="text-2xl lg:text-3xl font-bold italic font-['Playfair_Display'] tracking-wide text-gray-800">
+          <p className="text-2xl lg:text-3xl font-bold italic font-['Playfair_Display'] tracking-wide">
             Backed by Science
           </p>
-          <p className="text-2xl lg:text-3xl font-bold italic font-['Playfair_Display'] tracking-wide text-blue-600 mt-4">
+          <p className="text-2xl lg:text-3xl font-bold italic font-['Playfair_Display'] tracking-wide mt-4 text-white">
             "We Believe in Excellence"
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* Inner Cards - Right Grid */}
+      {/* RIGHT: Info Cards */}
       <div className="flex-1 max-w-md h-[500px] grid grid-cols-2 grid-rows-2 gap-5">
-        {cardData.map((card, i) => (
-          <Card 
-            key={i} 
-            icon={card.icon} 
-            text={card.text} 
-            alt={card.alt} 
-            bgColor={card.bgColor}
-            textColor={card.textColor}
-            index={i}
-            inView={inView}
-            isScrolling={isScrolling}
-          />
+        {cardData.map((card, index) => (
+          <Card key={index} icon={card.icon} text={card.text} alt={card.alt} delay={index * 0.2} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-const Card = ({ icon, text, alt, bgColor, textColor, index, inView, isScrolling }) => {
-  const delay = index * 100 + 300;
-  
+const Card = ({ icon, text, alt, delay }) => {
   return (
-    <div
-      className={`transition-all duration-1000 ease-out transform ${
-        inView ? 
-          `opacity-100 translate-y-0 delay-[${delay}ms]` : 
-          'opacity-0 translate-y-10'
-      } ${
-        isScrolling ? 'scale-105' : 'scale-100'
-      } hover:scale-[1.03] hover:-rotate-1 hover:brightness-105 hover:shadow-xl rounded-xl border border-gray-200 p-1 w-full h-full cursor-pointer flex items-center justify-center overflow-hidden`}
-      style={{
-        transitionDelay: inView ? `${delay}ms` : '0ms'
-      }}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay, ease: 'easeOut' }}
+      viewport={{ once: true }}
+      whileHover={{ scale: 1.03, rotate: -1 }}
+      className="rounded-xl border border-gray-300 p-1 w-full h-full flex items-center justify-center overflow-hidden shadow transition-all"
     >
-      <div className={`flex items-center justify-between gap-x-4 w-full h-full p-4 bg-gradient-to-br ${bgColor} rounded-lg transition-all duration-500 hover:shadow-inner`}>
-        <div className="w-3/5 pr-4">
-          <p className={`text-lg lg:text-xl font-semibold ${textColor} font-['Poppins'] tracking-wide leading-tight`}>
+      <div className="flex items-center justify-between gap-x-4 w-full h-full p-4 bg-[#b6aaa1] rounded-lg">
+        <div className="w-3/5 pr-2">
+          <p className="text-lg lg:text-xl font-semibold text-white font-['Poppins'] leading-tight tracking-wide">
             {text}
           </p>
         </div>
         <div className="w-2/5 flex justify-end">
-          <img
+          <motion.img
             src={icon}
             alt={alt}
-            className={`w-20 h-20 rounded-full object-cover border-2 border-white shadow-md transition-all duration-500 ${
-              inView ? 'scale-100' : 'scale-90'
-            } ${isScrolling ? 'scale-110' : ''} hover:scale-110 hover:shadow-lg`}
+            className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

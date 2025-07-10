@@ -8,62 +8,70 @@ const AboutFounders = () => {
     <>
       <Navbar />
 
-      <div className="bg-[#e7ece8] min-h-screen py-16 px-6 lg:px-24">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-start gap-12">
+      <div className="bg-gradient-to-br from-[#e7ece8] via-[#f2f7f3] to-[#eef3ef] min-h-screen py-24 px-6 lg:px-24 text-black">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-start gap-20">
 
           {/* Left Image Section */}
-          <div className="relative w-[240px] self-start">
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img
-                src={assets.Founder}
-                alt="Founder Vishal Kumar"
-                className="w-full h-[320px] object-cover"
-              />
+          <div className="relative w-[320px] self-start">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-orange-500/20 rounded-3xl transform rotate-6"></div>
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-white p-4 transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src={assets.Founder}
+                  alt="Founder Vishal Kumar"
+                  className="w-full h-[400px] object-cover rounded-2xl"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Right Text Section in 3D Card Style */}
+          {/* Right Text Section */}
           <div className="flex-1">
-            <div className="bg-white rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.15)] p-8 transition-transform duration-300 hover:scale-[1.01]">
-
-              <h2 className="text-3xl font-semibold text-purple-800">Our Story</h2>
-              <p className="uppercase tracking-widest text-sm text-gray-500 mb-6">
-                About Vishal Kumar
-              </p>
-
-              <div className="text-gray-700 text-base leading-relaxed space-y-4">
-                <p>
-                  <strong>Mr. Vishal Kumar</strong> is the Founder and Director of <strong>Ecora Bioceuticals Pvt. Ltd.</strong>, formerly operating as <strong>MPS Animal Healthcare</strong>. A zoologist by education and a passionate advocate for animal wellness, he has dedicated <strong><em>over two decades</em></strong> to improving the healthcare across India.
+            <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-14 transition-all duration-300 hover:shadow-3xl border border-white/30 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-amber-400/5 to-orange-500/5 rounded-full -translate-y-16 translate-x-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-amber-400/5 to-orange-500/5 rounded-full translate-y-12 -translate-x-12"></div>
+              
+              <div className="relative z-10">
+                <h2 className="text-4xl font-bold text-amber-600 mb-3">Our Story</h2>
+                <p className="uppercase tracking-[0.25em] text-sm text-gray-500 mb-8 font-medium">
+                  About Vishal Kumar
                 </p>
 
-                <p>
-                  His journey began in <strong>1997</strong>, when he entered the field of Healthcare with a deep respect for nature, science, and the well-being. From the very beginning, Mr. Kumar recognized the importance of creating products that were not only effective but also <strong><em>affordable and trustworthy</em></strong>.
-                </p>
+                <div className="text-lg leading-relaxed space-y-6">
+                  <p>
+                    <strong>Mr Vishal Kumar</strong> is the Founder and Director of Ecora Bioceuticals Pvt. Ltd., formerly operating as MPS Animal Healthcare. A zoologist by education and a passionate advocate for animal wellness, he has dedicated over two decades to improving healthcare across India.
+                  </p>
 
-                <p>
-                  That belief led to the founding of <strong>Ecora</strong> in <strong>2014</strong>—a company built on the principle that <strong><em>premium quality should not come at a premium price</em></strong>. His vision was to deliver high-quality, science-driven supplements using top-tier ingredients, while ensuring they remain accessible to both pet parents and livestock caregivers.
-                </p>
+                  <p>
+                    His journey began in 1997, when he entered the field of Healthcare with a deep respect for nature, science, and well-being. From the very beginning, Mr. Kumar recognized the importance of creating products that were not only effective but also affordable and trustworthy.
+                  </p>
 
-                <p>
-                  Under his leadership, Ecora has grown into a trusted name among veterinarians, breeders, and pet owners alike—a reflection of his <strong>unwavering commitment to quality, integrity, and compassion</strong>.
-                </p>
+                  <p>
+                   That belief led to the founding of Ecora in 2014—a company built on the principle that premium quality should not come at a premium price. His vision was to deliver high-quality, science-driven supplements using top-tier ingredients, while ensuring they remain accessible to both pet parents and livestock caregivers.
+                  </p>
 
-                <p>
-                  What distinguishes Mr. Kumar is his ability to blend innovation with empathy. Whether consulting with veterinary professionals or overseeing production personally, he brings a <strong><em>deep sense of responsibility and care</em></strong> to every product Ecora creates.
-                </p>
+                  <p>
+                    Under his leadership, Ecora has grown into a trusted name among veterinarians, breeders, and pet owners alike—a reflection of his unwavering commitment to quality, integrity, and compassion.
+                  </p>
 
-                <p>
-                  Today, Ecora stands as a symbol of trust and excellence in the animal healthcare industry. For him, this work is far more than a business—it is a <strong><em>lifelong mission rooted in science, sincerity, and the belief that every animal deserves the best</em></strong>.
-                </p>
-              </div>
+                  <p>
+                    What distinguishes Mr. Kumar is his ability to blend innovation with empathy. Whether consulting with veterinary professionals or overseeing production personally, he brings a deep sense of responsibility and care to every product Ecora creates.
+                  </p>
 
-              {/* Signature Section */}
-              <div className="pt-6 mt-6 border-t border-gray-200">
-                <p className="font-cursive text-lg text-gray-800">Mr. Vishal Kumar</p>
-                <p className="text-sm text-gray-600">Founder and Director</p>
+                  <p>
+                    Today, Ecora stands as a symbol of trust and excellence in the animal healthcare industry. For him, this work is far more than a business—it is a lifelong mission rooted in science, sincerity, and the belief that every animal deserves the best.
+                  </p>
+                </div>
+
+                {/* Signature Section */}
+                <div className="pt-8 mt-8 border-t border-gray-200">
+                  <p className="font-cursive text-2xl text-amber-600 font-semibold">Mr. Vishal Kumar</p>
+                  <p className="text-base text-gray-600 font-medium">Founder and Director</p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
