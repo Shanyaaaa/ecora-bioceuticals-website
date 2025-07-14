@@ -1,4 +1,3 @@
-// All imports stay the same
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -34,7 +33,12 @@ const DropdownSection = ({ title, content }) => {
       {open && (
         <div className="px-4 py-2 text-sm text-gray-700 space-y-1">
           {content.map((item, idx) => (
-            <p key={idx}>• {item}</p>
+            <p
+              key={idx}
+              dangerouslySetInnerHTML={{
+                __html: item.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+              }}
+            />
           ))}
         </div>
       )}
@@ -73,7 +77,6 @@ const ProductById = () => {
     <div className="bg-gray-50">
       <Navbar />
 
-      {/* ✅ View Cart Banner */}
       {showViewCart && (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 mx-auto max-w-6xl mt-4 rounded-md flex justify-between items-center">
           <div>
@@ -88,7 +91,6 @@ const ProductById = () => {
         </div>
       )}
 
-      {/* Zoom Modal */}
       {isZoomed && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
           <img src={mainImage} alt="zoomed" className="max-w-[90%] max-h-[90%] object-contain" />
@@ -101,9 +103,7 @@ const ProductById = () => {
         </div>
       )}
 
-      {/* IMAGE & INFO */}
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
-        {/* LEFT: Image Gallery */}
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="flex lg:flex-col gap-2">
             {product.image.map((img, i) => (
@@ -132,7 +132,6 @@ const ProductById = () => {
           </div>
         </div>
 
-        {/* RIGHT: Product Info */}
         <div className="flex-1">
           <p className="text-sm text-gray-500">Home / Dog / {product.name}</p>
           <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-1">{product.name}</h1>
@@ -142,7 +141,6 @@ const ProductById = () => {
             {Array.from({ length: 5 }, (_, i) => (
               <span key={i} className="text-yellow-400">★</span>
             ))}
-            <span className="ml-2 text-sm text-gray-600">(1 customer review)</span>
           </div>
 
           <p className="text-2xl font-semibold text-gray-800 mb-2">
@@ -181,7 +179,6 @@ const ProductById = () => {
         </div>
       </div>
 
-      {/* TABS SECTION */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
         <div className="flex border-b mb-6">
           {['Description', 'Additional Info', 'Reviews'].map((label, i) => (
@@ -202,10 +199,14 @@ const ProductById = () => {
           </div>
         )}
 
-        {tab === 'Additional' && (
+        {tab === 'Additional' && product.additional && (
           <div className="text-gray-700 space-y-2">
-            <p>Shipping: Free across India</p>
-            <p>Stock Status: Available</p>
+            {product.additional.map((item, index) => (
+              <div key={index} className="flex justify-between border-b py-2">
+                <span className="font-medium">{item.label}</span>
+                <span>{item.value}</span>
+              </div>
+            ))}
           </div>
         )}
 
