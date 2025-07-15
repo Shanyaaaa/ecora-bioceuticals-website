@@ -94,6 +94,43 @@ import SameLivSyrup2 from './SameLivSyrup-3.jpg';
 import SameLivSyrup3 from './SameLivSyrup-4.jpg';
 import SameLivSyrup4 from './SameLivSyrup-5.jpg';
 
+import CVDSupport from './CVD Support1.jpg';
+import CVDSupport2 from './CVD Support2.jpg';
+import CVDSupport3 from './CVD Support3.jpg';
+import CVDSupport4 from './CVD Support4.jpg';
+
+import AllergySupport from './Allergy Support1.jpg';
+import AllergySupport2 from './Allergy Support2.jpg';
+import AllergySupport3 from './Allergy Support3.jpg';
+import AllergySupport4 from './Allergy Support4.jpg';
+import Gutora1 from './Gutora1.jpg';
+import Gutora2 from './Gutora2.jpg';
+import Gutora3 from './Gutora3.jpg';
+import Gutora4 from './Gutora4.jpg';
+import Gutora5 from './Gutora5.jpg';
+import Flexi1 from './Flexi1.jpg';
+import Flexi2 from './Flexi2.jpg';
+import Flexi3 from './Flexi3.jpg';
+import Flexi4 from './Flexi4.jpg';
+import FlexiE1 from './FlexiE1.jpg';
+import FlexiE2 from './FlexiE2.jpg';
+import FlexiE3 from './FlexiE3.png';
+import FlexiE4 from './FlexiE4.jpg';
+import FlexiE5 from './FlexiE5.jpg';
+import ZymeTBR1 from './ZymeTBR1.jpg';
+import ZymeTBR2 from './ZymeTBR2.jpg';
+import ZymeTBR3 from './ZymeTBR3.jpg';
+import ZymeTBR4 from './ZymeTBR4.jpg';
+import Liposomol1 from './Liposomol1.jpg';
+import Liposomol2 from './Liposomol2.jpg';
+import Liposomol3 from './Liposomol3.jpg';
+import Liposomol4 from './Liposomol4.jpg';
+import VitaTab1 from './VitaTab1.jpg';
+import VitaTab2 from './VitaTab2.jpg';
+import VitaTab3 from './VitaTab3.jpg';
+import VitaTab4 from './VitaTab4.jpg';
+import VitaTab5 from './VitaTab5.jpg';
+
 import Founder from './founder.png';
 import Payment from './payment.gif';
 import Razorpay from './Razorpay.png';
@@ -1146,2457 +1183,569 @@ export const products = [
   },
 
   {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
+    _id: 'MPS CVD Support Tabs',
+    name: 'MPS CVD Support Tabs | Advanced Cardiovascular Health Support for Pets | CoQ10, L-Carnitine, and Antioxidants',
+    description: 'Comprehensive heart health support for pets featuring CoQ10, Arjuna, Moringa, and essential amino acids to maintain cardiovascular function, manage blood pressure, and enhance energy metabolism.',
+    price: 650,
     image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
+      CVDSupport,
+      CVDSupport2,
+      CVDSupport3,
+      CVDSupport4
     ],
     category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
+    subCategory: ['Cardiac Support', 'Blood Pressure', 'Energy Metabolism'],
+    conditions: ['Heart Disease', 'Palpitations', 'Hypertension', 'Arrhythmia'],
+    sizes: ['60 Tablets'],
     bestseller: false,
     details: [
       {
         title: 'Key Benefits',
         content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
+          'Supports cardiovascular function and heart muscle strength',
+          'Helps in managing high blood pressure and rapid heartbeat',
+          'Promotes circulation and energy production',
+          'Protects heart muscles from free radical damage',
+          'Supports cholesterol balance and blood vessel flexibility'
         ]
       },
       {
         title: 'Key Ingredients & Their Benefits',
         content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
+          '<b>Arjuna Bark Extract (100 mg)</b>: Strengthens heart muscles, acts as cardiotonic, aids in plaque dissolution, and promotes blood flow',
+          '<b>Moringa Oleifera (50 mg)</b>: Rich in vitamins and minerals, helps reduce blood pressure, supports kidney function and cholesterol control',
+          '<b>L-Carnitine (125 mg)</b>: Converts fatty acids into energy, improves activity post heart failure and boosts cardiac function',
+          '<b>L-Taurine (125 mg)</b>: Essential amino acid that aids in treating cardiomyopathy and retinal degeneration',
+          '<b>L-Arginine (25 mg)</b>: Converts to nitric oxide, improving artery function and circulation',
+          '<b>Vitamin E (30 IU)</b>: Antioxidant that supports cellular health and heart function',
+          '<b>Coenzyme Q10 (10 mg)</b>: Enhances ATP production, improves energy, oxygen utilization, and supports dental and liver health',
+          '<b>Lycopene (10 mg)</b>: Antioxidant with anti-inflammatory and anti-atherogenic properties that support endothelial function and blood pressure regulation',
+          '<b>Folic Acid (0.5 mg)</b>: Reduces homocysteine levels, minimizing risk of artery hardening and blood clots',
+          '<b>Magnesium (0.5 mg)</b>: Maintains healthy heart rhythm by aiding electrolyte transport',
+          '<b>Potassium (0.2 mg)</b>: Regulates heartbeat through myocardium electrical signals',
+          '<b>Selenium (50 mcg)</b>: Prevents myocardial dysfunction and supports cardiovascular health'
         ]
       },
       {
         title: 'Suggested Use',
         content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
+          'Cats: Half tablet daily',
+          'Dogs: One tablet per 10–15 kg body weight daily',
+          'If giving more than one tablet, divide between AM and PM',
+          'Or as directed by veterinarian'
         ]
       },
       {
         title: 'Recommended In',
         content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
+          'Heart diseases including high blood pressure, palpitations, and arrhythmia',
+          'Pets at risk or recovering from cardiac conditions',
+          'Pets with poor circulation or heart rhythm imbalance',
+          'Geriatric pets needing energy and cardiovascular support'
         ]
       },
       {
         title: 'Why Choose This Supplement?',
         content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
+          'Powerful blend of cardioprotective ingredients including Arjuna, CoQ10, and amino acids',
+          'Formulated to maintain healthy heart rate, circulation, and blood pressure',
+          'Supports muscle recovery, detoxification, and energy production',
+          'Veterinarian-recommended for long-term heart care',
+          'Ideal for senior and active working pets'
         ]
       },
       {
         title: 'Packing',
-        content: ['100 ml Syrup Bottle']
+        content: ['60 Tablets']
       }
     ]
   },
-
   {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
+    _id: 'MPS Allergy Support Tabs',
+    name: 'MPS Allergy Support Tablets for Pets | Advanced Allergy Relief with Natural Ingredients | Immune System Booster',
+    description: 'Relieves seasonal allergies, itching, rashes, and respiratory distress with a blend of quercetin, herbs, and essential fatty acids.',
+    price: 350,
     image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
+      AllergySupport,
+      AllergySupport2,
+      AllergySupport3,
+      AllergySupport4
     ],
     category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
+    subCategory: ['Skin Allergies', 'Respiratory Allergies', 'Seasonal Allergies'],
+    conditions: ['Itching', 'Rashes', 'Sneezing', 'Runny Nose', 'Watery Eyes'],
+    sizes: ['30 Tablets'],
     bestseller: false,
     details: [
       {
         title: 'Key Benefits',
         content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
+          'Provides relief from itching, scratching, gnawing, and chewing',
+          'Helps soothe skin rashes, hot spots, and allergic dermatitis',
+          'Supports relief from sneezing, runny nose, and watery eyes',
+          'Natural, palatable formulation with convenient daily dosing',
+          'Promotes healthy immune response and reduces inflammation'
         ]
       },
       {
         title: 'Key Ingredients & Their Benefits',
         content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
+          '<b>Quercetin (100 mg)</b>: Natural antihistamine and anti-inflammatory agent that reduces allergy symptoms and stabilizes mast cells. Although quercetin is a relatively safe supplement for dogs & cats. Some of the Quercetin properties are:',
+          '🟢 <b>Antihistamine Properties</b>: Suppresses the release of histamine from mast cells, reducing itching, sneezing, and allergic responses.',
+          '🟢 <b>Anti-inflammatory Properties</b>: Inhibits inflammation-regulating enzymes, helping relieve swelling, redness, and skin irritation.',
+          '🟢 <b>Bronchitis Relief</b>: Inhibits leukotrienes (inflammatory lipids), which helps reduce bronchoconstriction and supports easier breathing.',
+         '<b>Nettle Leaf (100 mg)</b>: Works as an antihistamine, soothes itchy skin, supports seasonal allergy relief',
+          '<b>Turmeric Root Extract (60 mg)</b>: Anti-inflammatory and antioxidant that supports skin health and reduces irritation',
+          '<b>Burdock Root (50 mg)</b>: Promotes toxin elimination and supports liver and skin health, helps manage eczema and psoriasis',
+          '<b>Bromelain (50 mg)</b>: Enhances the absorption and efficacy of quercetin, reduces inflammation and pain',
+          '<b>Licorice Root (50 mg)</b>: Supports respiratory health, soothes GI inflammation, and helps manage skin allergies',
+          '<b>Citrus Bioflavonoids (10 mg)</b>: Boosts Vitamin C activity, stabilizes mast cells, and reduces allergy severity',
+          '<b>EPA (30 mg)</b>: Omega-3 fatty acid that reduces inflammation and supports immune function',
+          '<b>DHA (20 mg)</b>: Supports skin barrier, reduces allergy-triggered inflammation, and promotes overall skin and coat health'
         ]
       },
       {
         title: 'Suggested Use',
         content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
+          'Administer during or after meals to avoid gastrointestinal upset',
+          'Consult your veterinarian before use in pets with known medical conditions',
+          'Not tested for use in pregnant animals or those intended for breeding'
         ]
       },
       {
         title: 'Recommended In',
         content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
+          'Seasonal and environmental allergies',
+          'Pets with itchy skin, hot spots, or dermatitis',
+          'Respiratory allergy symptoms like sneezing or watery eyes',
+          'Pets prone to inflammation and allergic reactions'
         ]
       },
       {
         title: 'Why Choose This Supplement?',
         content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
+          'Contains natural antihistamines like quercetin and nettle',
+          'Includes synergistic anti-inflammatory and detox herbs',
+          'Enriched with Omega-3s (EPA & DHA) for skin health',
+          'Veterinarian-trusted formula for allergy relief',
+          'Supports immune regulation and mast cell stability'
         ]
       },
       {
         title: 'Packing',
-        content: ['100 ml Syrup Bottle']
+        content: ['30 Tablets']
       }
     ]
   },
-
   {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
+  _id: 'Gutora Tabs',
+  name: 'Gutora Tabs for Pets | Advanced Gut Health Supplement | Prebiotics, Probiotics, Papaya & Pumpkin Extract | Digestive Enzymes',
+  description: 'Gut health support formula enriched with prebiotics, probiotics, papaya, pumpkin extract, and digestive enzymes for pets of all ages.',
+  price: 300,
+  image: [
+    Gutora1,
+    Gutora2,
+    Gutora3,
+    Gutora4
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Gut Health', 'Digestion', 'Immunity'],
+  conditions: ['Diarrhea', 'Leaky Gut Syndrome', 'Irritable Bowel Syndrome'],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports gut flora balance and digestive health',
+        'Improves nutrient absorption and intestinal function',
+        'Helps manage diarrhea and leaky gut syndrome',
+        'Boosts immune response by supporting gut microbiota',
+        'Suitable for growing, adult, and geriatric pets'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Pumpkin Seed Extract (250 mg)</b>: Rich in fiber and antioxidants, helps regulate digestion and soothe the digestive tract',
+        '<b>Enzyme Blend (75 mg)</b>: Includes Amylase, Lipase, Cellulase, and Protease to aid digestion of carbohydrates, fats, fibers, and proteins',
+        '<b>Papaya Leaf Extract (50 mg)</b>: Natural source of digestive enzymes like papain; helps improve gut motility and relieve constipation',
+        '<b>Probiotic Blend – Total 5.4 Billion CFU/gm</b>: Includes Bacillus coagulans, Lactobacillus acidophilus, L. plantarum, L. brevis, L. fermentum, and L. lactis to maintain intestinal microflora and boost immunity'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '🐾 <b>Cats, Small Dogs, Medium Dogs</b>: 1 tablet twice a day',
+        '🐾 <b>Large Dogs</b>: 2 tablets twice a day',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Growing animals for better gut health and immunity',
+        'Adult animals for improved digestion and vitality',
+        'Geriatric animals to prevent age-related microflora imbalance',
+        'Pets suffering from diarrhea, leaky gut syndrome, or IBS'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Complete blend of prebiotics, probiotics, enzymes, and herbal extracts',
+        'Supports digestion across all life stages—from puppies and kittens to seniors',
+        'Helps restore and maintain gut microflora during and after illness',
+        'Vet-formulated and safe for daily use'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
+{
+  _id: 'Fleximaxx Joint Support Tabs',
+  name: 'Fleximaxx Joint Support Tablets for Pets | Maximum Flexibility & Mobility | Hip & Joint Care Supplement for Dogs & Cats',
+  description: 'Advanced joint care supplement with collagen, glucosamine, MSM, and anti-inflammatory herbs to support mobility, flexibility, and recovery in pets.',
+  price: 495,
+  image: [
+    Flexi1,
+    Flexi2,
+    Flexi3,
+    Flexi4
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Joint Support', 'Mobility', 'Flexibility'],
+  conditions: ['Osteoarthritis', 'Rheumatoid Arthritis', 'Joint Disorders', 'Hip Dysplasia', 'Elbow Dysplasia', 'Post-Surgery Recovery'],
+  sizes: ['3x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports maximum joint flexibility and mobility in pets',
+        'Helps in the repair and regeneration of cartilage',
+        'Maintains optimal levels of synovial fluid',
+        'Supports bone and connective tissue healing post-fracture or surgery',
+        'Useful in managing hip & elbow dysplasia, arthritis, and joint disorders',
+        'Strengthens joints in growing and geriatric animals'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Glucosamine Hydrochloride (500 mg)</b>: Supports collagen production, reduces arthritis-related pain and inflammation, and forms synovial fluid and cartilage.',
+        '<b>Methyl Sulphonyl Methane (MSM) (300 mg)</b>: Works with glucosamine to produce collagen, improves circulation, reduces scar tissue, and acts as an antioxidant.',
+        '<b>Boswellia serrata (50 mg)</b>: Regulates immune response, supports joint strength, and helps reduce inflammatory prostaglandins and free radicals.',
+        '<b>Withania somnifera (50 mg)</b>: Acts as a rejuvenator, reduces inflammation, supports nervous and cardiovascular systems, and works synergistically with Boswellia.',
+        '<b>Chondroitin Sulphate (32 mg)</b>: Prevents cartilage breakdown, supports flexibility, shock absorption, and joint strength.',
+        '<b>Vitamin C (12.5 mg)</b>: Antioxidant that enhances bone formation, collagen synthesis, and boosts immunity.',
+        '<b>Manganese Sulphate (10 mg)</b>: Essential micronutrient for enzyme function, bone, and cartilage maintenance.',
+        '<b>Collagen Peptide (20 mg)</b>: Regenerates bones, tendons, and cartilage; contains essential amino acids.',
+        '<b>Curcuma Longa (Turmeric) (20 mg)</b>: Curcumin blocks inflammatory cytokines and enzymes, reducing joint pain and swelling.',
+        '<b>Rosehip Extract (10 mg)</b>: Rich in polyphenols and flavonoids; provides antioxidant activity and protects joints from oxidative stress and inflammation.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '<b>For Dogs:</b>',
+        'Correction phase (4–6 weeks):',
+        '- < 20 kg: 1 tablet daily',
+        '- 20–40 kg: 2 tablets daily',
+        '- > 40 kg: 3 tablets daily',
+        'Maintenance phase (long term): Half of the above dosage',
+        '',
+        '<b>For Cats:</b>',
+        'Correction phase (4–6 weeks):',
+        '- < 5 kg: ¼ tablet daily',
+        '- > 5 kg: ½ tablet daily',
+        'Maintenance phase: Same dose on alternate days',
+        '',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Management of osteoarthritis and rheumatoid arthritis',
+        'Repair and regeneration of cartilage',
+        'Joint disorders in geriatric pets',
+        'Joint support in growing animals',
+        'Post-fracture healing and recovery from joint surgery',
+        'Managing hip and elbow dysplasia',
+        'Improving joint health and connective tissue function'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Comprehensive blend of joint-supportive ingredients and herbs',
+        'Targets pain, inflammation, cartilage protection and regeneration',
+        'Includes collagen, turmeric, and rosehip for added antioxidant and joint support',
+        'Vet-formulated chewable tablets for easy administration',
+        'Safe for long-term use in pets of all sizes and life stages'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['Chewable Tablets – 3x10 (30 Tablets)']
+    }
+  ]
+},
+{
+  _id: 'Fleximaxx Elite Tabs',
+  name: 'Fleximaxx Elite Tabs | Advanced Joint Support Supplement for Pets | Mobility & Flexibility Support | 30 Tablets',
+  description: 'Veterinary strength joint support formula with Glucosamine HCl, Chondroitin, MSM, Boswellia, Turmeric, Cissus quadrangularis, Hyaluronic Acid and more.',
+  price: 1050,
+  image: [
+    FlexiE1,
+    FlexiE2,
+    FlexiE3,
+    FlexiE4,
+    FlexiE5
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Joint Support', 'Mobility', 'Bone Strength'],
+  conditions: ['Osteoarthritis', 'Rheumatoid Arthritis', 'Hip Dysplasia', 'Elbow Dysplasia', 'Fracture Recovery', 'Joint Pain'],
+  sizes: ['1x15 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Power-packed formula for advanced joint support and flexibility',
+        'Helps in cartilage repair and synovial fluid maintenance',
+        'Effective in managing arthritis and joint degeneration',
+        'Reduces pain, inflammation, and supports faster fracture recovery',
+        'Suitable for pets with hip/elbow dysplasia or post-surgical needs'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Glucosamine HCl (500 mg, Purity >99%)</b>: Superior purity; supports joint lubrication, collagen production, and cartilage protection.',
+        '<b>Chondroitin Sulfate (400 mg, Purity 100%)</b>: Boosts cartilage strength and flexibility; promotes water retention and shock absorption.',
+        '<b>MSM (100 mg)</b>: Sulfur compound that reduces inflammation and pain, promotes collagen production, and improves circulation.',
+        '<b>Cissus Quadrangularis (50 mg)</b>: Reduces swelling, aids bone healing and minimizes inflammation better than standard arthritis medications.',
+        '<b>Boswellia Extract (50 mg, Boswellic Acid > 65%)</b>: Regulates immune response, inhibits inflammatory enzymes, and supports joint strength.',
+        '<b>Turmeric Extract (50 mg, Curcuminoids > 95%)</b>: Contains highly concentrated curcumin; reduces joint swelling and improves mobility.',
+        '<b>Vitamin C – Calcium Ascorbate (40 mg)</b>: Boosts collagen synthesis and antioxidant protection with better GI tolerance.',
+        '<b>EPA (30 mg)</b>: Omega-3 fatty acid that reduces inflammation and supports joint health.',
+        '<b>Hyaluronic Acid (25 mg)</b>: Acts as a shock absorber and lubricates joints by binding water within the synovial fluid.',
+        '<b>Native Type II Collagen Peptide (20 mg)</b>: Supports cartilage regeneration and provides long-term joint protection.',
+        '<b>DHA (20 mg)</b>: Omega-3 fatty acid with anti-inflammatory effects for improved joint flexibility and mobility.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '<b>For Dogs:</b>',
+        'Correction phase (4–6 weeks):',
+        '- < 20 kg: 1 tablet daily',
+        '- 20–40 kg: 2 tablets daily',
+        '- > 40 kg: 3 tablets daily',
+        'Maintenance phase: Half of the above dosage',
+        '',
+        '<b>For Cats:</b>',
+        'Correction phase (4–6 weeks):',
+        '- < 5 kg: ½ tablet daily',
+        '- > 5 kg: ½ tablet daily',
+        'Maintenance phase: Same dose on alternate days',
+        '',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Management of osteoarthritis and rheumatoid arthritis',
+        'Joint degeneration and chronic joint disorders',
+        'Regeneration of cartilage in aging pets',
+        'Post-operative support for joint surgeries and fractures',
+        'Growing pets for strengthening joints',
+        'Managing hip and elbow dysplasia',
+        'Maintaining joint health and connective tissue function'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Includes premium-grade Glucosamine HCl, Chondroitin, MSM and hyaluronic acid',
+        'High-potency extracts with superior purity and bioavailability',
+        'Enhanced anti-inflammatory and antioxidant effect with turmeric and boswellia',
+        'Supports mobility, comfort, and joint structure long term',
+        'Vet-formulated and ideal for both cats and dogs'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x15 Tablets']
+    }
+  ]
+},
+{
+  _id: 'Zyme-TBR Tablets',
+  name: 'Zyme-TBR | Proteolytic Enzyme Support for Inflammation, Trauma & Wound Healing | 3x10 Tablets',
+  description: 'Advanced enzyme formula for reducing inflammation, swelling, pain, and promoting wound healing in dogs and cats.',
+  price: 690,
+  image: [
+    ZymeTBR1,
+    ZymeTBR2,
+    ZymeTBR3
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Wound Care', 'Trauma Recovery', 'Joint Support'],
+  conditions: ['Inflammation', 'Arthritis', 'Fracture Healing', 'Post Surgery', 'Otitis Media', 'Otitis Externa'],
+  sizes: ['3x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Facilitates wound healing and tissue repair by enzymatic action',
+        'Reduces pain, inflammation, swelling, and bruising effectively',
+        'Improves antibiotic penetration at infection site',
+        'Natural antihistamine effect beneficial in allergic reactions',
+        'Enteric coating ensures enzyme delivery without stomach degradation'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Trypsin (48 mg)</b>: Proteolytic enzyme that removes dead and necrotic tissue, enhances immune response, and prevents pathogen growth. Also helps dissolve blood clots and reduce inflammation.',
+        '<b>Bromelain (90 mg)</b>: Derived from pineapple stem, it breaks down inflammatory agents like kinin and fibrin. Acts as a natural antihistamine to reduce allergic reactions, swelling, and inflammation.',
+        '<b>Rutoside Trihydrate (100 mg)</b>: Natural flavonoid with strong anti-inflammatory, antioxidant, and circulatory benefits. Reduces capillary permeability, blocks platelet aggregation, and accelerates healing.',
+        '<b>Enteric Coating</b>: Protects enzymes from stomach acid and ensures release in the intestines, enhancing effectiveness and avoiding interactions with NSAIDs and antibiotics.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Administer 1 tablet 2–3 times a day',
+        'Must be given whole — do not crush or chew',
+        'Give 1 hour before food for optimal absorption',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Pets with wounds, abscesses, or trauma',
+        'Post-surgery recovery support',
+        'Fracture healing and inflammation reduction',
+        'Arthritic pain and swelling',
+        'Otitis externa and media (ear inflammation)',
+        'Animals with sluggish circulation or bruising'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Next-generation proteolytic enzymes with broad anti-inflammatory action',
+        'Natural origin ingredients for safe long-term use',
+        'Faster wound recovery and reduced inflammation vs traditional NSAIDs',
+        'Supports immunity, collagen protection, and joint health',
+        'Vet-recommended enteric-coated formula'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['3x10 Enteric Coated Tablets']
+    }
+  ]
+},
+{
+  _id: 'MPS Liposomal Apigenin',
+  name: 'MPS Liposomal Apigenin | Anti-Cancer & Senolytic Support for Pets | 1x10 Tablets',
+  description:
+    'Liposomal apigenin with enhanced bioavailability to support anti-cancer treatment, inflammation reduction, and immune health in pets.',
+  price: 850,
+  image: [
+    Liposomol1,
+    Liposomol2,
+    Liposomol3,
+    Liposomol4,
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Cancer Support', 'Immunity', 'Senolytics'],
+  conditions: ['All Types of Cancer', 'Metastasis', 'Inflammation', 'Immune Deficiency', 'Senescent Cell Accumulation'],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Targets and inhibits cancer cell proliferation, growth, and metastasis',
+        'Enhances the effectiveness of chemotherapy and other conventional therapies',
+        'Reduces overexpressed genes linked to cancer development',
+        'Promotes apoptosis (cancer cell death) and autophagy (cell cleanup)',
+        'Clears senescent cells and reduces age-related inflammation',
+        'Minimizes side effects of cancer treatments while protecting healthy cells',
+        'Improves immune health and overall well-being in pets',
+        'Formulated with liposomal delivery system for superior absorption and bioavailability'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Apigenin</b>: Natural flavonoid that inhibits cancer cell growth, induces apoptosis and autophagy, disrupts cell cycle and motility, and reduces drug resistance. Offers selective targeting to cancer cells.',
+        '<b>Resveratrol</b>: Potent anti-inflammatory and anti-cancer agent that disrupts cancer cell growth pathways and supports healthy immune response.',
+        '<b>Fisetin</b>: Suppresses cell growth, induces apoptosis, reduces angiogenesis, and prevents cancer spread. Boosts chemotherapy impact.',
+        '<b>Quercetin</b>: Inhibits tumor proliferation and metastasis, supports anti-cancer pathways, and is backed by strong clinical evidence.',
+        '<b>Theaflavins</b>: Provide multi-pathway anti-cancer support by controlling tumor growth and spread.',
+        '<b>Liposomal Delivery</b>: Encapsulation technology that increases apigenin’s absorption by bypassing GI degradation and improving cellular uptake.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '1 to 3 tablets per day depending on condition severity',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'All types of cancer and tumors',
+        'Pets undergoing chemotherapy or post-cancer care',
+        'Metastasis and cancer cell migration',
+        'Compromised immune system function',
+        'High senescent cell count due to aging or disease',
+        'Chronic inflammation or immune dysregulation'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Liposomal delivery enhances bioavailability and clinical efficacy',
+        'Comprehensive anti-cancer, senolytic, and immune-boosting formula',
+        'Can be used alongside conventional treatments for improved results',
+        'Natural ingredients with scientific backing and minimal side effects',
+        'Recommended by veterinarians for pets with serious health conditions'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
 
 
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
 
 
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
 
 
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
 
 
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
 
 
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
 
 
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
 
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
-
-  {
-    _id: 'Same-Liv Syrup',
-    name: 'Same-Liv Syrup 100ml | Same + Silymarin Liver Support',
-    description:
-      'Effective for chronic liver conditions and appetite loss.',
-    price: 450,
-    image: [
-      sameLivFront,
-      sameLivBack,
-      SameLivSyrup2,
-      SameLivSyrup3,
-      SameLivSyrup4
-    ],
-    category: 'Cats,Dogs',
-    subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
-    conditions: ['Liver Health'],
-    sizes: ['100ml'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Power-packed formula for liver support and appetite regulation',
-          'Ideal for pets with chronic liver disorders or recovering from infections',
-          'Promotes liver cell regeneration and detoxification',
-          'Improves energy metabolism, heart health, and exercise capacity',
-          'Helps manage IBD, cirrhosis, and hepatitis'
-        ]
-      },
-      {
-        title: 'Key Ingredients & Their Benefits',
-        content: [
-          'SAMe (300 mg): Enhances liver detox, regeneration, and inflammation balance',
-          'Silybin (20 mg): Antioxidant that promotes liver recovery and protects against toxins',
-          'Ursodiol (300 mg): Aids fat digestion, reduces bile cholesterol, improves liver and GI health',
-          'BCAAs – L-Leucine (380 mg), L-Isoleucine (190 mg), L-Valine (190 mg): Support muscle repair, endurance, and recovery in active pets',
-          'L-Carnitine (50 mg): Boosts energy production, supports heart function, aids in fat metabolism'
-        ]
-      },
-      {
-        title: 'Suggested Use',
-        content: [
-          '0–5 kg: 2.5 ml per day',
-          '5–15 kg: 5 ml per day',
-          '15–25 kg: 7.5 ml per day',
-          '25–40 kg: 10 ml per day',
-          '40–50 kg: 15 ml per day',
-          'Above 50 kg: 20 ml per day',
-          'Or as directed by the veterinarian'
-        ]
-      },
-      {
-        title: 'Recommended In',
-        content: [
-          'Pets with liver disorders or chronic liver diseases',
-          'Recovery from infections and poor appetite (inappetence)',
-          'Drug-induced liver damage',
-          'Support therapy for cirrhosis, fibrosis, hepatitis, and IBD'
-        ]
-      },
-      {
-        title: 'Why Choose This Supplement?',
-        content: [
-          'Formulated by veterinary nutrition experts',
-          'High-grade, research-supported ingredients',
-          'Covers liver, digestive, immune, and muscular health',
-          'Safe and effective daily support for long-term use'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['100 ml Syrup Bottle']
-      }
-    ]
-  },
 
 
 ];
@@ -3698,6 +1847,44 @@ export const assets = {
   SporipetTab3,
   SporipetTab4,
   SporipetTab5,
+  AllergySupport,
+  AllergySupport2,
+  AllergySupport3,
+  AllergySupport4,
+  Gutora1,
+  Gutora2,
+  Gutora3,
+  Gutora4,
+  Gutora5,
+  Flexi1,
+  Flexi2,
+  Flexi3,
+  Flexi4,
+  FlexiE1,
+  FlexiE2,
+  FlexiE3,
+  FlexiE4,
+  FlexiE5,
+  ZymeTBR1,
+  ZymeTBR2,
+  ZymeTBR3,
+  ZymeTBR4,
+  Liposomol1,
+  Liposomol2,
+  Liposomol3,
+  Liposomol4,
+  VitaTab1,
+  VitaTab2,
+  VitaTab3,
+  VitaTab4,
+  VitaTab5,
+
+
+
+  CVDSupport,
+  CVDSupport2,
+  CVDSupport3,
+  CVDSupport4,
   Founder,
   Payment,
   Razorpay
