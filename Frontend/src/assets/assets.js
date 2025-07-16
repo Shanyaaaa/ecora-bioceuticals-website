@@ -93,8 +93,14 @@ import sameLivFront from './same_liv_front.jpg';
 import SameLivSyrup2 from './SameLivSyrup-3.jpg';
 import SameLivSyrup3 from './SameLivSyrup-4.jpg';
 import SameLivSyrup4 from './SameLivSyrup-5.jpg';
+import ArtimarinE1 from './ArtimarinE1.jpg';
+import ArtimarinE2 from './ArtimarinE2.jpg';
+import ArtimarinE3 from './ArtimarinE3.jpg';
+import ArtimarinE4 from './ArtimarinE4.jpg';
+import ArtimarinE5 from './ArtimarinE5.jpg';
 
-import CVDSupport from './CVD Support1.jpg';
+
+import CVDSupport1 from './CVD Support1.jpg';
 import CVDSupport2 from './CVD Support2.jpg';
 import CVDSupport3 from './CVD Support3.jpg';
 import CVDSupport4 from './CVD Support4.jpg';
@@ -161,6 +167,38 @@ import Samelivlarge2 from './Samelivlarge2.jpg';
 import Samelivlarge3 from './Samelivlarge3.jpg';
 import Samelivlarge4 from './Samelivlarge4.jpg';
 import Samelivlarge5 from './Samelivlarge5.jpg';
+import Ecowormtab1 from './Ecowormtab1.jpg';
+import Ecowormtab2 from './Ecowormtab2.jpg';
+import Ecowormtab3 from './Ecowormtab3.jpg';
+import Ecowormtab4 from './Ecowormtab4.jpg';
+import Ecowormtab5 from './Ecowormtab5.jpg';
+import SamelivMed1 from './SamelivMed1.jpg';
+import SamelivMed2 from './SamelivMed2.jpg';
+import SamelivMed3 from './SamelivMed3.jpg';
+import SamelivMed4 from './SamelivMed4.jpg';
+import SamelivMed5 from './SamelivMed5.jpg';
+import SmallZymeMandL1 from './SmallZymeMandL1.jpg';
+import SmallZymeMandL2 from './SmallZymeMandL2.jpg';
+import SmallZymeMandL3 from './SmallZymeMandL3.jpg';
+import SmallZymeMandL4 from './SmallZymeMandL4.jpg';
+import SmallZymeTab1 from './SmallZymeTab1.jpg';
+import SmallZymeTab2 from './SmallZymeTab2.jpg';
+import SmallZymeTab3 from './SmallZymeTab3.jpg';
+import SmallZymeTab4 from './SmallZymeTab4.jpg';
+import CKDsupportcat1 from './CKDsupportcat1.jpg';
+import CKDsupportcat2 from './CKDsupportcat2.jpg';
+import CKDsupportcat3 from './CKDsupportcat3.jpg';
+import CKDsupportcat4 from './CKDsupportcat4.jpg';
+import CKDsupportcat5 from './CKDsupportcat5.jpg';
+import CKDsupportdog1 from './CKDsupportdog1.jpg';
+import CKDsupportdog2 from './CKDsupportdog2.jpg';
+import CKDsupportdog3 from './CKDsupportdog3.jpg';
+import CKDsupportdog4 from './CKDsupportdog4.jpg';
+import CKDsupportdog5 from './CKDsupportdog5.jpg';
+
+
+
+
 
 
 import Founder from './founder.png';
@@ -1310,7 +1348,7 @@ export const products = [
     description: 'Comprehensive heart health support for pets featuring CoQ10, Arjuna, Moringa, and essential amino acids to maintain cardiovascular function, manage blood pressure, and enhance energy metabolism.',
     price: 650,
     image: [
-      CVDSupport,
+      CVDSupport1,
       CVDSupport2,
       CVDSupport3,
       CVDSupport4
@@ -2409,7 +2447,511 @@ export const products = [
       content: ['1x10 Tablets']
     }
   ]
+},
+{
+  _id: 'EcoWorm Deworming Tablets',
+  name: 'EcoWorm Deworming Tablets for Pets | Broad Spectrum Anthelmintic | 1x10 Tablets',
+  description:
+    'Natural deworming formula with enzymes, probiotics, and botanicals to gently eliminate worms, support digestion, and improve gut health in dogs and cats.',
+  price: 200,
+  image: [
+    Ecowormtab1,
+    Ecowormtab2,
+    Ecowormtab3,
+    Ecowormtab4,
+    Ecowormtab5
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Deworming', 'Digestive Health', 'Gut Support'],
+  conditions: ['Worm Infestation', 'Digestive Imbalance', 'Bloating', 'Poor Gut Flora'],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Helps remove worms and harmful bacteria naturally',
+        'Supports healthy digestion and nutrient absorption',
+        'Soothes gastrointestinal tract and reduces bloating',
+        'Works gently without harsh chemicals or toxins',
+        'Contains probiotics to restore gut flora balance',
+        'Safe and effective for regular deworming cycles'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Papain (56,000 FCC PU)</b>: Digestive enzyme that aids in protein breakdown and supports overall gut health.',
+        '<b>Cellulase (500 CU)</b>: Helps break down plant fibers to improve digestion and nutrient uptake.',
+        '<b>L. Sporogenes (1×10⁴ CFU)</b>: Probiotic that enhances intestinal flora, immunity, and digestion.',
+        '<b>Ginger Powder (5 mg)</b>: Natural digestive soother that reduces gas, bloating, and stomach discomfort.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Small Dogs & Cats: 1 tablet twice daily for 2 days',
+        'Medium & Large Dogs: 2 tablets twice daily for 2 days',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Worm infestations including roundworms, hookworms, and whipworms',
+        'Digestive discomfort and irregular bowel movements',
+        'Bloating, poor appetite, and stomach sensitivity',
+        'Post-deworming recovery to support healthy gut flora'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Natural alternative to chemical dewormers',
+        'Enzyme-rich formula supports digestive health while eliminating worms',
+        'Probiotic support restores gut balance post-deworming',
+        'Gentle on the stomach and safe for regular use in dogs and cats',
+        'Vet-trusted formula for overall gastrointestinal care'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
+{
+  _id: 'SAMe-Liv Medium',
+  name: 'SAMe-Liv Medium | Liver Support Supplement for Dogs | 1x10 Tablets',
+  description:
+    'Veterinary-grade liver support tablets containing S-Adenosylmethionine and Silybin to promote liver detoxification, regeneration, and antioxidant defense in dogs.',
+  price: 400,
+  image: [
+     SamelivMed1,
+    SamelivMed2,
+    SamelivMed3,
+    SamelivMed4,
+    SamelivMed5,
+
+  ],
+  category: 'Dogs',
+  subCategory: ['Liver Support', 'Detox', 'Antioxidant'],
+  conditions: [
+    'Liver Disorders',
+    'Drug-Induced Hepatotoxicity',
+    'Hepatitis',
+    'Inappetance',
+    'Fibrosis',
+    'Liver Cirrhosis',
+    'Irritable Bowel Disease',
+    'Post-Infection Recovery'
+  ],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports detoxification and metabolic liver function',
+        'Enhances liver cell regeneration and repair',
+        'Increases glutathione levels in the liver for antioxidant protection',
+        'Helps reduce inflammation and oxidative stress in liver tissue',
+        'Supports recovery from infectious diseases and drug-induced liver damage',
+        'Improves appetite and overall vitality in pets with liver dysfunction'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>S-Adenosylmethionine (225 mg)</b>: Active form of methionine that boosts glutathione levels, supports detoxification, and protects liver cells from oxidative damage.',
+        '<b>Silybin (24 mg)</b>: Highly bioavailable milk thistle extract with antioxidant and anti-inflammatory properties, promotes liver cell repair and regeneration.',
+        '<b>Methylation Support</b>: SAMe acts as a methyl donor for neurotransmitters and other biochemical reactions essential to cellular health.',
+        '<b>Sulfur Compound Synthesis</b>: Aids in synthesis of cysteine, glutathione, and other compounds essential for detox and antioxidant defense.',
+        '<b>Polyamine Synthesis</b>: Supports cell growth, neuronal function, and gene regulation, especially important during liver cell recovery.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Dogs (6–16 kg): 1 tablet daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Dogs with acute or chronic liver disease',
+        'Liver damage caused by toxins, drugs, or infections',
+        'Pets with reduced appetite due to hepatic issues',
+        'As supportive therapy in liver cirrhosis, fibrosis, hepatitis, or IBD',
+        'Dogs recovering from illness affecting liver function'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Contains both SAMe and Silybin for dual-action liver support',
+        'Formulated specifically for pets in mid-weight category',
+        'Supports antioxidant activity, detox pathways, and liver healing',
+        'Vet-recommended for liver and digestive care',
+        'Backed by clinical insights from human and veterinary medicine'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
+{
+  _id: 'Small-ZYME-ML-Dogs',
+  name: 'Small-ZYME | Systemic Enzyme Support for Medium & Large Dogs | 1x10 Tablets',
+  description:
+    'Systemic enzyme-based supplement designed to reduce inflammation, promote wound healing, dissolve fibrin clots, and enhance recovery in dogs. Formulated with proteolytic enzymes, Amla extract, and Rutin.',
+  price: 395,
+  image: [
+    SmallZymeMandL1,
+    SmallZymeMandL2,
+    SmallZymeMandL3,
+    SmallZymeMandL4
+  ],
+  category: 'Dogs',
+  subCategory: ['Wound Healing', 'Anti-Inflammatory', 'Immune Support'],
+  conditions: [
+    'Wounds & Cuts',
+    'Edema',
+    'Inflammation',
+    'Post-surgery Recovery',
+    'Tissue Injury',
+    'Free Radical Damage',
+    'Clot Removal',
+  ],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Provides systemic enzyme therapy for wound healing and inflammation control',
+        'Scavenges free radicals and promotes skin and tissue repair',
+        'Supports debridement of wounds by dissolving fibrin clots and necrotic tissue',
+        'Improves blood flow and reduces swelling (edema)',
+        'Enhances immune response and accelerates recovery after trauma or surgery',
+        'Safe and natural alternative for pain relief and wound management'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Protease (7250 units)</b>: A systemic proteolytic enzyme that breaks down inflammatory proteins, supports blood flow, and helps dissolve fibrin clots and dead tissue.',
+        '<b>Amla Extract (100 mg)</b>: Rich in antioxidants and known for its wound healing and anti-inflammatory properties. Amla extract has shown wound closure rates of up to 62%.',
+        '<b>Rutin (50 mg)</b>: A natural bioflavonoid that enhances the effectiveness of proteolytic enzymes and supports vascular health by reducing permeability and inflammation.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Medium Dogs: 1 tablet twice daily for 1 week',
+        'Large Dogs: 1–2 tablets twice daily for 1 week',
+        'Or as advised by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Post-surgical wound recovery',
+        'Inflammation and swelling due to injury or infection',
+        'Fibrin or clot accumulation',
+        'Debridement of necrotic tissue and wound care',
+        'Pets experiencing oxidative stress or free radical damage',
+        'Recovery aid after trauma or orthopedic procedures'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Formulated with clinically proven systemic enzymes and natural antioxidants',
+        'Promotes faster recovery and healing without harsh medications',
+        'Reduces inflammation, pain, and edema safely and effectively',
+        'Vet-formulated for medium and large breed dogs',
+        'Supports both internal and external healing processes'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
+{
+  _id: 'Small-ZYME Tablets',
+  name: 'Small-ZYME | Natural Enzyme-Based Wound Healing Support for Pets | 1x10 Tablets',
+  description:
+    'Natural proteolytic enzyme supplement for pets to reduce inflammation, support wound healing, and improve recovery after injuries or surgeries. Contains Protease, Amla Extract, and Rutin.',
+  price: 250,
+  image: [
+    SmallZymeTab1,
+    SmallZymeTab2,
+    SmallZymeTab3,
+    SmallZymeTab4,
+
+  ],
+  category: 'Dogs,Cats',
+  subCategory: ['Wound Healing', 'Anti-Inflammatory', 'Immune Support'],
+  conditions: ['Wounds', 'Inflammation', 'Injury Recovery', 'Post-Surgery Care'],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Shows anti-inflammatory effects for pets recovering from injuries',
+        'Promotes rapid wound healing and tissue regeneration',
+        'Scavenges free radicals and reduces oxidative stress',
+        'Dissolves fibrin clots and dead cells for effective wound debridement',
+        'Reduces edema and supports overall recovery',
+        'Supports systemic enzyme therapy to enhance immune health'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Small-Zyme</b>: Small-ZYME tablets from Ecora provide a proprietary blend of systemic enzymes for wound healing, reducing pain or inflammation and swelling after traumatic injuries or surgery in dogs & cats. It contains proteolytic enzymes that help improve blood flow, reduce edema, dissolve fibrin clots, and scavenge free radicals, thus promoting rapid wound debridement, skin, and tissue healing.',
+        '<b>Protease (NLT 3625 units)</b>: Breaks down proteins and helps against inflammation, pain, recovery from injury, and more when given apart from food. Systemic enzyme therapy, also called metabolic or proteolytic enzyme therapy, allows enzymes to enter the body where they can be used for healing rather than digestion. Proteolytic enzymes work best for inflammation when given away from meals and combined with bioflavonoids like rutin (rutoside). Systemic enzyme therapy is theorized to work by breaking down proteins in the blood that cause inflammation and by removing fibrin, which prolongs inflammation. It promotes health in every part of the body by reducing pain and inflammation, speeding healing, supporting a healthy immune system, shrinking tumors, and preventing metastasis from cancer. Amla Extract has excellent wound healing properties, with a 50% methanolic extract showing closure rates up to 62% compared to natural healing.',
+        '<b>Amla Extract (50 mg)</b>: Rich in antioxidants, promotes wound healing, boosts immunity, and improves skin recovery.',
+        '<b>Rutin (25 mg)</b>: A bioflavonoid that supports capillary strength, reduces inflammation, and enhances enzyme effectiveness.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Cats & Small Dogs: 1 tablet twice daily for 7 days',
+        'Medium Dogs: 2 tablets twice daily for 7 days',
+        'Large Dogs: 3 tablets twice daily for 7 days',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Pets recovering from wounds or surgeries',
+        'Inflammatory conditions or trauma',
+        'Pain management and tissue debridement',
+        'Immune system support post-injury'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Formulated with systemic enzymes for enhanced bioavailability',
+        'Includes antioxidants to speed up healing and reduce inflammation',
+        'Gentle yet effective solution for all pet sizes',
+        'Trusted by veterinarians for recovery protocols'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
+{
+  _id: 'MPS-CKD Support for Cats',
+  name: 'MPS-CKD Support for Cats | Kidney Health Supplement | 60 Capsules',
+  description:
+    'Advanced renal care supplement formulated exclusively for cats. Contains powerful natural ingredients that support kidney function, detoxification, and overall wellness in chronic and acute renal disorders.',
+  price: 700,
+  image: [
+    CKDsupportcat1,
+    CKDsupportcat2,
+    CKDsupportcat3,
+    CKDsupportcat4,
+    CKDsupportcat5
+  ],
+  category: 'Cat',
+  subCategory: ['Kidney Support', 'Detox', 'Immune Boost'],
+  conditions: [
+    'Chronic Renal Disease',
+    'Elevated Blood Urea Nitrogen (BUN)',
+    'Glomerulonephritis',
+    'Polycystic Kidney Disease',
+    'Nephrotic Syndrome',
+    'Acute Renal Disease'
+  ],
+  sizes: ['60 Capsules'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports normal kidney function in cats',
+        'Promotes detoxification and urinary health',
+        'Reduces oxidative stress on kidneys and liver',
+        'Boosts immune response and vitality',
+        'Helps manage symptoms of chronic renal failure',
+        'Improves circulation and cardiovascular support',
+        'Antioxidant protection for liver and kidneys'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Astragalus Root Extract (10:1, 25 mg)</b>: Enhances immune function, supports kidney health, and improves overall vitality.',
+        '<b>N-acetylcysteine (50 mg)</b>: Powerful antioxidant that aids liver detoxification and supports respiratory wellness.',
+        '<b>Rehmannia glutinosa Extract (5:1, 50 mg)</b>: Anti-inflammatory and adrenal supportive herb for kidney function.',
+        '<b>Rhubarb Extract (5:1, 50 mg)</b>: Supports digestion, kidney detox, and liver health.',
+        '<b>Milk Thistle (80% Silymarin, 50 mg)</b>: Protects liver cells, promotes detoxification, and helps manage liver stress.',
+        '<b>L-Arginine (50 mg)</b>: Improves cardiovascular health and boosts circulation and immune response.',
+        '<b>L-Glutamine (25 mg)</b>: Supports gut lining, muscle repair, and overall immunity.',
+        '<b>Asparagus Root Extract (5:1, 25 mg)</b>: Diuretic effect that supports urinary detox and kidney health.',
+        '<b>Dong Quai Extract (5:1, 25 mg)</b>: Improves blood circulation, hormone balance, and immune function.',
+        '<b>Szechuan Lovage Root Extract (5:1, 25 mg)</b>: Supports joint health and cardiovascular circulation.',
+        '<b>Cordyceps Extract (5:1, 12.5 mg)</b>: Boosts energy, respiratory efficiency, and immune support.',
+        '<b>Ginkgo Biloba Extract (12.5 mg)</b>: Promotes blood flow and cognitive health with antioxidant protection.',
+        '<b>Green Tea Extract (55% EGCG, 12.5 mg)</b>: Powerful antioxidant that supports cellular detox and reduces inflammation.',
+        '<b>Hawthorn Extract (3.2% Vitexin, 12.5 mg)</b>: Supports cardiovascular function and reduces oxidative stress.',
+        '<b>Melatonin (500 mcg)</b>: Helps regulate rest cycles and contributes antioxidant protection.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'One capsule per 4.5 kg of body weight, twice daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Chronic renal diseases in cats',
+        'Elevated blood urea nitrogen (BUN)',
+        'Glomerulonephritis and polycystic kidney conditions',
+        'Nephrotic syndrome and acute kidney issues',
+        'Liver support and detoxification alongside kidney function',
+        'Immune-compromised or senior cats'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Veterinary-formulated for feline kidney health',
+        'Targets multiple causes of renal decline',
+        'Comprehensive blend of antioxidant, detox, and immune-boosting herbs',
+        'No harsh chemicals — gentle and effective',
+        'Supports long-term kidney wellness naturally'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['60 Capsules']
+    }
+  ]
+},
+{
+  _id: 'MPS-CKD Support for Dogs',
+  name: 'MPS-CKD Support for Dogs | Kidney Health Supplement | 60 Capsules',
+  description:
+    'Advanced veterinary renal care supplement formulated for dogs. Contains clinically backed herbal extracts, antioxidants, and amino acids to support kidney health, detoxification, circulation, and immune function.',
+  price: 1200,
+  image: [
+   CKDsupportdog1,
+   CKDsupportdog2,
+    CKDsupportdog3,
+    CKDsupportdog4,
+    CKDsupportdog5,
+  ],
+  category: 'Dog',
+  subCategory: ['Kidney Support', 'Detox', 'Immune Boost'],
+  conditions: [
+    'Chronic Renal Disease',
+    'Elevated Blood Urea Nitrogen (BUN)',
+    'Glomerulonephritis',
+    'Polycystic Kidney Disease',
+    'Nephrotic Syndrome',
+    'Acute Renal Disease'
+  ],
+  sizes: ['60 Capsules'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Promotes healthy kidney function in dogs',
+        'Supports detoxification and urinary elimination',
+        'Reduces oxidative stress in renal and hepatic tissues',
+        'Improves energy, vitality, and immune function',
+        'Protects liver alongside kidney support',
+        'Reduces BUN and supports urea metabolism',
+        'Aids in the management of chronic kidney disease'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Astragalus Root Extract (10:1, 50 mg)</b>: Adaptogenic herb that enhances kidney and immune function while improving overall vitality.',
+        '<b>N-acetylcysteine (100 mg)</b>: Sulfur-rich antioxidant and glutathione precursor that helps protect the liver and kidneys from oxidative damage.',
+        '<b>Rehmannia glutinosa Extract (5:1, 100 mg)</b>: Supports adrenal and kidney function while reducing inflammation.',
+        '<b>Rhubarb Extract (5:1, 100 mg)</b>: Promotes healthy digestion, detoxification, and kidney support.',
+        '<b>Milk Thistle (80% Silymarin, 100 mg)</b>: Supports liver detox and antioxidant protection in renal stress conditions.',
+        '<b>L-Arginine (100 mg)</b>: Improves nitric oxide production, circulation, and kidney perfusion.',
+        '<b>L-Glutamine (50 mg)</b>: Aids gut barrier health and immunity, especially during renal stress.',
+        '<b>Asparagus Root Extract (5:1, 50 mg)</b>: Diuretic and detoxifying herb that supports kidney and urinary health.',
+        '<b>Dong Quai Extract (5:1, 50 mg)</b>: Enhances circulation and hormonal balance while reducing inflammation.',
+        '<b>Szechuan Lovage Root Extract (5:1, 50 mg)</b>: Improves blood flow and supports joint comfort in aging dogs.',
+        '<b>Cordyceps Extract (5:1, 25 mg)</b>: Enhances energy, oxygen utilization, and immune support.',
+        '<b>Ginkgo Biloba Extract (25 mg)</b>: Antioxidant that promotes blood circulation and brain health.',
+        '<b>Green Tea Extract (55% EGCG, 25 mg)</b>: Antioxidant-rich extract that reduces cellular damage and inflammation.',
+        '<b>Hawthorn Extract (3.2% Vitexin, 25 mg)</b>: Supports cardiovascular function and renal circulation.',
+        '<b>Melatonin (1 mg)</b>: Regulates sleep and provides neuroprotective and antioxidant effects.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'One capsule per 11 kg of body weight, twice daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Dogs with chronic or acute kidney disease',
+        'Elevated BUN or compromised renal markers',
+        'Glomerulonephritis and proteinuria management',
+        'Polycystic kidney conditions and nephrotic syndrome',
+        'Liver and kidney co-support during illness or aging'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Veterinarian-developed for canine renal health',
+        'Broad-spectrum formula with herbal and nutritional support',
+        'Targets multiple stages and causes of kidney decline',
+        'Improves circulation, antioxidant status, and immune response',
+        'Free from harsh chemicals and suitable for long-term use'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['60 Capsules']
+    }
+  ]
 }
+
+
+
+  
+  
+
+
+ 
+
+
+
+
+
+
 
 
 
@@ -2589,13 +3131,48 @@ export const assets = {
   Samelivlarge3,
   Samelivlarge4,
   Samelivlarge5,
+  Ecowormtab1,
+  Ecowormtab2,
+  Ecowormtab3,
+  Ecowormtab4,
+  Ecowormtab5,
+  SamelivMed1,
+  SamelivMed2,
+  SamelivMed3,
+  SamelivMed4,
+  SamelivMed5,
+  SmallZymeMandL1,
+  SmallZymeMandL2,
+  SmallZymeMandL3,
+  SmallZymeMandL4,
+  SmallZymeTab1,
+  SmallZymeTab2,
+  SmallZymeTab3,
+  SmallZymeTab4,
+  ArtimarinE1,
+  ArtimarinE2,
+  ArtimarinE3,
+  ArtimarinE4,
+  ArtimarinE5,
+  CKDsupportcat1,
+  CKDsupportcat2,
+  CKDsupportcat3,
+  CKDsupportcat4,
+  CKDsupportcat5,
+  CKDsupportdog1,
+  CKDsupportdog2,
+  CKDsupportdog3,
+  CKDsupportdog4,
+  CKDsupportdog5,
 
 
 
 
 
 
-  CVDSupport,
+
+
+  CVDSupport1,
   CVDSupport2,
   CVDSupport3,
   CVDSupport4,
