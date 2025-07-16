@@ -130,11 +130,43 @@ import VitaTab2 from './VitaTab2.jpg';
 import VitaTab3 from './VitaTab3.jpg';
 import VitaTab4 from './VitaTab4.jpg';
 import VitaTab5 from './VitaTab5.jpg';
+import Iggmax1 from './Iggmax1.jpg';
+import Iggmax2 from './Iggmax2.jpg';
+import Iggmax3 from './Iggmax3.jpg';
+import Iggmax4 from './Iggmax4.jpg';
+import Mullein1 from './Mullein1.jpg';
+import Mullein2 from './Mullein2.jpg';
+import Mullein3 from './Mullein3.jpg';
+import Mullein4 from './Mullein4.jpg';
+import Mullein5 from './Mullein5.jpg';
+import Mullein6 from './Mullein6.jpg';
+import OmegaLiq1 from './OmegaLiq1.jpg';
+import OmegaLiq2 from './OmegaLiq2.jpg';
+import OmegaLiq3 from './OmegaLiq3.jpg';
+import OmegaLiq4 from './OmegaLiq4.jpg';
+import OmegaLiq5 from './OmegaLiq5.jpg';
+import Pancrefit1 from './Pancrefit1.jpg';
+import Pancrefit2 from './Pancrefit2.jpg';
+import Pancrefit3 from './Pancrefit3.jpg';
+import Pancrefit4 from './Pancrefit4.jpg';
+import Pancrefit5 from './Pancrefit5.jpg';
+import PancrefitE1 from './PancrefitE1.jpg';
+import PancrefitE2 from './PancrefitE2.jpg';
+import PancrefitE3 from './PancrefitE3.jpg';
+import PancrefitE4 from './PancrefitE4.jpg';
+import PancrefitE5 from './PancrefitE5.jpg';
+import PancrefitE6 from './PancrefitE6.jpg';
+import Samelivlarge1 from './Samelivlarge1.jpg';
+import Samelivlarge2 from './Samelivlarge2.jpg';
+import Samelivlarge3 from './Samelivlarge3.jpg';
+import Samelivlarge4 from './Samelivlarge4.jpg';
+import Samelivlarge5 from './Samelivlarge5.jpg';
+
 
 import Founder from './founder.png';
 import Payment from './payment.gif';
 import Razorpay from './Razorpay.png';
-import { Import } from 'lucide-react';
+
 
 
 
@@ -258,6 +290,96 @@ export const products = [
 
     ]
   },
+  {
+  _id: 'Artimarin Suspension',
+  name: 'Artimarin Suspension for Pets | Advanced Liver Support Formula | 200ml',
+  description:
+    'Advanced liver support formula for dogs and cats with a synergistic blend of Silymarin, N-Acetylcysteine, Tricholine Citrate, and other botanicals that protect, detoxify, and regenerate liver cells while supporting digestion and overall wellness.',
+  price: 290,
+  image: [
+    artimarinHome,
+    ArtimarinSus2,
+    ArtimarinSus3,
+    ArtimarinSus4,
+    ArtimarinSus5
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Liver Support', 'Detoxification', 'Digestive Health'],
+  conditions: [
+    'Liver Disorders',
+    'Drug-Induced Liver Damage',
+    'Inappetance',
+    'Gall Stones',
+    'Infectious Diseases',
+    'Irritable Bowel Syndrome',
+    'Liver Cirrhosis',
+    'Liver Fibrosis',
+    'Hepatitis',
+    'Jaundice'
+  ],
+  sizes: ['200ml Suspension'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Provides antioxidant and hepatoprotective support to dogs and cats with liver conditions',
+        'Helps regenerate liver cells and repair liver damage caused by toxins or infections',
+        'Supports detoxification and reduces oxidative stress on liver and kidney tissue',
+        'Improves bile flow and digestion with artichoke and tricholine citrate',
+        'Aids in fat metabolism, appetite improvement, and immune support',
+        'Useful as supportive therapy in chronic liver conditions, jaundice, and IBS'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Silymarin (70 mg)</b>: Antioxidant-rich milk thistle extract that stabilizes liver cell membranes and promotes regeneration. May also benefit kidney health and IBD.',
+        '<b>Tricholine Citrate (100 mg)</b>: Converts liver fat into phospholipids, supporting a healthy liver and reducing fat accumulation.',
+        '<b>N-Acetylcysteine (2 mg)</b>: Detoxifies liver and kidneys, supports mucus reduction and antioxidant function, beneficial in heart and lung issues.',
+        '<b>L-Ornithine (10 mg)</b>: Helps regenerate liver cells, enhances immunity, improves appetite and fat metabolism.',
+        '<b>Selenium Dioxide (65 mcg)</b>: Works synergistically with NAC as an antioxidant; supports heart, liver, and cholesterol regulation.',
+        '<b>Artichoke (35 mg)</b>: Stimulates bile production, improves digestion, and defends liver cells from toxins and carcinogens.',
+        '<b>Catechins (Green Tea Extract – 50 mg)</b>: Powerful antioxidant (EGCG) supports liver health, reduces LDL cholesterol, and prevents harmful clot formation.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Shake well before use',
+        '0.5 ml per kg body weight once daily',
+        'Can be given directly or mixed with food',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Liver disorders including hepatitis, fibrosis, and cirrhosis',
+        'Support during infectious diseases and recovery',
+        'Inappetance and poor digestion',
+        'Gall stones and bile flow dysfunction',
+        'Chronic digestive issues like irritable bowel syndrome',
+        'Detoxification from medications or environmental toxins'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Comprehensive liver support formula with botanical and amino acid-based ingredients',
+        'Targets liver cell repair, detoxification, and bile secretion',
+        'Includes ingredients with known clinical benefits for liver and digestive health',
+        'Backed by veterinarians for use in both acute and chronic liver conditions',
+        'Affordable and easy-to-administer liquid suspension for pets'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['200ml Suspension']
+    }
+  ]
+},
+
 
 
   {
@@ -1502,7 +1624,6 @@ export const products = [
   price: 1050,
   image: [
     FlexiE1,
-    FlexiE2,
     FlexiE3,
     FlexiE4,
     FlexiE5
@@ -1734,6 +1855,565 @@ export const products = [
   ]
 },
 
+{
+  _id: 'MPS IgG Maxx',
+  name: 'MPS-IgG Maxx | Pure Freeze-Dried Bovine Colostrum for Pets | 1x10 Capsules',
+  description:
+    'Freeze-dried bovine colostrum with 95+ immune factors, antibodies, and growth factors to support immunity, gut health, and regeneration in cats and dogs.',
+  price: 550,
+  image: [
+    Iggmax1,
+    Iggmax2,
+    Iggmax3,
+    Iggmax4
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Immunity', 'Gut Health', 'Anti-Aging'],
+  conditions: ['Immune Deficiency', 'Leaky Gut Syndrome', 'Systemic Yeast Infection', 'Autoimmune Disorders', 'Aging'],
+  sizes: ['1x10 Capsules'],
+  bestseller: false,
+  details: [
+    {
+      title: 'What is Colostrum?',
+      content: [
+       'Colostrum is the first milk produced by mammals within the first 6 hours after giving birth.',
+    'It is rich in antibodies, immune-regulating peptides, growth factors, and nutrients essential for early life defense.',
+    'Newborns can absorb colostrum directly into their bloodstream only in the first few days of life.',
+    'In pets and adult animals, colostrum exerts powerful local effects on tissues like the gut lining, skin, and mouth when consumed or applied topically.',
+    'It contains over 95 immune factors and 87 naturally occurring growth factors.',
+    'Supports the immune system by providing immunoglobulins (IgA, IgG, IgM, IgD, IgE), lactoferrin, PRPs, and cytokines.',
+    'Helps regulate immune responses — stimulates underactive immunity and calms overactive (autoimmune) activity.',
+    'Aids in cellular repair, protein synthesis, tissue regeneration, and organ recovery.',
+    'Improves gut integrity, reduces inflammation, and protects against leaky gut syndrome.',
+    'Acts as a natural antiviral, antibacterial, antifungal, and anti-inflammatory agent.',
+    'Promotes healthy metabolism, increases energy, and helps reduce fat while improving muscle mass.',
+    'Contains glyconutrients that facilitate cellular communication and maintain nervous, cardiovascular, and endocrine functions.',
+    'Includes leptin and insulin which assist in appetite regulation, glucose conversion, and fat metabolism.',
+    'Backed by studies showing its effectiveness in repairing NSAID-induced intestinal damage and improving aging-related decline in immune response.'
+      ]
+    },
+    {
+      title: 'Key Benefits',
+      content: [
+        'Provides over 95 immune factors to support protection against bacteria, viruses, toxins, and disease',
+        'Contains all 5 immunoglobulins (IgA, IgG, IgM, IgD, IgE) for full-spectrum immune support',
+        'Regulates immune system through Proline-rich Polypeptides (PRP)',
+        'Delivers lactoferrin and transferrin to inhibit microbial growth and promote healing',
+        'Offers 87 anti-aging growth factors that support regeneration of organs, skin, and tissues',
+        'Promotes healing of inflamed or damaged intestinal lining in leaky gut syndrome',
+        'Improves metabolic rate, promotes fat loss, and increases lean muscle mass',
+        'Enhances mood and mental clarity by supporting neurotransmitter balance',
+        'Supports regeneration of heart, lung, liver, and other tissues',
+        'Stimulates protein synthesis for stronger bones, joints, and skin',
+        'Provides leptin to regulate appetite and aid in weight loss',
+        'Provides insulin to convert glucose into glycogen, improving energy levels'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Colostrum (500mg)</b>: 100% natural cow’s first milk powder packed with antibodies, PRP, immunoglobulins, lactoferrin, and growth factors.',
+        '<b>Proline-rich Polypeptide (PRP)</b>: Regulates thymus gland and immune response—boosts underactive immunity or calms overactive autoimmune activity.',
+        '<b>Lactoferrin</b>: Antiviral, antibacterial, anti-inflammatory; binds iron to restrict pathogen growth and supports oxygenation.',
+        '<b>Immunoglobulins</b>: IgA neutralizes toxins, IgM kills bacteria, IgG blocks pathogens, IgE & IgD are antiviral.',
+        '<b>Growth Hormones & IGFs</b>: Aid cellular repair and tissue regeneration; especially beneficial for aging pets.',
+        '<b>Glyconutrients</b>: Enhance cell communication, immune system, nervous system, endocrine function, and cardiovascular health.',
+        '<b>Leptin & Insulin</b>: Regulate metabolism, support weight loss, and enhance energy conversion.'
+      ]
+    },
+    {
+      title: 'Colostrum for Leaky Gut & Yeast Overgrowth',
+      content: [
+        'Leaky gut syndrome occurs when the intestinal lining becomes inflamed and overly permeable.',
+        'Causes include overuse of antibiotics, bacterial/parasite contamination, NSAIDs (aspirin, ibuprofen), and high-sugar diets.',
+        'This allows bacteria, toxins, and undigested food particles to leak into the bloodstream, causing immune overreaction.',
+        'Colostrum’s IgA binds to and immobilizes pathogens while enzymes break down their cell walls.',
+        'Growth factors and hormones help restore damaged mucosal tissues, reducing permeability and inflammation.',
+        'Helps alleviate food sensitivities that result from undigested particles triggering immune responses.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Puppies, Kittens, and Cats: 1–2 capsules (powder) daily',
+        'Dog: 2–3 capsules (powder) daily',
+        'Giant Breed Dog: 3–4 capsules (powder) daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Pets with immune deficiencies or recurrent infections',
+        'Cases of leaky gut syndrome and systemic yeast overgrowth',
+        'Autoimmune conditions requiring immune modulation',
+        'Support during aging and tissue degeneration',
+        'Pets recovering from illness, antibiotic use, or GI issues'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Freeze-dried for maximum potency and nutrient preservation',
+        'Targets immunity, gut health, tissue repair, and age-related decline',
+        'Contains complete antibody spectrum and growth factors',
+        'Regenerates mucosal lining and strengthens intestinal barrier',
+        'Reduces inflammation and prevents premature aging',
+        'Safe, natural, and vet-recommended for both cats and dogs'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Capsules']
+    }
+  ]
+},
+{
+  _id: 'MPS Mullein Lung Support',
+  name: 'MPS Mullein Lung Support | Respiratory Relief Formula for Pets | 1x10 Tablets',
+  description:
+    'Advanced respiratory support formula for dogs and cats containing mullein, quercetin, bromelain, marshmallow root, turmeric, and NAC to clear mucus, reduce inflammation, ease coughing, and promote lung health.',
+  price: 550,
+  image: [
+    Mullein1,
+    Mullein2,
+    Mullein3,
+    Mullein4,
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Lung Health', 'Respiratory Support', 'Anti-Inflammatory'],
+  conditions: [
+    'Kennel Cough',
+    'Pulmonary Fibrosis',
+    'Bronchiectasis',
+    'Chronic Bronchitis',
+    'COPD (Chronic Obstructive Pulmonary Disease)',
+    'Asthma',
+    'Respiratory Infections',
+    'Lung Congestion'
+  ],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Quickly alleviates inflammation and irritation in the lungs and airways',
+        'Breaks down and clears thick, sticky mucus buildup from the respiratory tract',
+        'Possesses antimicrobial and antiviral properties to help fight infections',
+        'Soothes irritated mucus membranes and relieves dry, persistent cough',
+        'Reduces secretion viscosity for easier breathing and expectoration',
+        'Assists in treating kennel cough, asthma, COPD, and chronic bronchitis',
+        'Provides support for pets with pulmonary fibrosis and bronchiectasis',
+        'Helps reduce oxidative stress in lungs and promotes healing in damaged tissues'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Mullein (3500mg equivalent)</b>: Breaks down mucus, reduces inflammation, soothes respiratory tract, and offers antimicrobial and antiviral protection. Contains ursolic acid beneficial in lung cancer and inflammation.',
+        '<b>Quercetin</b>: Potent antioxidant with anti-inflammatory properties that supports respiratory health and lung function.',
+        '<b>Bromelain</b>: Natural enzyme that reduces muscle inflammation and mucus thickness, easing congestion and coughing.',
+        '<b>Marshmallow Root</b>: Rich in mucilage to soothe the respiratory tract, relieve pain, and suppress cough.',
+        '<b>N-acetyl Cysteine (NAC)</b>: Thins and loosens mucus, aiding in effective lung clearance.',
+        '<b>Turmeric</b>: Contains curcumin, which helps reduce airway inflammation and supports respiratory wellness in pets.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '1 to 3 tablets per day depending on condition severity',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Kennel Cough',
+        'Pulmonary Fibrosis',
+        'Bronchiectasis',
+        'Chronic Bronchitis',
+        'COPD (Chronic Obstructive Pulmonary Disease)',
+        'Asthma and wheezing',
+        'Respiratory infections with mucus buildup'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Complete respiratory support formula with natural mucolytics and anti-inflammatories',
+        'Combines traditional herbs like mullein and marshmallow with modern compounds like NAC and quercetin',
+        'Clears lung congestion and helps ease breathing in dogs and cats',
+        'Relieves inflammation without steroids',
+        'Free from harsh chemicals, artificial additives, and preservatives',
+        'Vet-recommended for chronic or acute respiratory issues in pets'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
+{
+  _id: 'Omega Pet Liquid',
+  name: 'Omega Pet Liquid for Dogs & Cats | Omega 3, 6 & 9 | 150ml | Skin, Coat, Joint & Heart Health Supplement',
+  description:
+    'A comprehensive liquid supplement rich in Omega 3, 6, and 9 fatty acids along with essential vitamins, minerals, and herbal extracts to support skin health, coat shine, joint function, immunity, and overall wellness in dogs and cats.',
+  price: 390,
+  image: [
+   OmegaLiq1,
+    OmegaLiq2,
+    OmegaLiq3,
+    OmegaLiq4,
+    OmegaLiq5
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Skin & Coat', 'Joint Health', 'Heart Health', 'Immunity'],
+  conditions: [
+    'Dry or dull coat',
+    'Dry skin & dandruff',
+    'Hair loss',
+    'Non-specific alopecia',
+    'Dermatic conditions',
+    'Internal and external inflammation',
+    'Show coat improvement'
+  ],
+  sizes: ['150ml Liquid'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Promotes a shiny, healthy coat and reduces dryness, itching, and dandruff',
+        'Supports heart, brain, and joint health with high-quality Omega fatty acids',
+        'Improves skin barrier, reduces inflammation, and strengthens hair follicles',
+        'Enhances immune function, cellular health, and vision',
+        'Contains powerful antioxidants to combat oxidative stress and aging',
+        'Supports liver function, hormonal regulation, and metabolism of fats and proteins',
+        'May reduce anxiety and provide mental calming effects',
+        'Helps alleviate symptoms of allergies, arthritis, and benign prostatic hyperplasia (BPH)'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Omega 3 (EPA 360 mg, DHA 240 mg)</b>: Supports cardiovascular health, joint mobility, brain function, and a shiny coat.',
+        '<b>Omega 6 (Gamma Linolenic Acid, 100 mg)</b>: Improves skin condition, combats inflammation, and supports immunity.',
+        '<b>Omega 9 (Oleic Acid, 100 mg)</b>: Maintains heart health and enhances immune response.',
+        '<b>Biotin (1000 mcg)</b>: Essential for healthy skin, strong nails, and a lustrous coat.',
+        '<b>Zinc (60 mg)</b>: Vital for immune function, skin healing, and reproductive health.',
+        '<b>Saw Palmetto (200 mg)</b>: Supports urinary tract health and prostate function, especially in male pets.',
+        '<b>Stinging Nettle Extract (200 mg)</b>: This natural herb is beneficial for allergies and arthritis. It may help reduce inflammation and alleviate symptoms associated with seasonal allergies.',
+        '<b>Inositol (3 mg)</b>: Supports fat metabolism, liver function, and emotional well-being.',
+        '<b>Retinol (Vitamin A - 1200 IU)</b>: Maintains vision, boosts immunity, and supports skin regeneration.',
+        '<b>Vitamin E (20 IU)</b>: Potent antioxidant that protects cells, improves skin health, and supports heart function.',
+        '<b>Pyridoxine (Vitamin B6 - 1 mg)</b>: Pyridoxine, or Vitamin B6, is essential for proper brain development and function.It also plays a role in the synthesis of neurotransmitters and the regulation of hormonal activity.'
+      ]
+    },
+    {
+      title: 'Per 10ml Contains',
+      content: [
+        'Omega 3: 600 mg (EPA 360 mg, DHA 240 mg)',
+        'Omega 6: 100 mg (Gamma Linolenic Acid)',
+        'Omega 9: 100 mg (Oleic Acid)',
+        'Biotin: 1000 mcg',
+        'Zinc: 60 mg',
+        'Saw Palmetto: 200 mg',
+        'Stinging Nettle Extract: 200 mg',
+        'Inositol: 3 mg',
+        'Retinol (Vitamin A): 1200 IU',
+        'Vitamin E: 20 IU',
+        'Pyridoxine (Vitamin B6): 1 mg'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '0.5 ml per kg body weight once daily',
+        'Can be given directly or mixed with food',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Dry or dull coat',
+        'Dandruff or flaky skin',
+        'Hair fall and alopecia',
+        'Dermatic and inflammatory skin conditions',
+        'Enhancing coat appearance in show animals',
+        'Reducing joint pain and improving flexibility',
+        'Cardiovascular and immune system support'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Rich blend of Omega 3, 6 & 9 for comprehensive skin, coat, and joint health',
+        'Fortified with essential vitamins, minerals, and herbal extracts',
+        'Formulated by pet health experts for optimal wellness',
+        'Free from artificial colors, preservatives, and harsh additives',
+        'Liquid format for easy administration and fast absorption',
+        'Vet-recommended for long-term coat and health maintenance'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['150ml Liquid']
+    }
+  ]
+},
+{
+  _id: 'Pancrefit',
+  name: 'Pancrefit | Enzymatic Support for Exocrine Pancreatic Insufficiency in Pets | 1x10 Tablets',
+  description:
+    'Pancrefit is a veterinary pancreatic enzyme supplement for dogs and cats to support digestion in pets suffering from Exocrine Pancreatic Insufficiency (EPI). Helps break down fats, proteins, and carbohydrates for optimal nutrient absorption.',
+  price: 395,
+  image: [
+    Pancrefit1,
+    Pancrefit2,
+    Pancrefit3,
+    Pancrefit4,
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Digestive Support', 'Pancreatic Health', 'Enzyme Therapy'],
+  conditions: [
+    'Exocrine Pancreatic Insufficiency (EPI)',
+    'Chronic Pancreatitis',
+    'Fat Malabsorption',
+    'Nutrient Deficiency',
+    'Weight Loss Despite Appetite',
+    'Fatty Stool (Steatorrhea)',
+    'Digestive Enzyme Deficiency'
+  ],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports digestion of fats, proteins, and carbohydrates in pets with pancreatic enzyme deficiency',
+        'Improves nutrient absorption and reduces symptoms like fatty stools, weight loss, and bloating',
+        'Helps stabilize pets with chronic EPI or pancreatitis when combined with proper diet',
+        'Improves stool quality and reduces steatorrhea (fat in stool)',
+        'Provides essential enzymes for pets with congenital or acquired pancreatic insufficiency'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Lipase (18,000 USP Units)</b>: Breaks down dietary fats into absorbable fatty acids and glycerol.',
+        '<b>Protease (114,000 USP Units)</b>: Aids in the breakdown of dietary proteins into amino acids.',
+        '<b>Amylase (128,000 USP Units)</b>: Helps digest carbohydrates by converting starches into sugars.',
+        'These enzymes mimic natural pancreatic secretions and help restore digestive balance in pets with EPI.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Dogs: 1–2 tablets before every meal',
+        'Cats: 1/4 to 1/2 tablet before every meal',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Exocrine Pancreatic Insufficiency (EPI)',
+        'Chronic diarrhea or soft, bulky, fatty stools',
+        'Weight loss despite normal or increased appetite',
+        'Breed-prone pets like German Shepherds, Chow Chows, Spaniels, and Collies',
+        'Pets recovering from chronic pancreatitis or pancreatic injury'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'High-potency enzyme blend formulated to aid digestion in pets with pancreatic dysfunction',
+        'Helps improve quality of life in EPI-affected dogs and cats',
+        'Can be safely used with low-fat, highly digestible veterinary diets',
+        'Backed by veterinarians for managing long-term pancreatic insufficiency',
+        'Made to USP standards for quality and enzyme activity'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+},
+{
+  _id: 'Pancrefit Elite',
+  name: 'Pancrefit Elite | Advanced Porcine Pancreatic Enzyme Supplement for Pets | 1x10 Capsules',
+  description:
+    'Pancrefit-Elite is a third-generation, clinically-proven pancreatic enzyme supplement formulated with high-activity porcine enzymes in micro-pellet form to aid digestion in pets suffering from Exocrine Pancreatic Insufficiency (EPI) and other digestive disorders.',
+  price: 700,
+  image: [
+    PancrefitE1,
+    PancrefitE2,
+    PancrefitE3,
+    PancrefitE4
+  ],
+  category: 'Cats,Dogs',
+  subCategory: ['Digestive Support', 'Pancreatic Health', 'Advanced Enzyme Therapy'],
+  conditions: [
+    'Exocrine Pancreatic Insufficiency (EPI)',
+    'Chronic Pancreatitis',
+    'Gastrointestinal Disorders',
+    'Fat Malabsorption',
+    'Poor Appetite or Excessive Hunger',
+    'Unexplained Weight Loss',
+    'Loose or Abnormal Stool',
+    'Abnormal Eating Habits'
+  ],
+  sizes: ['1x10 Capsules'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Contains highly active porcine-derived pancreatic enzymes for superior digestion support',
+        'Improves food absorption and helps alleviate symptoms like weight loss, loose stools, and poor coat',
+        'Formulated as micro-pellets to enhance enzyme activity and stability in the digestive tract',
+        'Supports pets with pancreatic insufficiency, chronic pancreatitis, and digestive inefficiencies',
+        'Developed using human-grade pharmaceutical enzyme technology',
+        'Clinically proven for effectiveness in managing pancreatic dysfunction in pets'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Lipase (30,000 Ph. Eur. U)</b>: Breaks down dietary fats into absorbable fatty acids to combat steatorrhea and malabsorption.',
+        '<b>Porcine-Derived Enzyme Blend</b>: Includes amylase, protease, and lipase to mimic the natural enzymatic output of the pancreas.',
+        'Micro-pellet technology ensures enhanced delivery and bioavailability of enzymes during digestion.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Open the capsule and sprinkle contents over food before every meal.',
+        'Serve food immediately after mixing.',
+        'Do not feed the capsule whole.',
+        'Cats and Dogs under 10 kg: 1 capsule per day',
+        'Dogs over 10 kg: 2 capsules per day',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Exocrine Pancreatic Insufficiency (EPI)',
+        'Pancreatitis and post-pancreatitis care',
+        'Chronic gastrointestinal disorders with poor nutrient absorption',
+        'Pets showing signs like chronic weight loss, increased appetite, loose or fatty stools',
+        'Animals with poor coat quality or strange eating behavior (e.g., eating soil, plants)'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Third-generation enzyme supplement using pharmaceutical-grade technology',
+        'Micro-pellet formulation enhances enzyme delivery and stability',
+        'Highly potent porcine enzyme activity surpasses basic enzyme blends',
+        'Clinically backed and trusted by veterinarians for EPI and digestion support',
+        'Easy to administer – sprinkle over food with no need for whole capsule ingestion'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Capsules']
+    }
+  ]
+},
+{
+  _id: 'SAMe-Liv Large',
+  name: 'SAMe-Liv Large | Liver Support with SAMe & Silybin for Dogs | 1x10 Tablets',
+  description:
+    'Advanced liver health supplement for large dogs containing S-Adenosylmethionine (SAMe) and Silybin to support liver regeneration, detoxification, and recovery from liver disorders, infections, and drug-induced toxicity.',
+  price: 550,
+  image: [
+   Samelivlarge1,
+    Samelivlarge2,
+    Samelivlarge3,
+    Samelivlarge4,
+    Samelivlarge5
+
+  ],
+  category: 'Dogs',
+  subCategory: ['Liver Support', 'Detoxification', 'Recovery & Healing'],
+  conditions: [
+    'Liver Disorders',
+    'Drug-Induced Liver Toxicity',
+    'Liver Cirrhosis',
+    'Liver Fibrosis',
+    'Hepatitis',
+    'Irritable Bowel Disease (IBD)',
+    'Inappetence',
+    'Post-Infection Recovery'
+  ],
+  sizes: ['1x10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports liver regeneration and detoxification in dogs',
+        'Helps restore glutathione levels in the liver and reduces oxidative stress',
+        'Protects liver cells from damage and promotes cellular repair and regeneration',
+        'Improves appetite and supports recovery after infectious diseases',
+        'Useful in managing liver cirrhosis, fibrosis, hepatitis, and IBD',
+        'Clinically used for drug-induced liver toxicity and compromised liver function'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>S-Adenosylmethionine (SAMe) – 425 mg</b>: Bioactive form of methionine that donates methyl groups in essential biochemical reactions including liver detoxification, antioxidant activity (via glutathione), and cell protection.',
+        '<b>Silybin (A+B) – 35 mg</b>: Major active component of Silymarin from Milk Thistle extract; acts as a potent antioxidant, protects liver cells, and supports natural anti-inflammatory processes.',
+        'SAMe participates in methylation, synthesis of glutathione and cysteine, and polyamine production which are crucial for liver and brain health.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Dogs 16–30 kg body weight: 1 tablet daily',
+        'Dogs 30–55 kg body weight: 2 tablets daily',
+        'Dogs above 55 kg body weight: 3 tablets daily',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Dogs with liver disease or dysfunction',
+        'Recovery from infections or antibiotic treatment',
+        'Drug-induced hepatotoxicity',
+        'Cases of inappetence linked to liver health',
+        'Liver cirrhosis, fibrosis, hepatitis, and chronic inflammatory liver disorders',
+        'Digestive distress due to IBD or related liver stress'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Combines SAMe and Silybin – a clinically proven synergy for liver protection and repair',
+        'Supports detox, antioxidant defense, and tissue regeneration',
+        'Formulated specifically for medium to large breed dogs with liver stress or chronic issues',
+        'Vet-recommended for liver support during recovery and long-term care',
+        'Free from harmful additives, with well-researched ingredients for liver therapy'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1x10 Tablets']
+    }
+  ]
+}
+
+
+
+
 
 
 
@@ -1878,6 +2558,40 @@ export const assets = {
   VitaTab3,
   VitaTab4,
   VitaTab5,
+  Iggmax1,
+  Iggmax2,
+  Iggmax3,
+  Iggmax4,
+  Mullein1,
+  Mullein2,
+  Mullein3,
+  Mullein4,
+  Mullein5,
+  Mullein6,
+  OmegaLiq1,
+  OmegaLiq2,
+  OmegaLiq3,
+  OmegaLiq4,
+  OmegaLiq5,
+  Pancrefit1,
+  Pancrefit2,
+  Pancrefit3,
+  Pancrefit4,
+  Pancrefit5,
+  PancrefitE1,
+  PancrefitE2,
+  PancrefitE3,
+  PancrefitE4,
+  PancrefitE5,
+  PancrefitE6,
+  Samelivlarge1,
+  Samelivlarge2,
+  Samelivlarge3,
+  Samelivlarge4,
+  Samelivlarge5,
+
+
+
 
 
 
