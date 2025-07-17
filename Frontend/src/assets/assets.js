@@ -98,6 +98,7 @@ import ArtimarinE2 from './ArtimarinE2.jpg';
 import ArtimarinE3 from './ArtimarinE3.jpg';
 import ArtimarinE4 from './ArtimarinE4.jpg';
 import ArtimarinE5 from './ArtimarinE5.jpg';
+import Prurifix from './Prurifix1.jpg';
 
 
 import CVDSupport1 from './CVD Support1.jpg';
@@ -195,6 +196,34 @@ import CKDsupportdog2 from './CKDsupportdog2.jpg';
 import CKDsupportdog3 from './CKDsupportdog3.jpg';
 import CKDsupportdog4 from './CKDsupportdog4.jpg';
 import CKDsupportdog5 from './CKDsupportdog5.jpg';
+import VitaSyrup1 from './VitaSyrup1.jpg';
+import VitaSyrup2 from './VitaSyrup2.jpg';
+import VitaSyrup3 from './VitaSyrup3.jpg';
+import VitaSyrup4 from './VitaSyrup4.jpg';
+import Diamaxx1 from './Diamaxx1.jpg';
+import Diamaxx2 from './Diamaxx2.jpg';
+import Diamaxx3 from './Diamaxx3.jpg';
+import Diamaxx4 from './Diamaxx4.jpg';
+import Ecocarp50 from './Ecocarp50.jpg';
+import Ecocarp100 from './Ecocarp100.jpg';
+import Ecocyclin100 from './Ecocyclin100.jpg';
+import Ecocylcin200 from './Ecocylcin200.jpg';
+import Renalydyl1 from './Renalydyl1.jpeg';
+import Renalydyl2 from './Renalydyl2.jpeg';
+import Renalydyl3 from './Renalydyl3.jpeg';
+import Renalydyl4 from './Renalydyl4.jpeg';
+import Renalydyl5 from './Renalydyl5.jpeg';
+import UTIsypport1 from './UTIsypport1.jpg';
+import UTIsypport2 from './UTIsypport2.jpg';
+import UTIsypport3 from './UTIsypport3.jpg';
+import UTIsypport4 from './UTIsypport4.jpg';
+import UTIsypport5 from './UTIsypport5.jpg';
+import UTITab1 from './UTITab1.jpg';
+import UTITab2 from './UTITab2.jpg';
+import UTITab3 from './UTITab3.jpg';
+import UTITab4 from './UTITab4.jpg';
+import UTITab5 from './UTITab5.jpg';
+
 
 
 
@@ -996,6 +1025,7 @@ export const products = [
   },
 
   {
+    
     _id: 'MPS NanoCurcumin',
     name: 'MPS NanoCurcumin for Pets – 30ml',
     description:
@@ -2937,32 +2967,270 @@ export const products = [
       content: ['60 Capsules']
     }
   ]
+},
+{
+  _id: 'Prurifix Spray 50ml',
+  name: 'Prurifix Spray for Dogs | Hydrocortisone 0.5% | Anti-Inflammatory Topical Spray | 50ml',
+  description:
+    'Topical anti-inflammatory corticosteroid spray with Hydrocortisone 0.5% for dogs. Used for reducing itching, inflammation, and allergic skin conditions under veterinary supervision.',
+  price: 380,
+  image: [
+    Prurifix,
+  ],
+  category: 'Dog',
+  subCategory: ['Skin Care', 'Anti-Inflammatory', 'Prescription Required'],
+  conditions: [
+    'Allergies',
+    'Skin Inflammation',
+    'Itching',
+    'Dermatitis',
+    'Arthritis (topical)',
+    'Adrenal Disorders (topical use)'
+  ],
+  sizes: ['50ml'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Reduces inflammation and swelling in skin conditions',
+        'Provides relief from itching and irritation',
+        'Helps manage allergic and inflammatory skin issues',
+        'Easy-to-use topical spray for targeted relief',
+        'Veterinary-grade corticosteroid treatment'
+      ]
+    },
+    {
+      title: 'Active Ingredient',
+      content: [
+        '<b>Hydrocortisone IP 0.5% w/w</b>: A corticosteroid that suppresses inflammation and reduces immune responses on the skin.'
+      ]
+    },
+    {
+      title: 'How It Works',
+      content: [
+        'Blocks proteins responsible for inflammation at the site of application',
+        'Provides symptomatic relief by calming immune system overactivity',
+        'Promotes healing in cases of redness, itching, and swelling'
+      ]
+    },
+    {
+      title: 'Dosage and Administration',
+      content: [
+        'Remove cap and screw on the spray pump before use',
+        'Spray from a distance of 10 cm directly on affected skin area',
+        'Avoid contact with eyes, nose, and mouth',
+        'Prevent licking until the area is dry (minimum 30 minutes)',
+        'Repeat once daily for 7 consecutive days or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Important Warnings',
+      content: [
+        'Do not spray on ulcerated or burned skin',
+        'Use only under veterinary supervision',
+        'Not for internal use',
+        'If no improvement is seen within 7 days, consult your veterinarian',
+        'Avoid prolonged use unless advised by a vet'
+      ]
+    },
+    {
+      title: 'Prescription Notice',
+      content: [
+        'This product requires a valid veterinary prescription',
+        'Send prescription via email to ecorabioceuticals@gmail.com or WhatsApp at 9819643646',
+        'Orders without prescription will be refunded after 24 hours'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['50ml spray bottle']
+    }
+  ]
+},
+{
+  _id: 'MPS Vita Support Tablet 60’s',
+  name: 'MPS Vita Support Tablet for Dogs & Cats | Advanced Multivitamin Formula | 60 Tablets',
+  description: 'Veterinary multivitamin supplement formulated with 28 vital nutrients and 6 added bioactives to improve vitality, immunity, and overall health in adult, senior, and active pets.',
+  price: 520,
+  image: [
+    VitaTab1,
+    VitaTab2,
+    VitaTab3,
+    VitaTab4,
+    VitaTab5
+  ],
+  category: 'Dog',
+  subCategory: ['Multivitamin', 'Vitality', 'Immunity'],
+  conditions: [
+    'Nutritional deficiencies',
+    'Low energy or stamina',
+    'Age-related issues in senior dogs',
+    'Immunity support',
+    'Skin, joint, and heart health'
+  ],
+  sizes: ['60 Tablets'],
+  bestseller: true,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Improves health and vitality in adult dogs',
+        'Boosts immunity and body function',
+        'Helps prevent age-related deficiencies in senior pets',
+        'Supports active and show dogs for better efficiency',
+        'Corrects nutritional imbalances'
+      ]
+    },
+    {
+      title: 'Key Ingredients & Their Benefits',
+      content: [
+        '<b>Resveratrol</b>: Antioxidant that supports heart health, joint mobility, and immune defense.',
+        '<b>Ginkgo Biloba</b>: Enhances circulation, memory, and mental clarity.',
+        '<b>Ginseng</b>: Adaptogen that boosts stamina and stress response.',
+        '<b>Green Tea Extract</b>: Aids metabolism, provides antioxidants, and supports energy levels.',
+        '<b>Glutamine</b>: Essential amino acid for muscle recovery and gut health.',
+        '<b>Grapeseed Extract</b>: Rich in antioxidants, supports skin, capillaries, and anti-inflammatory actions.',
+        '<b>Chromium</b>: Supports insulin function and healthy growth.'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Toy Dog (2–5 kg): 1/2 Tablet daily',
+        'Small Dog (5–9 kg): 1 Tablet daily',
+        'Medium/Large Dog: 1 to 2 Tablets daily',
+        'Extra Large Dog: 2 Tablets daily',
+        'Mix in moist food for best results. Always keep fresh water available.'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Adult dogs for improved health',
+        'Active and show dogs for enhanced energy and performance',
+        'Geriatric dogs to support aging bodies',
+        'For correcting diet-related deficiencies',
+        'For strengthening immunity and vitality'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Contains 28 vital nutrients plus 6 specialized actives',
+        'Formulated for adult, active, and senior dogs',
+        'Supports immune, metabolic, and muscular functions',
+        'Veterinary-grade ingredients',
+        'Easy to administer with food'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['60 Tablets']
+    }
+  ]
+},
+{
+  _id: 'MPS-Vita-Support-100ml',
+  name: 'MPS Vita Support | Multivitamin & Allergy Support Syrup | 100ml',
+  description:
+    'Comprehensive multivitamin and antioxidant syrup for dogs and cats. Supports immune function, reduces shedding, promotes joint, skin, and coat health. Especially helpful for pets with allergies, weak immunity, or coat concerns.',
+  price: 240,
+  image: [
+    VitaSyrup1,
+    VitaSyrup2,
+    VitaSyrup3,
+    VitaSyrup4,
+  ],
+  category: 'Dog & Cat',
+  subCategory: ['Multivitamin', 'Allergy Support', 'Skin & Coat', 'Joint Health'],
+  conditions: [
+    'Allergies in cats and dogs',
+    'Weak immune function',
+    'Skin and coat issues',
+    'Joint and ligament concerns',
+    'Hair shedding'
+  ],
+  sizes: ['100 ml Syrup'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports healthy immune system function',
+        'Boosts skin and coat health',
+        'Promotes joint and ligament strength',
+        'Reduces excessive shedding',
+        'Supports pets with allergies and weak immunity'
+      ]
+    },
+    {
+      title: 'Key Ingredients (per 15 ml)',
+      content: [
+        'Vitamin A (Palmitate) – 750 IU',
+        'Vitamin B1 (Thiamine HCL) – 2 mg',
+        'Vitamin B2 (Riboflavin) – 2 mg',
+        'Vitamin B3 (Niacin) – 2 mg',
+        'Vitamin B5 (Pantothenic Acid) – 2 mg',
+        'Vitamin B6 (Pyridoxine HCL) – 3 mg',
+        'Vitamin B12 (Cyanocobalamin) – 12 mcg',
+        'Folic Acid – 15 mcg',
+        'Choline (Bitartrate) – 5 mg',
+        'Inositol – 4 mg',
+        'Vitamin C (Sodium Ascorbate) – 60 mg',
+        'Vitamin D3 (Cholecalciferol) – 100 IU',
+        'Vitamin E (Alpha Tocopherol Acetate) – 50 IU',
+        'Iodine (Potassium Iodide) – 45 mcg',
+        'Manganese (Amino Acid Chelate) – 2 mcg',
+        'Selenium (Amino Acid Chelate) – 15 mcg',
+        'Zinc (Gluconate) – 1 mg',
+        'Glucosamine Sulfate – 50 mg',
+        'Citrus Bioflavonoids – 50 mcg',
+        'Boron (Amino Acid Chelate) – 50 mcg',
+        'Betaine HCL – 10 mg',
+        'Taurine – 120 mg',
+        'Essential Fatty Acids (Lecithin, Flaxseed Oil) – 65 mg',
+        'Copper (Gluconate) – 30 mcg',
+        'L-Arginine – 75 mg',
+        'L-Citrulline – 75 mg',
+        'L-Methionine – 7 mg',
+        'L-Cysteine – 3 mg'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '0.5 ml per kg body weight once daily',
+        'Can be given directly or mixed with food',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Allergic reactions in pets',
+        'Low immunity in dogs and cats',
+        'Poor skin and dull coat',
+        'Joint and ligament weakness',
+        'Excessive shedding in cats and dogs'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Rich multivitamin profile',
+        'Contains essential amino acids and fatty acids',
+        'Gentle and suitable for daily use',
+        'Formulated for both cats and dogs',
+        'Supports overall wellness and allergy management'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['100 ml Syrup']
+    }
+  ]
 }
-
-
-
-  
-  
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3164,6 +3432,36 @@ export const assets = {
   CKDsupportdog3,
   CKDsupportdog4,
   CKDsupportdog5,
+  Prurifix,
+  VitaSyrup1,
+  VitaSyrup2,
+  VitaSyrup3,
+  VitaSyrup4,
+  Diamaxx1,
+  Diamaxx2,
+  Diamaxx3,
+  Diamaxx4,
+  Ecocarp50,
+  Ecocarp100,
+  Ecocyclin100,
+  Ecocyclin100,
+  Renalydyl1,
+  Renalydyl2,
+  Renalydyl3,
+  Renalydyl4,
+  Renalydyl5,
+  UTIsypport1,
+  UTIsypport2,
+  UTIsypport3,
+  UTIsypport4,
+  UTIsypport5,
+  UTITab1,
+  UTITab2,
+  UTITab3,
+  UTITab4,
+  UTITab5,
+
+
 
 
 
@@ -3178,5 +3476,7 @@ export const assets = {
   CVDSupport4,
   Founder,
   Payment,
-  Razorpay
+  Razorpay,
+
 };
+
