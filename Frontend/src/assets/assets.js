@@ -207,17 +207,17 @@ import Diamaxx4 from './Diamaxx4.jpg';
 import Ecocarp50 from './Ecocarp50.jpg';
 import Ecocarp100 from './Ecocarp100.jpg';
 import Ecocyclin100 from './Ecocyclin100.jpg';
-import Ecocylcin200 from './Ecocylcin200.jpg';
+import Ecocyclin200 from './Ecocyclin200.jpg';    
 import Renalydyl1 from './Renalydyl1.jpeg';
 import Renalydyl2 from './Renalydyl2.jpeg';
 import Renalydyl3 from './Renalydyl3.jpeg';
 import Renalydyl4 from './Renalydyl4.jpeg';
 import Renalydyl5 from './Renalydyl5.jpeg';
-import UTIsypport1 from './UTIsypport1.jpg';
-import UTIsypport2 from './UTIsypport2.jpg';
-import UTIsypport3 from './UTIsypport3.jpg';
-import UTIsypport4 from './UTIsypport4.jpg';
-import UTIsypport5 from './UTIsypport5.jpg';
+import UTIsupport1 from './UTIsupport1.jpg';
+import UTIsupport2 from './UTIsupport2.jpg';
+import UTIsupport3 from './UTIsupport3.jpg';
+import UTIsupport4 from './UTIsupport4.jpg';
+import UTIsupport5 from './UTIsupport5.jpg';
 import UTITab1 from './UTITab1.jpg';
 import UTITab2 from './UTITab2.jpg';
 import UTITab3 from './UTITab3.jpg';
@@ -3230,7 +3230,727 @@ export const products = [
       content: ['100 ml Syrup']
     }
   ]
-}
+},
+// {
+//   _id: 'Prurifix-Spray-50ml',
+//   name: 'Prurifix Spray | Hydrocortisone 0.5% Topical Anti-Itch & Anti-Inflammatory Spray for Dogs | 50ml',
+//   description:
+//     'Topical corticosteroid spray for dogs containing Hydrocortisone IP 0.5% w/w. Provides fast-acting relief from itching, inflammation, allergies, and skin irritation. Ideal for conditions requiring anti-inflammatory treatment under veterinary supervision.',
+//   price: 380,
+//   image: [
+//     Prurifix,
+//   ],
+//   category: 'Dog',
+//   subCategory: ['Anti-Inflammatory', 'Allergy Support', 'Skin & Coat'],
+//   conditions: [
+//     'Skin inflammation and itching',
+//     'Allergic dermatitis',
+//     'Hot spots and redness',
+//     'Swelling due to allergic reactions',
+//     'Localized skin irritation'
+//   ],
+//   sizes: ['50 ml Spray'],
+//   bestseller: false,
+//   details: [
+//     {
+//       title: 'Key Benefits',
+//       content: [
+//         'Reduces itching, redness, and inflammation',
+//         'Provides targeted relief for skin allergies',
+//         'Effective against hot spots and swelling',
+//         'Soothes irritated skin quickly',
+//         'Veterinary-grade topical corticosteroid treatment'
+//       ]
+//     },
+//     {
+//       title: 'Key Ingredient',
+//       content: [
+//         'Hydrocortisone IP 0.5% w/w'
+//       ]
+//     },
+//     {
+//       title: 'How Hydrocortisone Works',
+//       content: [
+//         'Blocks activation of proteins responsible for inflammation',
+//         'Suppresses overactive immune responses in allergic conditions',
+//         'Relieves itch and swelling at the site of application'
+//       ]
+//     },
+//     {
+//       title: 'Usage Guidelines',
+//       content: [
+//         'Remove cap and screw the spray pump onto the bottle',
+//         'Hold the spray 10 cm above the affected area and apply',
+//         'Allow the area to dry for at least 30 minutes before the dog licks it',
+//         'Avoid contact with eyes, nose, or mouth',
+//         'Do not spray on ulcerated or burned skin',
+//         'Apply once daily for 7 consecutive days',
+//         'Consult a veterinarian if no improvement is observed within 7 days'
+//       ]
+//     },
+//     {
+//       title: 'Important Safety Information',
+//       content: [
+//         'For external use in dogs only',
+//         'Do not use without a valid veterinary prescription',
+//         'Not for use in pets hypersensitive to corticosteroids',
+//         'Discuss existing medical conditions with your vet before use'
+//       ]
+//     },
+//     {
+//       title: 'Prescription Notice',
+//       content: [
+//         'This product requires a valid veterinary prescription',
+//         'Send prescription to ecorabioceuticals@gmail.com or WhatsApp 9819643646 within 24 hours of ordering',
+//         'If not received, the order will be refunded to the original payment method'
+//       ]
+//     },
+//     {
+//       title: 'Packing',
+//       content: ['50 ml Spray Bottle']
+//     }
+//   ]
+// },
+{
+  _id: 'MPS-UTI-Support-30Tabs',
+  name: 'MPS UTI Support | Urinary & Bladder Health Tablets for Dogs & Cats | 30 Tablets',
+  description:
+    'Advanced urinary tract support formula for dogs and cats containing Cranberry, D-Mannose, Hibiscus, and Pumpkin Seed Extract. Helps manage UTIs, supports bladder health, and relieves discomfort from urinary incontinence and infections.',
+  price: 680,
+  image: [
+    UTITab1,
+    UTITab2,
+    UTITab3,
+    UTITab4,
+    UTITab5
+  ],
+  category: 'Dog & Cat',
+  subCategory: ['Urinary Support', 'Bladder Health', 'Kidney Health'],
+  conditions: [
+    'Urinary tract infections (UTIs)',
+    'Bladder inflammation',
+    'Urinary incontinence',
+    'Overactive bladder',
+    'Prostate and kidney health issues'
+  ],
+  sizes: ['30 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports urinary and bladder health',
+        'Helps prevent and manage UTIs',
+        'Reduces bladder inflammation and discomfort',
+        'Improves urinary incontinence and overactive bladder',
+        'Natural antioxidant and anti-inflammatory support'
+      ]
+    },
+    {
+      title: 'Key Ingredients (per tablet)',
+      content: [
+        'D-Mannose – 250 mg',
+        'Cranberry (Vaccinium Macrocarpon) – 250 mg',
+        'Hibiscus Extract (Hibiscus rosasinensis) – 100 mg',
+        'Pumpkin Seed Extract (Cucurbita pepo) – 100 mg'
+      ]
+    },
+    {
+      title: 'Ingredient Highlights',
+      content: [
+        'Cranberry: Prevents bacteria from adhering to urinary tract lining',
+        'D-Mannose: Binds to E. coli bacteria and flushes it out',
+        'Hibiscus: Maintains bladder pH and provides antioxidant support',
+        'Pumpkin Seed: Improves bladder function and relieves incontinence'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '1 tablet per 15–20 kg body weight daily',
+        'Adjust dosage as per body weight or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Recurring urinary tract infections',
+        'Urinary incontinence and overactive bladder',
+        'Bladder irritation and inflammation',
+        'Prostate discomfort in male pets'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Combination of clinically studied natural ingredients',
+        'Safe for long-term urinary tract support',
+        'Suitable for both dogs and cats',
+        'Free from harmful additives or preservatives'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['30 Tablets']
+    }
+  ]
+},
+{
+  _id: 'MPS-UTI-Support-100ml',
+  name: 'MPS UTI Support | Urinary & Bladder Health Syrup for Dogs & Cats | 100ml',
+  description:
+    'Syrup-based urinary support supplement for dogs and cats containing Cranberry, D-Mannose, and Hibiscus. Helps manage urinary tract infections, supports bladder health, and provides relief from incontinence and irritation.',
+  price: 450,
+  image: [
+    UTIsupport1,
+    UTIsupport2,
+    UTIsupport3,
+    UTIsupport4,
+    UTIsupport5
+
+  ],
+  category: 'Dogs & Cats',
+  subCategory: ['Urinary Support', 'Bladder Health', 'Kidney Health'],
+  conditions: [
+    'Urinary tract infections (UTIs)',
+    'Bladder irritation and discomfort',
+    'Urinary incontinence',
+    'Overactive bladder',
+    'Kidney and prostate issues'
+  ],
+  sizes: ['100 ml Syrup'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Supports urinary tract and bladder health',
+        'Helps prevent and manage UTIs',
+        'Relieves symptoms of urinary incontinence',
+        'Promotes healthy bladder pH balance',
+        'Antioxidant support from Hibiscus and Cranberry'
+      ]
+    },
+    {
+      title: 'Key Ingredients (per 5 ml)',
+      content: [
+        'D-Mannose – 250 mg',
+        'Cranberry (Vaccinium Macrocarpon) – 250 mg',
+        'Hibiscus Extract (Hibiscus rosasinensis) – Not quantified',
+        'Pumpkin Seed Extract (Cucurbita pepo) – Not quantified'
+      ]
+    },
+    {
+      title: 'Ingredient Highlights',
+      content: [
+        'Cranberry: Prevents bacterial adhesion in the urinary tract',
+        'D-Mannose: Binds and flushes E. coli bacteria',
+        'Hibiscus: Helps maintain urethral pH and supports antioxidant activity',
+        'Pumpkin Seed: Promotes healthy urination and reduces bladder discomfort'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        '0.5 ml per kg body weight once daily',
+        'Can be given directly or mixed with food',
+        'Or as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Frequent UTIs in pets',
+        'Urinary incontinence or leakage',
+        'Bladder inflammation or irritation',
+        'Prostate discomfort in male pets'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Liquid format for easy administration',
+        'Natural urinary health support for dogs and cats',
+        'Helps maintain bladder and kidney health',
+        'Gentle and suitable for daily use'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['100 ml Syrup']
+    }
+  ]
+},
+{
+  _id: 'Dia-Maxx-4x10g',
+  name: 'Dia-Maxx | Digestive Support for Diarrhoea & Constipation in Dogs & Cats | 4 x 10g Sachets',
+  description:
+    'Veterinarian-formulated dietary supplement to manage acute intestinal absorptive disorders, including diarrhoea and constipation. Psyllium husk-based formula supports balanced digestion, regulates stool consistency, and maintains gut health during and after digestive disturbances.',
+  price: 1000,
+  image: [
+   Diamaxx1,
+   Diamaxx2,
+    Diamaxx3,
+    Diamaxx4,
+  ],
+  category: 'Dog & Cat',
+  subCategory: ['Digestive Health', 'Diarrhoea Relief', 'Constipation Relief'],
+  conditions: [
+    'Acute diarrhoea in pets',
+    'Digestive disturbances',
+    'Constipation in dogs and cats',
+    'Intestinal motility imbalance',
+    'Stool consistency regulation'
+  ],
+  sizes: ['4 x 10g Sachets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Reduces acute intestinal absorptive disorders',
+        'Supports recovery from diarrhoea',
+        'Helps soften stools and relieve constipation',
+        'Regulates stool consistency with psyllium husk',
+        'Promotes balanced digestion in cats and dogs'
+      ]
+    },
+    {
+      title: 'Key Ingredients',
+      content: [
+        'Psyllium Husk',
+        'Dextrose Monohydrate',
+        'Sodium Bicarbonate',
+        'Sodium Chloride',
+        'Potassium Chloride',
+        'Magnesium Hydroxide'
+      ]
+    },
+    {
+      title: 'Analytical Constituents',
+      content: [
+        'Crude Ash – 20.0%',
+        'Crude Protein – 2.4%',
+        'Crude Fibre – 1.9%',
+        'Crude Oil – 1.0%',
+        'Sodium – 4.6%',
+        'Potassium – 1.4%',
+        'Total Sugars – 40.0%',
+        'Calorie Content (ME Calculated): 2497 Kcal/Kg'
+      ]
+    },
+    {
+      title: 'Suggested Use',
+      content: [
+        'Give 10g mixed in 125 ml of hand-warm water or sprinkle over moist food',
+        'If using dry food, pre-dissolve in water and pour over food',
+        'Ensure supervision while feeding',
+        'Or use as directed by the veterinarian'
+      ]
+    },
+    {
+      title: 'Recommended In',
+      content: [
+        'Acute diarrhoea recovery',
+        'Digestive upset due to stress or infection',
+        'Constipation relief and stool softening',
+        'Intestinal health maintenance during recovery'
+      ]
+    },
+    {
+      title: 'Why Choose This Supplement?',
+      content: [
+        'Dual-action relief for both diarrhoea and constipation',
+        'Veterinary formulated and safe for daily use',
+        'Psyllium-based for natural regulation of stool consistency',
+        'Suitable for dogs and cats up to 20 kg body weight'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['4 x 10g Sachets']
+    }
+  ]
+},
+{
+  _id: 'Ecocarp-50-1x6Tabs',
+  name: 'Ecocarp-50 | Carprofen 50mg NSAID Tablets for Joint Pain & Inflammation in Dogs | 1x6 Tablets',
+  description:
+    'Vet-recommended NSAID tablets with Carprofen 50mg for pain relief, osteoarthritis, post-surgical recovery, and inflammation in dogs. Provides once-daily dosing, improves joint mobility, and enhances overall quality of life.',
+  price: 210,
+  image: [
+     Ecocarp50
+  ],
+  category: 'Dogs & Cats',
+  subCategory: ['Pain Relief', 'Joint Support', 'Post-Surgery Recovery', 'Anti-Inflammatory'],
+  conditions: [
+    'Osteoarthritis and joint stiffness',
+    'Musculoskeletal disorders',
+    'Post-operative pain and inflammation',
+    'Chronic joint pain in aging dogs'
+  ],
+  sizes: ['1 x 6 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Reduces joint pain and inflammation',
+        'Supports mobility in dogs with arthritis',
+        'Eases discomfort after surgeries',
+        'Long-lasting once-daily dosing',
+        'Improves overall quality of life in aging dogs'
+      ]
+    },
+    {
+      title: 'Active Ingredient',
+      content: [
+        'Carprofen I.P. Vet. – 50 mg per tablet'
+      ]
+    },
+    {
+      title: 'Indications',
+      content: [
+        'Osteoarthritis',
+        'Musculoskeletal pain and inflammation',
+        'Post-operative recovery'
+      ]
+    },
+    {
+      title: 'Dosage Guide',
+      content: [
+        'Recommended dose: 4.4 mg/kg body weight once daily',
+        'General guide: 1 tablet for every 12 kg of body weight per day',
+        'Administer with food or as directed by a registered veterinarian'
+      ]
+    },
+    {
+      title: 'Prescription Notice',
+      content: [
+        'This product requires a valid veterinary prescription',
+        'Send a copy to ecorabioceuticals@gmail.com or WhatsApp 9819643646 within 24 hours',
+        'Failure to submit will result in automatic refund to the original payment method'
+      ]
+    },
+    {
+      title: 'Important Safety Information',
+      content: [
+        'For use in dogs only — not suitable for cats',
+        'Not recommended for dogs with liver, kidney, or GI issues',
+        'Liver function should be monitored during prolonged use',
+        'Ensure the pet is well-hydrated during treatment',
+        'Store in a cool, dry place. Keep out of reach of children'
+      ]
+    },
+    {
+      title: 'Packing',
+      content: ['1 x 6 Tablets']
+    }
+  ]
+},
+{
+  _id: 'Ecocarp-100-1x6Tabs',
+  name: 'Ecocarp-100 | Carprofen 100mg NSAID tablets for Dogs | 1×6 Tablets',
+  description:
+    'Carprofen 100mg NSAID tablets for dogs to relieve joint pain, inflammation, osteoarthritis, and post-surgical recovery. Vet-recommended with once-daily dosing to enhance mobility and comfort.',
+  price: 330,
+  image: [
+   Ecocarp100
+  ],
+  category: 'Dog',
+  subCategory: ['Pain Relief', 'Joint Support', 'Post-Surgery', 'Anti-Inflammatory'],
+  conditions: [
+    'Osteoarthritis',
+    'Post-operative inflammation',
+    'Musculoskeletal disorders',
+    'Joint stiffness and pain'
+  ],
+  sizes: ['1 x 6 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Fast-acting relief from joint pain and inflammation',
+        'Improves mobility in dogs with arthritis',
+        'Supports recovery after orthopedic or soft-tissue surgery',
+        'Reduces stiffness for active, pain-free movement',
+        'Once-daily tablet for ease of use'
+      ]
+    },
+    {
+      title: 'Active Ingredient',
+      content: ['Carprofen I.P. Vet. – 100 mg per tablet']
+    },
+    {
+      title: 'Indications',
+      content: [
+        'Osteoarthritis in dogs',
+        'Musculoskeletal disorders',
+        'Post-operative inflammation and pain'
+      ]
+    },
+    {
+      title: 'Dosage Guide',
+      content: [
+        'Recommended dose: 4.4 mg/kg body weight once daily',
+        'Typical use: 1 tablet per 12 kg body weight per day',
+        'Administer with food or as prescribed by a registered veterinarian'
+      ]
+    },
+    {
+      title: 'Prescription Requirement',
+      content: [
+        'Valid prescription required to purchase this product',
+        'Send prescription via email: ecorabioceuticals@gmail.com or WhatsApp: 9819643646',
+        'Orders without prescription within 24 hours will be refunded'
+      ]
+    },
+    {
+      title: 'Safety Information',
+      content: [
+        'For canine use only – not for cats',
+        'Do not use in dogs with liver, kidney, or gastrointestinal conditions',
+        'Monitor liver function for long-term use',
+        'Ensure your dog stays hydrated',
+        'Store in a cool, dry place away from children'
+      ]
+    },
+    {
+      title: 'Packaging',
+      content: ['1 strip of 6 tablets']
+    }
+  ]
+}, 
+{
+  _id: 'Ecocycline-100-1x10Tabs',
+  name: 'Ecocycline-100 | Doxycycline 100mg Broad-Spectrum Antibiotic | 1×10 Tablets',
+  description:
+    'Doxycycline 100mg tablets for dogs and cats. Broad-spectrum antibiotic effective against respiratory, urinary, skin, and tick-borne infections. Vet-recommended, anti-inflammatory, and easy oral dosing.',
+  price: 110,
+  image: [
+    Ecocyclin100
+  ],
+  category: 'Dog',
+  subCategory: ['Antibiotics', 'Infection Control', 'Tick-Borne Disease'],
+  conditions: [
+    'Respiratory tract infections (e.g., kennel cough, pneumonia)',
+    'Urinary tract infections',
+    'Tick-borne diseases (Ehrlichiosis, Lyme disease)',
+    'Skin infections',
+    'Soft tissue infections',
+    'Wounds and abscesses'
+  ],
+  sizes: ['1 x 10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Broad-spectrum activity against both gram-positive and gram-negative bacteria',
+        'Excellent tissue penetration – reaches respiratory, urinary, and skin systems',
+        'Anti-inflammatory benefits help reduce secondary inflammation',
+        'Easy oral dosing in tablet format',
+        'Safe for both dogs and cats'
+      ]
+    },
+    {
+      title: 'Active Ingredient',
+      content: ['Doxycycline 100mg per tablet']
+    },
+    {
+      title: 'Indications',
+      content: [
+        'Respiratory tract infections (e.g., kennel cough, pneumonia)',
+        'Urinary tract infections',
+        'Tick-borne diseases such as Ehrlichiosis and Lyme disease',
+        'Skin and soft tissue infections',
+        'Wounds and abscess treatment'
+      ]
+    },
+    {
+      title: 'Dosage Guide',
+      content: [
+        'Recommended dosage: 10 mg/kg body weight once daily',
+        'Typical use: 1 tablet per 10 kg body weight per day',
+        'Duration: 7 to 28 days, based on infection type and severity',
+        'Always follow dosage instructions from a registered veterinarian'
+      ]
+    },
+    {
+      title: 'Prescription Requirement',
+      content: [
+        'Valid prescription required to purchase this product',
+        'Send prescription via email: ecorabioceuticals@gmail.com or WhatsApp: 9819643646',
+        'Orders without prescription within 24 hours will be refunded'
+      ]
+    },
+    {
+      title: 'Safety Information',
+      content: [
+        'Safe for dogs and cats',
+        'Consult your vet before starting antibiotic treatment',
+        'Store in a cool, dry place away from direct sunlight and children'
+      ]
+    },
+    {
+      title: 'Packaging',
+      content: ['1 strip of 10 tablets']
+    }
+  ]
+},
+{
+  _id: 'Ecocycline-200-1x10Tabs',
+  name: 'Ecocycline-200 | Doxycycline 200mg Broad-Spectrum Antibiotic | 1×10 Tablets',
+  description:
+    'Doxycycline 200mg tablets for dogs and cats. Broad-spectrum antibiotic for respiratory, urinary, skin, and tick-borne infections. Vet-recommended with high tissue penetration and anti-inflammatory action.',
+  price: 190,
+  image: [
+    Ecocyclin200
+  ],
+  category: 'Dog',
+  subCategory: ['Antibiotics', 'Infection Control', 'Tick-Borne Disease'],
+  conditions: [
+    'Respiratory tract infections (e.g., kennel cough, pneumonia)',
+    'Urinary tract infections',
+    'Tick-borne diseases (Ehrlichiosis, Lyme disease)',
+    'Skin infections',
+    'Soft tissue infections',
+    'Wounds and abscesses'
+  ],
+  sizes: ['1 x 10 Tablets'],
+  bestseller: false,
+  details: [
+    {
+      title: 'Key Benefits',
+      content: [
+        'Powerful broad-spectrum activity against gram-positive and gram-negative bacteria',
+        'Excellent tissue penetration including respiratory, urinary, and skin systems',
+        'Anti-inflammatory support to reduce secondary effects of infection',
+        'Easy oral administration – convenient tablet format',
+        'Trusted by veterinarians for dogs and cats'
+      ]
+    },
+    {
+      title: 'Active Ingredient',
+      content: ['Doxycycline 200mg per tablet']
+    },
+    {
+      title: 'Indications',
+      content: [
+        'Respiratory tract infections such as kennel cough and pneumonia',
+        'Urinary tract infections',
+        'Tick-borne illnesses including Ehrlichiosis and Lyme disease',
+        'Skin and soft tissue infections',
+        'Wound and abscess treatment'
+      ]
+    },
+    {
+      title: 'Dosage Guide',
+      content: [
+        'Dosage: 10 mg/kg body weight per day',
+        'Example: 1 tablet per 20 kg body weight per day',
+        'Duration: 7 to 28 days, depending on the type and severity of infection',
+        'To be administered as directed by a registered veterinarian'
+      ]
+    },
+    {
+      title: 'Prescription Requirement',
+      content: [
+        'Veterinary prescription required for purchase',
+        'Email: ecorabioceuticals@gmail.com or WhatsApp: 9819643646',
+        'Orders without prescription in 24 hours will be refunded'
+      ]
+    },
+    {
+      title: 'Safety Information',
+      content: [
+        'Formulated for dogs and cats',
+        'Consult your vet before starting treatment',
+        'Store in a cool, dry place, out of children’s reach'
+      ]
+    },
+    {
+      title: 'Packaging',
+      content: ['1 strip of 10 tablets']
+    }
+  ]
+},
+{
+  _id: "renaldyl-10caps",
+  name: "Renaldyl | Symbiotic Kidney Support | 1x10 Capsules",
+  description:
+    "Vet-recommended prebiotic and probiotic formulation to support kidney function through enteric dialysis in dogs and cats. Helps reduce uremic toxins and slow progression of chronic kidney disease (CKD).",
+  price: 490,
+  image: [
+    Renalydyl1,
+    Renalydyl2,
+    Renalydyl3,
+    Renalydyl4,
+    Renalydyl5
+  ],
+  category: "Dog & Cat",
+  subCategory: "Kidney Support",
+  conditions: [
+    "Renal insufficiency",
+    "Chronic Kidney Disease (CKD)",
+    "Uremic toxin build-up",
+    "Gut microbiome imbalance"
+  ],
+  sizes: ["1x10 Capsules"],
+  bestseller: false,
+  prescriptionRequired: false,
+  details: [
+    {
+      title: "Key Benefits",
+      content: [
+        "Provides natural enteric dialysis to flush uremic toxins",
+        "Restores gut microbiome with beneficial bacteria",
+        "Slows progression of chronic kidney disease (CKD)",
+        "Reduces behavioral anxiety via gut-brain axis",
+        "Safe for daily use in dogs and cats"
+      ]
+    },
+    {
+      title: "Ingredients",
+      content: [
+        "Streptococcus thermophilus – 15 billion spores",
+        "Lactobacillus acidophilus – 15 billion spores",
+        "Bifidobacterium longum – 15 billion spores",
+        "Fructo-oligosaccharides – 100 mg"
+      ]
+    },
+    {
+      title: "How It Works",
+      content: [
+        "**Step 1**: Probiotics metabolize uremic toxins in the gut.",
+        "**Step 2**: Enhanced toxin diffusion into the bowel as microbes multiply.",
+        "**Step 3**: Toxins are eliminated through feces, easing the kidney’s load."
+      ]
+    },
+    {
+      title: "Suggested Use",
+      content: [
+        "1–3 capsules daily before meals, or as directed by your veterinarian.",
+        "Safe for use during steroid therapy or digestive upset."
+      ]
+    },
+    {
+      title: "Packaging",
+      content: ["Blister pack of 10 capsules"]
+    }
+  ]
+},
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3444,17 +4164,16 @@ export const assets = {
   Ecocarp50,
   Ecocarp100,
   Ecocyclin100,
-  Ecocyclin100,
   Renalydyl1,
   Renalydyl2,
   Renalydyl3,
   Renalydyl4,
   Renalydyl5,
-  UTIsypport1,
-  UTIsypport2,
-  UTIsypport3,
-  UTIsypport4,
-  UTIsypport5,
+  UTIsupport1,
+  UTIsupport2,
+  UTIsupport3,
+  UTIsupport4,
+  UTIsupport5,
   UTITab1,
   UTITab2,
   UTITab3,
