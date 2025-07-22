@@ -247,25 +247,20 @@ export const products = [
       'Calcinex Tab is an advanced calcium supplement enriched with Vitamin D3 and K2-MK7, designed to promote strong bones, healthy teeth, and joint support. Ideal for both growing and aging pets, it aids in managing rickets, osteoporosis, and fracture recovery.',
     price: 450,
     image: [calcinexTab1, calcinexTab2, calcinexTab3, calcinexTab4, calcinexTab5],
-    category: 'Cats,Dogs',
+    category: 'Dogs & Cats',
     subCategory: ['Rickets', 'Osteoporosis', 'Fractures', 'Joint Pain'],
     conditions: ['Calcium Support', 'Joint Support'],
     sizes: ['70 Tabs'],
     bestseller: false,
-    additional: [
-      { label: 'Weight', value: '60kg' },
-      { label: 'Color', value: 'Blue,Green,Red' },
-
-    ],
     details: [
       {
         title: 'Key Benefits',
         content: [
-          'Superior source of calcium for both growing and aging pets',
-          'Supports healing in rickets, osteoporosis, and osteomalacia',
+          'Superior source of calcium for both growing and aging pets.',
+          'Supports healing in rickets, osteoporosis, and osteomalacia.',
           'Aids faster recovery from bone fractures',
-          'Contains Vitamin K2-MK7 to reduce risk of calcification and promote healthy calcium distribution',
-          'Improves bone mass density and skeletal strength',
+          'Contains Vitamin K2-MK7 to reduce risk of calcification and promote healthy calcium distribution.',
+          'Improves bone mass density and skeletal strength.',
         ],
       },
       {
@@ -1179,30 +1174,30 @@ export const products = [
       {
         title: 'Key Ingredients & Their Benefits',
         content: [
-          '<b>Essential Amino Acids</b>: Includes Leucine, Isoleucine, Valine, Arginine, Methionine, Histidine, Phenylalanine, Threonine, Tryptophan, Lysine and Taurine. Crucial for tissue repair, enzyme and hormone synthesis, muscle health, and immune support.',
-          '<b>L-Leucine</b>: Muscle development, protein synthesis, reduces cholesterol and high blood sugar.',
-          '<b>L-Isoleucine</b>: Energy production, muscle repair, wound healing, and hemoglobin formation.',
-          '<b>L-Valine</b>: Supports muscle turnover, liver and nervous system function.',
+          '**Essential Amino Acids**:  These cannot be synthesised by the body in sufficient quantities and must be supplied in the diet. These are individual “building blocks” for tissues, organs, enzymes, hormones, antibodies etc. For dogs, these include Leucine, Isoleucine, Valine, Arginine, Methionine, Histidine, Phenylalanine, Threonine, Tryptophan, Lysine and. For cats, Taurine is also essential.',
+          '<b>L-Leucine</b>: One of the three branch chained amino acids (BCAAs) along with Isoleucine and Valine. Vital for muscle development and maintenance and utilization of other amino acids to build proteins. When combined with regular exercise, it has been found to reduce cholesterol as well boost weight loss and prevent high blood sugar.',
+          '<b>L-Isoleucine</b>: A branch chained amino acid which along with Leucine and Valine is responsible for energy building, muscle repair and stabilizing blood sugar levels. May also help in haemoglobin production and may facilitate wound healing as it plays a role in blood clotting.',
+          '<b>L-Valine</b>: A branch chained amino acid which acts along with Leucine and Isoleucine. The three combine to regulate muscle turnover and energy metabolism. May help in the treatment of liver disorders and conditions of the digestive and nervous system.',
           '<b>L-Arginine</b>: Immune booster, detox agent, growth hormone inducer, cardiovascular benefits.',
-          '<b>L-Taurine</b>: Heart, liver, brain and eye support; essential for cats.',
-          '<b>L-Methionine</b>: Bone and hair strength, bile synthesis, fat metabolism.',
+          '<b>L-Taurine</b>: It is an amino acid that acts in the areas of fat metabolism, nerve and heart health. It has a protective effect on the brain. It helps strengthen heart muscles, regulate blood pressure, enables the liver to synthesise bile salts. Taurine is beneficial for reproduction, healthy eyesight and hearing. It is an important antioxidant.',
+          '<b>L-Methionine</b>: Sulfur containing amino acid, which helps in the growth and maintenance of strong bones, hair and nails. It helps in the synthesis of Choline and Taurine in dogs. May help in preventing depositing of fats in the liver and in the synthesis of bile salts. May help prevent tumours.',
           '<b>L-Histidine</b>: Pain control, joint health, circulatory and digestive support.',
           '<b>L-Phenylalanine</b>: Appetite control, hormone synthesis, coat pigmentation.',
           '<b>L-Threonine</b>: Energy regulation, hormone and pigment synthesis.',
           '<b>L-Tryptophan</b>: Calms anxiety, improves sleep, aids in blood clotting and hair growth.',
           '<b>L-Lysine</b>: Collagen synthesis, bone growth, immune function.',
-          '<b>Vitamin B1 (Thiamine)</b>: Carbohydrate metabolism, nerve transmission, immune booster.',
-          '<b>Vitamin B2 (Riboflavin)</b>: RBC production, mucosal health, nutrient metabolism.',
+          '<b>Vitamin B1 (Thiamine)</b>: It is a water-soluble vitamin. Aids in metabolism of carbohydrates, fats and proteins, maintenance of normal growth, transmission of nerve impulses, and acetylcholine synthesis. Acts as an antioxidant that boosts kidney circulation. Essential for healthy skin, hair, eyes and liver. Helps improve the immune system.',
+          '<b>Vitamin B2 (Riboflavin)</b>: It is a water-soluble vitamin. It is part of a number of coenzymes in most cells. It is also used for the production of red blood cells and antibodies that help fight diseases. It helps prevent cataracts and aids in energy production by cells of the body. Riboflavin works with vitamin A to maintain mucous membranes and helps the absorption of iron and vitamin B6 in the intestines. Assists in metabolism of nutrients including fats, carbohydrates, and proteins, and helps activate vitamins B6 and folic acid (B9). Is an antioxidant and helps in removal of waste products from the kidney.',
           '<b>Vitamin B3 (Niacinamide)</b>: Energy metabolism, hormone production, skin and circulatory health.',
           '<b>Vitamin B5 (Calcium Pantothenate)</b>: Adrenal and antibody function, stamina enhancer.',
           '<b>Vitamin B6 (Pyridoxine)</b>: Protein synthesis, red blood cell production, cardiac and immune function.',
           '<b>Vitamin B9 (Folic Acid)</b>: DNA synthesis, RBC production, nervous system development.',
-          '<b>Vitamin B12 (Cyanocobalamin)</b>: Energy production, nerve myelination, bone and liver health.',
+          '<b>Vitamin B12 (Cyanocobalamin)</b>: It is a water-soluble vitamin necessary for energy production; for maintaining bone mineral health and to prevent osteoporosis, for nervous system function as it is needed to produce myelin – the protective sheath around nerves; for the production of acetylcholine, a neurotransmitter; for the synthesis of red blood cells; for producing the genetic materials, DNA and RNA, for production of collagen and for liver function and protection.',
           '<b>Vitamin C (Ascorbic Acid)</b>: Collagen production, antioxidant, immunity booster.',
           '<b>Vitamin D3 (Cholecalciferol)</b>: Bone development, calcium absorption, thyroid and muscle health.',
           '<b>Vitamin E (Alpha Tocopheryl Acetate)</b>: Antioxidant, tissue repair, slows aging, coat health.',
           '<b>Grape Seed Extract</b>: Heart, brain, and immune health. Potent antioxidant.',
-          '<b>Stinging Nettle Extract</b>: Nourishes blood, lymph, hormones, and supports pregnancy/lactation.'
+          '<b>Stinging Nettle Extract</b>: “Nettle leaf is an excellent source of minerals, vitamins, and amino acids (protein building blocks).  Its superb, bio-active nourishment is readily absorbed by all soft tissue and working fluids:  blood, lymph, hormones, and neurotransmitters.  This results in increased ease and energy in the operation of the circulatory, immune, endocrine, nervous, and urinary systems. Nettle is highly recommended for pregnant and lactating bitches.'
         ]
       },
       {
