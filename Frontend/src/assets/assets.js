@@ -365,19 +365,11 @@ export const products = [
     ArtimarinSus4,
     ArtimarinSus5
   ],
-  category: 'Cats,Dogs',
+  category: 'Dogs & Cats',
   subCategory: ['Liver Support', 'Detoxification', 'Digestive Health'],
   conditions: [
-    'Liver Disorders',
-    'Drug-Induced Liver Damage',
-    'Inappetance',
-    'Gall Stones',
-    'Infectious Diseases',
-    'Irritable Bowel Syndrome',
-    'Liver Cirrhosis',
-    'Liver Fibrosis',
-    'Hepatitis',
-    'Jaundice'
+    'Liver Health',
+    
   ],
   sizes: ['200ml Suspension'],
   bestseller: false,
@@ -451,17 +443,11 @@ export const products = [
       'This synergistic blend contains a total of 1.25 billion spores, including Lactobacillus acidophilus, Lactobacillus rhamnosus, Saccharomyces boulardii, and Bifidobacterium longum, enhanced with the added benefit of FOS (Fructooligosaccharides). Together, these probiotics and prebiotics work to improve gut health and immunity, offering effective support in managing diarrhoea, leaky gut syndrome, irritable bowel syndrome (IBS), gas, bloating, and heartburn.',
     price: 495,
     image: [SporipetTab, SporipetTab2, SporipetTab3, SporipetTab4, SporipetTab5],
-    category: 'Cats,Dogs',
+    category: 'Dogs & Cats',
     subCategory: ['Diarrhoea', 'IBS', 'Gas', 'Bloating', 'Heartburn', 'Leaky Gut'],
     conditions: ['Gut Health', 'Digestive Health', 'Immune Support'],
     sizes: ['30 Tabs'],
     bestseller: true,
-    additional: [
-      { label: 'Weight', value: '310kg' },
-      { label: 'Color', value: 'Blue' },
-      { label: 'Size', value: '32, 34, 36, 38' },
-
-    ],
     details: [
       {
         title: 'Key Benefits',
@@ -538,7 +524,7 @@ export const products = [
       SameLivElite3,
       SameLivElite4
     ],
-    category: 'Cats,Dogs',
+    category: 'Dogs & Cats',
     subCategory: ['Liver Disorders', 'Infectious Diseases', 'Inappetence'],
     conditions: ['Liver Health'],
     sizes: ['100ml'],
@@ -612,7 +598,7 @@ export const products = [
       SameLivSyrup3,
       SameLivSyrup4
     ],
-    category: 'Cats,Dogs',
+    category: 'Dogs & Cats',
     subCategory: ['Liver Cirrhosis', 'Fibrosis', 'IBD', 'Hepatitis'],
     conditions: ['Liver Health'],
     sizes: ['100ml'],
@@ -813,7 +799,7 @@ export const products = [
       'Omegapet Elite is a triple-strength Omega-3 supplement formulated with EPA and DHA to support joint, heart, brain, skin, and eye health in dogs. It provides 1000mg Omega-3s per serving with certified purified ingredients from wild ocean fish.',
     price: 1490,
     image: [OmegaPetEliteCap, OmegaPetEliteCap2, OmegaPetEliteCap3, OmegaPetEliteCap5, OmegaPetEliteCap4],
-    category: 'Cats,Dogs',
+    category: 'Dogs & Cats',
     subCategory: ['Joint Inflammation', 'Skin Issues', 'Heart & Brain Health'],
     conditions: ['Joint Support', 'Skin and Coat', 'Cardiovascular Health', 'Brain Health', 'Eye Health'],
     sizes: ['30 Softgels'],
@@ -871,7 +857,7 @@ export const products = [
       'Supports fat metabolism, energy, and appetite control.',
     price: 680,
     image: [ObesitySupportTab, ObesitySupportTab2, ObesitySupportTab3, ObesitySupportTab4, ObesitySupportTab5],
-    category: 'Cats,Dogs',
+    category: 'Dogs & Cats',
     subCategory: ['Obesity', 'Low Energy', 'Overeating'],
     conditions: ['Obesity Support'],
     sizes: ['60 Tabs'],
@@ -941,7 +927,7 @@ export const products = [
       'A Biotin + Omegas combination for healthy coat and reduced skin inflammation.',
     price: 490,
     image: [FurTab, FurTab2, FurTab3, FurTab4],
-    category: 'Cats,Dogs',
+    category: 'Dogs & Cats',
     subCategory: ['Skin Inflammation', 'Poor Coat Quality'],
     conditions: ['Skin and Coat'],
     sizes: ['60 Tabs'],

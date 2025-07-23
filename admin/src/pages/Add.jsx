@@ -439,7 +439,7 @@ const Add = ({ token }) => {
       <p className="mb-4 text-gray-600">Example: To add "Calcinex Tab 70's", you will upload 5 images, enter name and description, select "Dogs,Cats" as category, choose subcategories like "Rickets, Osteoporosis" etc., enter size as "70 Tabs", mark bestseller if needed, and fill additional label-value pairs such as "Weight: 60kg". Under details, create blocks like "Key Benefits" or "Ingredients", each with multiple bullet points where each line represents a separate bullet point.</p>
       <form onSubmit={handleSubmit} className="flex flex-col w-full items-start gap-4">
         <div>
-          <p>Upload Images</p>
+          
           <div className="mb-2">
             <label className="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">
               Select All 5 Images at Once
@@ -452,7 +452,7 @@ const Add = ({ token }) => {
               />
             </label>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Or click individual slots to upload one by one:</p>
+          <p className="text-m text-gray-600 mb-2 font-bold">Or click individual slots to upload one by one:</p>
           <div className="flex gap-2">
             {images.map((img, i) => (
               <label key={i} className="cursor-pointer">
