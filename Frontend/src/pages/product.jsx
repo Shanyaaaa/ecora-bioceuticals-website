@@ -17,11 +17,11 @@ const Product = () => {
 
   const conditions = [
     "Nervine Care", "Joint Support", "Digestive Health", "Calcium Support", "Liver Health",
-    "Gut Health", "Skin and Coat", "Immune Support", "Cardiovascular Health", "Deworming",
+    "Gut Health", "Skin and Coat", "Immune Support", "Cardiovascular Health", "Deworming", "Dermatitis",
     "Hip Support", "Allergy Relief", "Cancer Support", "Pain Relief", "Obesity Support",
     "Lung Health", "Urinary Tract Support", "Multivitamin Support", "Kidney Support", "Eye Health",
     "Brain Health", "Pancreas Health", "Healing", "Blood Health", "Growth and Development",
-    "Coprophagia Support", "Bacterial Infection", "Antibiotic Therapy, Inflammation"
+    "Coprophagia Support", "Bacterial Infection", "Antibiotic Therapy", "Inflammation"
   ];
 
   const normalizeConditions = (conds) => {

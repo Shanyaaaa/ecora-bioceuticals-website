@@ -2600,13 +2600,7 @@ export const products = [
     category: 'Dogs',
     subCategory: ['Wound Healing', 'Anti-Inflammatory', 'Immune Support'],
     conditions: [
-      'Wounds & Cuts',
-      'Edema',
-      'Inflammation',
-      'Post-surgery Recovery',
-      'Tissue Injury',
-      'Free Radical Damage',
-      'Clot Removal',
+      'Healing'
     ],
     sizes: ['1x10 Tablets'],
     bestseller: false,
@@ -2625,9 +2619,10 @@ export const products = [
       {
         title: 'Key Ingredients & Their Benefits',
         content: [
-          '<b>Protease (7250 units)</b>: A systemic proteolytic enzyme that breaks down inflammatory proteins, supports blood flow, and helps dissolve fibrin clots and dead tissue.',
+          '<b>Protease (7250 units)</b>: A systemic proteolytic enzyme that breaks down inflammatory proteins, supports blood flow, and helps dissolve fibrin clots and dead tissue.Proteolytic enzymes work best for inflammation when given away from meals and combined with bioflavonoids rutin (rutoside).Systemic enzyme therapy is theorized to work by breaking down proteins in the blood that cause inflammation, and by removing fibrin, which prolongs inflammation. Proponents say that systemic enzyme therapy promotes health in every part of the body by reducing pain and inflammation, speeding healing, supporting a healthy immune system, shrinking tumors, and preventing metastasis from cancer Amla Extract is having excellent property of wound healing, with 50% methanolic extract of Amla,showed closure rate up to 62% compared to natural healing.',
           '<b>Amla Extract (100 mg)</b>: Rich in antioxidants and known for its wound healing and anti-inflammatory properties. Amla extract has shown wound closure rates of up to 62%.',
-          '<b>Rutin (50 mg)</b>: A natural bioflavonoid that enhances the effectiveness of proteolytic enzymes and supports vascular health by reducing permeability and inflammation.'
+          '<b>Rutin (50 mg)</b>: A natural bioflavonoid that enhances the effectiveness of proteolytic enzymes and supports vascular health by reducing permeability and inflammation.',
+         '<b>Small-ZYME</b>: tablets from Ecora provide a proprietary blend of systemic enzymes for wound healing, reducing pain or inflammation and swelling after traumatic injuries or surgery in dogs & cats, It contains proleolytic enzymes that help improve blood flow, reduce edema, dissolve fibrin clots and scavenge free radicals, thus promoting rapid wound,debridement skin and tissue healing.'
         ]
       },
       {
@@ -2678,9 +2673,9 @@ export const products = [
       SmallZymeTab4,
 
     ],
-    category: 'Dogs,Cats',
+    category: 'Dogs & Cats',
     subCategory: ['Wound Healing', 'Anti-Inflammatory', 'Immune Support'],
-    conditions: ['Wounds', 'Inflammation', 'Injury Recovery', 'Post-Surgery Care'],
+    conditions: ['Healing'],
     sizes: ['1x10 Tablets'],
     bestseller: false,
     details: [
@@ -2753,12 +2748,7 @@ export const products = [
     category: 'Cat',
     subCategory: ['Kidney Support', 'Detox', 'Immune Boost'],
     conditions: [
-      'Chronic Renal Disease',
-      'Elevated Blood Urea Nitrogen (BUN)',
-      'Glomerulonephritis',
-      'Polycystic Kidney Disease',
-      'Nephrotic Syndrome',
-      'Acute Renal Disease'
+      'Kidney Support'
     ],
     sizes: ['60 Capsules'],
     bestseller: true,
@@ -2845,12 +2835,7 @@ export const products = [
     category: 'Dog',
     subCategory: ['Kidney Support', 'Detox', 'Immune Boost'],
     conditions: [
-      'Chronic Renal Disease',
-      'Elevated Blood Urea Nitrogen (BUN)',
-      'Glomerulonephritis',
-      'Polycystic Kidney Disease',
-      'Nephrotic Syndrome',
-      'Acute Renal Disease'
+      'Kidney Support'
     ],
     sizes: ['60 Capsules'],
     bestseller: true,
@@ -2932,12 +2917,9 @@ export const products = [
     category: 'Dog',
     subCategory: ['Skin Care', 'Anti-Inflammatory', 'Prescription Required'],
     conditions: [
-      'Allergies',
-      'Skin Inflammation',
-      'Itching',
       'Dermatitis',
-      'Arthritis (topical)',
-      'Adrenal Disorders (topical use)'
+      'Allergy relief',
+      'Skin and Coat'
     ],
     sizes: ['50ml'],
     bestseller: false,
@@ -2955,7 +2937,8 @@ export const products = [
       {
         title: 'Active Ingredient',
         content: [
-          '<b>Hydrocortisone IP 0.5% w/w</b>: A corticosteroid that suppresses inflammation and reduces immune responses on the skin.'
+          '<b>Hydrocortisone IP 0.5% w/w</b>: Hydrocortisone for dogs is a type of glucocorticoid (steroid) used for its anti-inflammatory and anti-itch effects to treat a variety of conditions in dogs and cats.  The exact mechanism for how hydrocortisone reduces inflammation and itching is not completely understood. It is theorized that when topical hydrocortisone is applied on your dog’s skin, it blocks the activation of certain proteins that are responsible for inflammation in the area where it was applied.Hydrocortisone blocks the harmful effects of inflammation when the immune system is inappropriately overreactive in certain medical conditions such as allergies and swelling.'
+
         ]
       },
       {
@@ -3012,14 +2995,11 @@ export const products = [
       VitaTab4,
       VitaTab5
     ],
-    category: 'Dog',
+    category: 'Dogs & Cats',
     subCategory: ['Multivitamin', 'Vitality', 'Immunity'],
     conditions: [
-      'Nutritional deficiencies',
-      'Low energy or stamina',
-      'Age-related issues in senior dogs',
-      'Immunity support',
-      'Skin, joint, and heart health'
+      'Multivitamin Support',
+      'Immune Support'
     ],
     sizes: ['60 Tablets'],
     bestseller: true,
@@ -3037,13 +3017,13 @@ export const products = [
       {
         title: 'Key Ingredients & Their Benefits',
         content: [
-          '<b>Resveratrol</b>: Antioxidant that supports heart health, joint mobility, and immune defense.',
-          '<b>Ginkgo Biloba</b>: Enhances circulation, memory, and mental clarity.',
-          '<b>Ginseng</b>: Adaptogen that boosts stamina and stress response.',
-          '<b>Green Tea Extract</b>: Aids metabolism, provides antioxidants, and supports energy levels.',
-          '<b>Glutamine</b>: Essential amino acid for muscle recovery and gut health.',
-          '<b>Grapeseed Extract</b>: Rich in antioxidants, supports skin, capillaries, and anti-inflammatory actions.',
-          '<b>Chromium</b>: Supports insulin function and healthy growth.'
+          '<b>Resveratrol</b>: A natural antioxidant found in grapes and berries, resveratrol supports pets’ heart health, joint mobility, anti-aging, and immune defense. It may also help fight inflammation and support brain function in senior pets.',
+          '<b>Ginkgo Biloba</b>: If you’re looking to support your pet’s mental clarity, memory or circulation, the antioxidant-rich ginkgo biloba might just be for your pet. Ginkgo is one of our best-selling herbs – an unwavering supplement to its impressive properties. As Ginkgo Biloba is useful for your pets in so many ways we have added in MPS Vita Support.',
+          '<b>Ginseng</b>: Ginseng is the world’s best known and most highly researched adaptogen, a substance that assists the body to adapt to demanding situations. Ginseng has been used for thousands of years with the great demand. As ginseng is useful for your pets in so many ways we have added in MPS Vita Support',
+          '<b>Green Tea Extract</b>: AGreen tea is known to possess important health benefits, namely to increase our metabolic rate (our body’s ability to convert food into energy), making it popular with slimming pets as well as offering dietary source of antioxidants to help protect your pet’s bodies from cell damage caused by free radicals. As Green Tea Extract is useful for your pets in so many ways we have added in MPS Vita Support.',
+          '<b>Glutamine</b>: Glutamine is one of the most abundant amino acids in the body and is found in muscle tissue where it acts as an important fuel for muscle contraction. It is therefore often recommended by veterinarians as a supplement to be taken regularly to ensure glutamine levels don’t fall too low which can delay the recovery of muscles. As Glutamine is useful for your pets in so many ways we have added in MPS Vita Support.',
+          '<b>Grapeseed Extract</b>: Grapeseed is one of the richest sources of anthocyanidins known to support the many areas of your pet’s body containing collagen and help with anti-inflammatory processes. Collagen is found in high concentrations in capillary walls. in Europe pet owners often choose to take anthocyanidins for their pets on a regular basis to help maintain the health of their peripheral circulation. Collagen is also responsible for the suppleness and firmness of skin and it has long been recognised that skin health and complexion is influenced to a great degree by dietary factors.As grapeseed Extract is useful for your pets in so many ways, we have added in MPS Vita Support.',
+          '<b>Chromium</b>: Renowned for its role in supporting optimal health and growth, chromium may be one the most important health-promoting minerals. Chromium helps the body use insulin – a hormone that transfers blood sugar (glucose) to the cells, where it is burned as fuel. As Chromium is useful for your pets in so many ways, we have added in MPS Vita Support.'
         ]
       },
       {
@@ -3094,14 +3074,12 @@ export const products = [
       VitaSyrup3,
       VitaSyrup4,
     ],
-    category: 'Dog & Cat',
+    category: 'Dogs & Cats',
     subCategory: ['Multivitamin', 'Allergy Support', 'Skin & Coat', 'Joint Health'],
     conditions: [
-      'Allergies in cats and dogs',
-      'Weak immune function',
-      'Skin and coat issues',
-      'Joint and ligament concerns',
-      'Hair shedding'
+      'Multivitamin Support',
+      'Allergy Relief',
+      'Immune Support'
     ],
     sizes: ['100 ml Syrup'],
     bestseller: false,
@@ -3184,86 +3162,6 @@ export const products = [
     ]
   },
   {
-    _id: 'Prurifix-Spray-50ml',
-    name: 'Prurifix Spray | Hydrocortisone 0.5% Topical Anti-Itch & Anti-Inflammatory Spray for Dogs | 50ml',
-    description:
-      'Topical corticosteroid spray for dogs containing Hydrocortisone IP 0.5% w/w. Provides fast-acting relief from itching, inflammation, allergies, and skin irritation. Ideal for conditions requiring anti-inflammatory treatment under veterinary supervision.',
-    price: 380,
-    image: [
-      Prurifix,
-    ],
-    category: 'Dog',
-    subCategory: ['Anti-Inflammatory', 'Allergy Support', 'Skin & Coat'],
-    conditions: [
-      'Skin inflammation and itching',
-      'Allergic dermatitis',
-      'Hot spots and redness',
-      'Swelling due to allergic reactions',
-      'Localized skin irritation'
-    ],
-    sizes: ['50 ml Spray'],
-    bestseller: false,
-    details: [
-      {
-        title: 'Key Benefits',
-        content: [
-          'Reduces itching, redness, and inflammation',
-          'Provides targeted relief for skin allergies',
-          'Effective against hot spots and swelling',
-          'Soothes irritated skin quickly',
-          'Veterinary-grade topical corticosteroid treatment'
-        ]
-      },
-      {
-        title: 'Key Ingredient',
-        content: [
-          'Hydrocortisone IP 0.5% w/w'
-        ]
-      },
-      {
-        title: 'How Hydrocortisone Works',
-        content: [
-          'Blocks activation of proteins responsible for inflammation',
-          'Suppresses overactive immune responses in allergic conditions',
-          'Relieves itch and swelling at the site of application'
-        ]
-      },
-      {
-        title: 'Usage Guidelines',
-        content: [
-          'Remove cap and screw the spray pump onto the bottle',
-          'Hold the spray 10 cm above the affected area and apply',
-          'Allow the area to dry for at least 30 minutes before the dog licks it',
-          'Avoid contact with eyes, nose, or mouth',
-          'Do not spray on ulcerated or burned skin',
-          'Apply once daily for 7 consecutive days',
-          'Consult a veterinarian if no improvement is observed within 7 days'
-        ]
-      },
-      {
-        title: 'Important Safety Information',
-        content: [
-          'For external use in dogs only',
-          'Do not use without a valid veterinary prescription',
-          'Not for use in pets hypersensitive to corticosteroids',
-          'Discuss existing medical conditions with your vet before use'
-        ]
-      },
-      {
-        title: 'Prescription Notice',
-        content: [
-          'This product requires a valid veterinary prescription',
-          'Send prescription to ecorabioceuticals@gmail.com or WhatsApp 9819643646 within 24 hours of ordering',
-          'If not received, the order will be refunded to the original payment method'
-        ]
-      },
-      {
-        title: 'Packing',
-        content: ['50 ml Spray Bottle']
-      }
-    ]
-  },
-  {
     _id: 'MPS-UTI-Support-30Tabs',
     name: 'MPS UTI Support | Urinary & Bladder Health Tablets for Dogs & Cats | 30 Tablets',
     description:
@@ -3276,14 +3174,10 @@ export const products = [
       UTITab4,
       UTITab5
     ],
-    category: 'Dog & Cat',
+    category: 'Dogs & Cats',
     subCategory: ['Urinary Support', 'Bladder Health', 'Kidney Health'],
     conditions: [
-      'Urinary tract infections (UTIs)',
-      'Bladder inflammation',
-      'Urinary incontinence',
-      'Overactive bladder',
-      'Prostate and kidney health issues'
+      'Urinary Tract Support'
     ],
     sizes: ['30 Tablets'],
     bestseller: false,
@@ -3301,19 +3195,10 @@ export const products = [
       {
         title: 'Key Ingredients (per tablet)',
         content: [
-          'D-Mannose – 250 mg',
-          'Cranberry (Vaccinium Macrocarpon) – 250 mg',
-          'Hibiscus Extract (Hibiscus rosasinensis) – 100 mg',
-          'Pumpkin Seed Extract (Cucurbita pepo) – 100 mg'
-        ]
-      },
-      {
-        title: 'Ingredient Highlights',
-        content: [
-          'Cranberry: Prevents bacteria from adhering to urinary tract lining',
-          'D-Mannose: Binds to E. coli bacteria and flushes it out',
-          'Hibiscus: Maintains bladder pH and provides antioxidant support',
-          'Pumpkin Seed: Improves bladder function and relieves incontinence'
+          'D-Mannose – 250 mg:D-mannose is a type of sugar that’s related to the better known glucose. These sugars are both simple sugars. While in the urinary tract, it can attach to the E. coli bacteria that may be there. As a result, the bacteria can no longer attach to cells and cause infection.',
+          'Cranberry (Vaccinium Macrocarpon) – 250 mg:(Vaccinium macrocarpon) is an evergreen shrub that grows in bogs in North America. In fact, research has linked the chemicals in cranberries keep bacteria from sticking to the cells in the urinary tract. Cranberry is useful in Infections of the kidney, bladder or urethra (urinary tract infections or UTIs).',
+          'Hibiscus Extract (Hibiscus rosasinensis) – 100 mg: Hibiscus is known to help in urinary tract infections nearly up to 80% if given in a right dosage. It helps in maintaining the urethtra & bladder pH and also aids as potent antioxidant. It also aids in hair fall problems and promoting hair growth.',
+          'Pumpkin Seed Extract (Cucurbita pepo) – 100 mg:Pumpkin seed Extract (Cucurbita pepo) were first discovered by archaeo-logists back in 7,000 B.C. Traditionally, these pumpkin seeds were used to treat tapeworm infections, and urinary as well as prostate problems. The chemicals in pumpkin seed can increase urination, which might help relieve bladder and prostate discomfort. Some chemicals might also reduce swelling in the prostate.Pumpkin seed extract is having the best result in urinary incontinence, Pumpkin seeds appear to be remarkably effective in treating overactive bladder, a condition that causes a sudden urge to urinate and can sometimes result in mild urinary incontinence.The chemicals in the pumpkin seed cause an increase in urination (diuretic effect), which helps relieve bladder discomfort.'
         ]
       },
       {
@@ -3364,11 +3249,7 @@ export const products = [
     category: 'Dogs & Cats',
     subCategory: ['Urinary Support', 'Bladder Health', 'Kidney Health'],
     conditions: [
-      'Urinary tract infections (UTIs)',
-      'Bladder irritation and discomfort',
-      'Urinary incontinence',
-      'Overactive bladder',
-      'Kidney and prostate issues'
+      'Urinary Tract Support'
     ],
     sizes: ['100 ml Syrup'],
     bestseller: false,
@@ -3386,21 +3267,13 @@ export const products = [
       {
         title: 'Key Ingredients (per 5 ml)',
         content: [
-          'D-Mannose – 250 mg',
-          'Cranberry (Vaccinium Macrocarpon) – 250 mg',
-          'Hibiscus Extract (Hibiscus rosasinensis) – Not quantified',
-          'Pumpkin Seed Extract (Cucurbita pepo) – Not quantified'
+          'D-Mannose – 250 mg: D-mannose is a type of sugar that’s related to the better known glucose. These sugars are both simple sugars. While in the urinary tract, it can attach to the E. coli bacteria that may be there. As a result, the bacteria can no longer attach to cells and cause infection.',
+          'Cranberry (Vaccinium Macrocarpon) – 250 mg: Cranberry (Vaccinium macrocarpon) is an evergreen shrub that grows in bogs in North America. In fact, research has linked the chemicals in cranberries keep bacteria from sticking to the cells in the urinary tract. Cranberry is useful in Infections of the kidney, bladder or urethra (urinary tract infections or UTIs).',
+          'Hibiscus Extract (Hibiscus rosasinensis):  Hibiscus is known to help in urinary tract infections nearly up to 80% if given in a right dosage. It helps in maintaining the urethtra & bladder pH and also aids as potent antioxidant. It also aids in hair fall problems and promoting hair growth.',
+          'Pumpkin Seed Extract (Cucurbita pepo): Pumpkin seed Extract (Cucurbita pepo) were first discovered by archaeo-logists back in 7,000 B.C. Traditionally, these pumpkin seeds were used to treat tapeworm infections, and urinary as well as prostate problems. The chemicals in pumpkin seed can increase urination, which might help relieve bladder and prostate discomfort. Some chemicals might also reduce swelling in the prostate.Pumpkin seed extract is having the best result in urinary incontinence, Pumpkin seeds appear to be remarkably effective in treating overactive bladder, a condition that causes a sudden urge to urinate and can sometimes result in mild urinary incontinence.The chemicals in the pumpkin seed cause an increase in urination (diuretic effect), which helps relieve bladder discomfort.'
         ]
-      },
-      {
-        title: 'Ingredient Highlights',
-        content: [
-          'Cranberry: Prevents bacterial adhesion in the urinary tract',
-          'D-Mannose: Binds and flushes E. coli bacteria',
-          'Hibiscus: Helps maintain urethral pH and supports antioxidant activity',
-          'Pumpkin Seed: Promotes healthy urination and reduces bladder discomfort'
-        ]
-      },
+        },
+    
       {
         title: 'Suggested Use',
         content: [
@@ -3445,14 +3318,11 @@ export const products = [
       Diamaxx3,
       Diamaxx4,
     ],
-    category: 'Dog & Cat',
+    category: 'Dogs & Cats',
     subCategory: ['Digestive Health', 'Diarrhoea Relief', 'Constipation Relief'],
     conditions: [
-      'Acute diarrhoea in pets',
-      'Digestive disturbances',
-      'Constipation in dogs and cats',
-      'Intestinal motility imbalance',
-      'Stool consistency regulation'
+      'Gut Health',
+      'Digestive Health'
     ],
     sizes: ['4 x 10g Sachets'],
     bestseller: false,
