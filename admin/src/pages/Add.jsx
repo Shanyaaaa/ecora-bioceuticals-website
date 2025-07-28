@@ -74,7 +74,7 @@ const Add = ({ token }) => {
   return (
     <div>
       <h2 className="text-xl font-semibold mb-4">Add New Product</h2>
-      <p className="mb-4 text-gray-600">Example: To add "Calcinex Tab 70's", upload 5 images, fill in name, description, subcategories (e.g., Rickets), sizes (e.g., 70 Tabs), and optionally bestseller/prescription. Use <code>**bold**</code> to highlight and <code>-></code> for sub-points in bullet list.</p>
+      <p className="mb-4 text-gray-600">Example: To add "Calcinex Tab 70's", upload 5 images, fill in name, description, subcategories (e.g., Rickets), sizes (e.g., 70 Tabs), and optionally bestseller/prescription. Use <code>**bold**</code> to highlight and <code> - </code> for sub-points in bullet list.</p>
 
       <form onSubmit={handleSubmit} className="flex flex-col w-full items-start gap-4">
         {/* Image Upload */}
@@ -162,7 +162,7 @@ const Add = ({ token }) => {
               }} />
               <div className="text-sm text-gray-600 mb-2">
                 <p>Add bullet points (each line will be a bullet point):</p>
-                <p>Use <code>**bold**</code> for <strong>bold</strong>, and <code>-></code> prefix for sub-bullets.</p>
+                <p>Use <code>**bold**</code> for <strong>bold</strong>, and <code>-</code> prefix for sub-bullets.</p>
               </div>
               {block.content.map((line, j) => (
                 <div key={j} className="flex gap-2 mt-1 items-center">

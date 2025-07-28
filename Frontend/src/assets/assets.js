@@ -137,6 +137,7 @@ import Liposomol1 from './Liposomol1.jpg';
 import Liposomol2 from './Liposomol2.jpg';
 import Liposomol3 from './Liposomol3.jpg';
 import Liposomol4 from './Liposomol4.jpg';
+import VitaSupport from './VitaSupport.jpg';
 import VitaTab1 from './VitaTab1.jpg';
 import VitaTab2 from './VitaTab2.jpg';
 import VitaTab3 from './VitaTab3.jpg';
@@ -3074,6 +3075,7 @@ export const products = [
       'Comprehensive multivitamin and antioxidant syrup for dogs and cats. Supports immune function, reduces shedding, promotes joint, skin, and coat health. Especially helpful for pets with allergies, weak immunity, or coat concerns.',
     price: 240,
     image: [
+      VitaSupport,
       VitaSyrup1,
       VitaSyrup2,
       VitaSyrup3,
@@ -4026,6 +4028,7 @@ export const assets = {
   CKDsupportdog4,
   CKDsupportdog5,
   Prurifix,
+  VitaSupport,
   VitaSyrup1,
   VitaSyrup2,
   VitaSyrup3,
