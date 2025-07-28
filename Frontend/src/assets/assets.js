@@ -99,6 +99,11 @@ import ArtimarinE3 from './ArtimarinE3.jpg';
 import ArtimarinE4 from './ArtimarinE4.jpg';
 import ArtimarinE5 from './ArtimarinE5.jpg';
 import Prurifix from './Prurifix1.jpg';
+import NAD1 from './NAD1.png';
+import NAD2 from './NAD2.png';
+import NAD3 from './NAD3.png';
+import NAD4 from './NAD4.jpg';
+import NAD5 from './NAD5.png';
 
 
 import CVDSupport1 from './CVD Support1.jpg';
@@ -3406,10 +3411,7 @@ export const products = [
     category: 'Dogs & Cats',
     subCategory: ['Pain Relief', 'Joint Support', 'Post-Surgery Recovery', 'Anti-Inflammatory'],
     conditions: [
-      'Osteoarthritis and joint stiffness',
-      'Musculoskeletal disorders',
-      'Post-operative pain and inflammation',
-      'Chronic joint pain in aging dogs'
+      'Pain Relief'
     ],
     sizes: ['1 x 6 Tablets'],
     bestseller: false,
@@ -3479,13 +3481,10 @@ export const products = [
     image: [
       Ecocarp100
     ],
-    category: 'Dog',
+    category: ' Dogs & Cats',
     subCategory: ['Pain Relief', 'Joint Support', 'Post-Surgery', 'Anti-Inflammatory'],
     conditions: [
-      'Osteoarthritis',
-      'Post-operative inflammation',
-      'Musculoskeletal disorders',
-      'Joint stiffness and pain'
+      'Pain Relief'
     ],
     sizes: ['1 x 6 Tablets'],
     bestseller: false,
@@ -3553,15 +3552,11 @@ export const products = [
     image: [
       Ecocyclin100
     ],
-    category: 'Dog',
+    category: 'Dogs & Cats',
     subCategory: ['Antibiotics', 'Infection Control', 'Tick-Borne Disease'],
     conditions: [
-      'Respiratory tract infections (e.g., kennel cough, pneumonia)',
-      'Urinary tract infections',
-      'Tick-borne diseases (Ehrlichiosis, Lyme disease)',
-      'Skin infections',
-      'Soft tissue infections',
-      'Wounds and abscesses'
+      'Antibiotic Therapy',
+      'Bacterial Infection'
     ],
     sizes: ['1 x 10 Tablets'],
     bestseller: false,
@@ -3630,15 +3625,11 @@ export const products = [
     image: [
       Ecocyclin200
     ],
-    category: 'Dog',
+    category: 'Dogs & Cats',
     subCategory: ['Antibiotics', 'Infection Control', 'Tick-Borne Disease'],
     conditions: [
-      'Respiratory tract infections (e.g., kennel cough, pneumonia)',
-      'Urinary tract infections',
-      'Tick-borne diseases (Ehrlichiosis, Lyme disease)',
-      'Skin infections',
-      'Soft tissue infections',
-      'Wounds and abscesses'
+      'Antibiotic Therapy',
+      'Bacterial Infection'
     ],
     sizes: ['1 x 10 Tablets'],
     bestseller: false,
@@ -3711,13 +3702,10 @@ export const products = [
       Renalydyl4,
       Renalydyl5
     ],
-    category: "Dog & Cat",
+    category: "Dogs & Cats",
     subCategory: "Kidney Support",
     conditions: [
-      "Renal insufficiency",
-      "Chronic Kidney Disease (CKD)",
-      "Uremic toxin build-up",
-      "Gut microbiome imbalance"
+      "Kidney Support",
     ],
     sizes: ["1x10 Capsules"],
     bestseller: false,
@@ -3736,10 +3724,10 @@ export const products = [
       {
         title: "Ingredients",
         content: [
-          "Streptococcus thermophilus – 15 billion spores",
-          "Lactobacillus acidophilus – 15 billion spores",
-          "Bifidobacterium longum – 15 billion spores",
-          "Fructo-oligosaccharides – 100 mg"
+          "<b>Streptococcus thermophilus – 15 billion spores</b>: Streptococcus thermophilus is a kind of lactic acid producing bacteria. Which is able to do metabolism in an extreme temperature. It has optimal growing pH 6.8 and it has anaerobe characteristic. This bacterium can endure acidity from 0.85 to 0.95%. Lactate acid produced by this bacterium is a result of glucose, fructose, galactose, sucrose and lactose splitting process.It is essential to making sure pets are healthy, active and live a long, full healthy life. They are safe to give to pets daily or when they’re having tummy problems. They can help shorten onsets of diarrhoea and are important to give in case, when pet is on steroids.",
+          "<b>Lactobacillus acidophilus – 15 billion spores</b>: acidophilus can be successfully survived transit through the canine gastrointestinal tract, and populate the colon and are associated with local and systemic changes. L acidophilus as probiotic bacterium may exhibit the potential to enhance gut health & improve immunity in dogs. Lactobacilli can be roughly divided into 2 metabolic groups: Homofermentative, converting glucose to lactic acid, and heterofermentative, converting glucose to lactic acid, acetic acid, ethanol, and CO₂. These metabolites reduce pH of the intestinal lumen, creates an unfavorable environment for potential pathogenic bacteria.",
+          "<b>Bifidobacterium longum – 15 billion spores</b>: Bifidobacterium longum has physiological effects such as anti-allergy effect, reduction in harmful bacteria and improvement in intestinal environment.Bifidobacterium longum, which works at the gut-brain axis to ameliorate behavioral signs related to separation anxiety, noise phobias, and other manifestations of anxiety, including hyper vigilance, excessive vocalization, pacing, panting, compulsive licking, trembling, and house soiling in canine.Bifidobacterium longum to anxious dogs resulted in statistically significant improvement in dogs displaying day-to-day anxious behaviour, reduced salivary cortisol concentrations, decreased heart rates and increased variability.",
+          "<b>Fructo-oligosaccharides – 100 mg</b>: Fructo-oligosaccharides are sugars that are not degraded by intestinal enzymes which allow them to pass down to the cecum and colon to become “colonic food” for host bacteria and provide nutrients to the intestinal mucosa.Ingestion of FOS selectively stimulates the growth of bifidobacteria and inhibits the growth of harmful clostridia. FOS spike glucose levels in the blood, and cause weight gain. fructooligo- saccharides or mannanoligosaccharides, serve as the main substrate source for beneficia bacterial species of the Gl microbiota and, thus, have a great impact on the Gl microbiota and, in turn, Gl and overall heath.On reaching the large intestine, FOS is fermented by colonic bacteria such as Bifidobacteria. The result of the fermentation process is lactic and acetic acid like short chain fatty acids (SAFCS). Butyrate, another acid often found in increased quantities with the feeding of prebiotics, is not produced by the lactic acid bacteria, but is a product of other bacteria which can use the lactic and acetic acids as substrates. A symbiotic collection of beneficial bacteria is formed, which helps to outnumber and exclude pathogens.Fructo-oligosaccharides (FOS) is a carbohydrate that consists of short fructose chains and is not digested. Fructo-oligosaccharides travels intact through the small intestine to the colon (large intestine), where they support the growth of healthy bacteria."
         ]
       },
       {
@@ -3763,6 +3751,69 @@ export const products = [
       }
     ]
   },
+  {
+  _id: 'MPS-NAD-60Caps',
+  name: 'MPS NAD+ Precursor – 60 Capsules | Cellular Energy & Healthy Aging Support | Boosts NAD+ Levels | Supports Mitochondrial Function & Longevity',
+  description: 'Veterinary-formulated supplement with 400mg Nicotinamide Riboside per capsule to support NAD+ levels, promote mitochondrial health, and enhance energy and longevity in senior pets. Ideal for dogs and cats experiencing fatigue, recovery, or age-related decline.',
+  price: 1400,
+  image: [NAD1, NAD2, NAD3, NAD4, NAD5],
+  category: 'Dogs & Cats',
+  subCategory: ['Longevity', 'Cellular Health', 'Senior Pet Support'],
+  conditions: ['Brain Health', 'Cellular Energy', 'Aging Support'],
+  sizes: ['1 x 60 Capsules'],
+  bestseller: false,
+  details: [
+    {
+      title: 'What is NAD+?',
+      content: [
+        'NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy, metabolism, and DNA repair.',
+        'As pets age, NAD+ levels decline, impacting vitality and cellular health.',
+        'Supplementing NAD+ helps maintain active metabolism and energy production.'
+      ]
+    },
+    {
+      title: 'Why Choose MPS NAD+ Precursor?',
+      content: [
+        'Boosts cellular energy – helps tired or aging pets feel more active.',
+        'Supports cognitive clarity and brain function in senior pets.',
+        'Promotes mitochondrial and heart health with cellular repair.',
+        'Delays age-related decline with advanced NAD+ support.',
+        'Vet-formulated with 400mg Nicotinamide Riboside per capsule.'
+      ]
+    },
+    {
+      title: 'Perfect For',
+      content: [
+        'Senior pets showing signs of fatigue or weakness.',
+        'Pets with metabolic or mitochondrial concerns.',
+        'Pets recovering from illness or surgery.',
+        'Daily vitality and long-term cellular health support.'
+      ]
+    },
+    {
+      title: 'Suggestion for Use',
+      content: [
+        '1 capsule per 20 kg of body weight per day.',
+        'Or as directed by a veterinarian.'
+      ]
+    },
+    {
+      title: 'Packaging',
+      content: ['1 strip of 60 capsules']
+    },
+    {
+      title: 'Safety Information',
+      content: [
+        'Formulated for dogs and cats only.',
+        'Consult your vet before starting supplementation.',
+        'Store in a cool, dry place, away from children.'
+      ]
+    }
+  ]
+}
+
+
+  
 
 
 
@@ -4001,6 +4052,11 @@ export const assets = {
   UTITab3,
   UTITab4,
   UTITab5,
+  NAD1,
+  NAD2,
+  NAD3,
+  NAD4,
+  NAD5,
 
 
 
