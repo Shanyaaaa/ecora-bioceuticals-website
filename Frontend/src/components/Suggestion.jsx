@@ -4,14 +4,22 @@ import ProductItem from './ProductItem';
 import { products } from '../assets/assets';
 
 const Suggestions = ({ currentProduct }) => {
-  const suggestedProducts = products.filter((p) => {
-    if (p._id === currentProduct._id) return false;
-    const matchesCondition = p.conditions?.some((cond) =>
-      currentProduct.conditions?.includes(cond)
-    );
-    const closeInPrice = Math.abs(p.price - currentProduct.price) <= 100;
-    return matchesCondition || closeInPrice;
-  }).slice(0, 4); // Limit suggestions
+  const suggestedProducts = products
+    .filter((p) => {
+      if (p._id === currentProduct._id) return false;
+
+      const hasValidConditions =
+        Array.isArray(p.conditions) && Array.isArray(currentProduct.conditions);
+
+      const matchesCondition = hasValidConditions
+        ? p.conditions.some((cond) => currentProduct.conditions.includes(cond))
+        : false;
+
+      const closeInPrice = Math.abs(p.price - currentProduct.price) <= 100;
+
+      return matchesCondition || closeInPrice;
+    })
+    .slice(0, 4); // Limit suggestions
 
   return (
     <div className="px-0 pt-4 pb-12">

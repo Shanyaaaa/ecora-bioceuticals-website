@@ -99,11 +99,7 @@ import ArtimarinE3 from './ArtimarinE3.jpg';
 import ArtimarinE4 from './ArtimarinE4.jpg';
 import ArtimarinE5 from './ArtimarinE5.jpg';
 import Prurifix from './Prurifix1.jpg';
-import NAD1 from './NAD1.png';
-import NAD2 from './NAD2.png';
-import NAD3 from './NAD3.png';
-import NAD4 from './NAD4.jpg';
-import NAD5 from './NAD5.png';
+
 
 
 import CVDSupport1 from './CVD Support1.jpg';
@@ -229,6 +225,11 @@ import UTITab2 from './UTITab2.jpg';
 import UTITab3 from './UTITab3.jpg';
 import UTITab4 from './UTITab4.jpg';
 import UTITab5 from './UTITab5.jpg';
+import NAD1 from './NAD1.jpeg';
+import NAD2 from './NAD2.jpeg';
+import NAD3 from './NAD3.jpeg';
+import NAD4 from './NAD4.jpeg';
+import NAD5 from './NAD5.jpeg';
 
 
 
@@ -3753,66 +3754,171 @@ export const products = [
       }
     ]
   },
-  {
-  _id: 'MPS-NAD-60Caps',
-  name: 'MPS NAD+ Precursor – 60 Capsules | Cellular Energy & Healthy Aging Support | Boosts NAD+ Levels | Supports Mitochondrial Function & Longevity',
-  description: 'Veterinary-formulated supplement with 400mg Nicotinamide Riboside per capsule to support NAD+ levels, promote mitochondrial health, and enhance energy and longevity in senior pets. Ideal for dogs and cats experiencing fatigue, recovery, or age-related decline.',
+ {
+  _id: "MPS-NAD-60Caps",
+  name: "MPS NAD+ Precursor – 60 Capsules | Cellular Energy & Healthy Aging Support | Boosts NAD+ Levels | Supports Mitochondrial Function & Longevity",
+  description:
+    "Veterinary-formulated supplement with 400mg Nicotinamide Riboside per capsule to support NAD+ levels, promote mitochondrial health, and enhance energy and longevity in senior pets. Ideal for dogs and cats experiencing fatigue, recovery, or age-related decline.",
   price: 1400,
   image: [NAD1, NAD2, NAD3, NAD4, NAD5],
-  category: 'Dogs & Cats',
-  subCategory: ['Longevity', 'Cellular Health', 'Senior Pet Support'],
-  conditions: ['Brain Health', 'Cellular Energy', 'Aging Support'],
-  sizes: ['1 x 60 Capsules'],
+  category: "Dogs & Cats",
+  subCategory: ["Longevity", "Cellular Health", "Senior Pet Support"],
+  conditions: ["Brain Health", "Cellular Energy", "Aging Support"],
+  sizes: ["1 x 60 Capsules"],
   bestseller: false,
+  prescriptionRequired: false,
   details: [
     {
-      title: 'What is NAD+?',
+      title: "What is NAD+?",
       content: [
-        'NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy, metabolism, and DNA repair.',
-        'As pets age, NAD+ levels decline, impacting vitality and cellular health.',
-        'Supplementing NAD+ helps maintain active metabolism and energy production.'
+        "NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy, metabolism, and DNA repair.",
+        "As pets age, NAD+ levels decline, impacting vitality and cellular health.",
+        "Supplementing NAD+ helps maintain active metabolism and energy production."
       ]
     },
     {
-      title: 'Why Choose MPS NAD+ Precursor?',
+      title: "Why Choose MPS NAD+ Precursor?",
       content: [
-        'Boosts cellular energy – helps tired or aging pets feel more active.',
-        'Supports cognitive clarity and brain function in senior pets.',
-        'Promotes mitochondrial and heart health with cellular repair.',
-        'Delays age-related decline with advanced NAD+ support.',
-        'Vet-formulated with 400mg Nicotinamide Riboside per capsule.'
+        "Boosts cellular energy – helps tired or aging pets feel more active.",
+        "Supports cognitive clarity and brain function in senior pets.",
+        "Promotes mitochondrial and heart health with cellular repair.",
+        "Delays age-related decline with advanced NAD+ support.",
+        "Vet-formulated with 400mg Nicotinamide Riboside per capsule."
       ]
     },
     {
-      title: 'Perfect For',
+      title: "Perfect For",
       content: [
-        'Senior pets showing signs of fatigue or weakness.',
-        'Pets with metabolic or mitochondrial concerns.',
-        'Pets recovering from illness or surgery.',
-        'Daily vitality and long-term cellular health support.'
+        "Senior pets showing signs of fatigue or weakness.",
+        "Pets with metabolic or mitochondrial concerns.",
+        "Pets recovering from illness or surgery.",
+        "Daily vitality and long-term cellular health support."
       ]
     },
     {
-      title: 'Suggestion for Use',
+      title: "How It Works",
       content: [
-        '1 capsule per 20 kg of body weight per day.',
-        'Or as directed by a veterinarian.'
+        "**Step 1**: NAD+ precursors are absorbed and converted inside cells.",
+        "**Step 2**: NAD+ boosts mitochondrial function for better energy production.",
+        "**Step 3**: Improved energy and cellular repair promote healthy aging and organ function."
+      ]
+    },
+    {
+      title: "Suggested Use",
+      content: [
+        "1 capsule per 20 kg of body weight per day.",
+        "Or as directed by your veterinarian."
+      ]
+    },
+    {
+      title: "Packaging",
+      content: ["1 strip of 60 capsules"]
+    },
+    {
+      title: "Safety Information",
+      content: [
+        "Formulated for dogs and cats only.",
+        "Consult your vet before starting supplementation.",
+        "Store in a cool, dry place, away from children."
+      ]
+    }
+  ]
+},
+
+
+{
+  _id: 'Artimarin-Elite-3x10Tabs',
+  name: 'Artimarin Elite | Advanced Liver Support Supplement for Dogs & Cats | 3x10 Chewable Tablets',
+  price: 1050,
+  image: [
+    ArtimarinE1,
+    ArtimarinE2,
+    ArtimarinE3,
+    ArtimarinE4,
+    ArtimarinE5
+
+  ],
+  category: 'Dogs & Cats',
+  subCategory: 'liver Health',
+  description:
+    'Synergistic veterinary-formulated blend of Silymarin, Coenzyme Q10, N-Acetylcysteine (NAC), Artichoke Extract, L-Ornithine L-Aspartate, Inositol, and B Vitamins to support liver function, recovery, and detoxification in dogs and cats.',
+  conditions: 'Liver Health',
+  sizes: ['3x10 Chewable Tablets'],
+  bestseller: true,
+  prescriptionRequired: false,
+ 
+  details: [
+    {
+      title: 'Key Ingredients (Per 10ml)',
+      content: [
+        'Silymarin: 140 mg',
+        'N-Acetylcysteine (NAC): 200 mg',
+        'Artichoke Extract: 70 mg',
+        'L-Ornithine L-Aspartate: 50 mg',
+        'Coenzyme Q10: 10 mg',
+        'Inositol: 10 mg',
+        'Vitamin B1: 1.4 mg',
+        'Vitamin B2: 1.6 mg',
+        'Vitamin B6: 1.2 mg'
+      ]
+    },
+   {
+  title: 'Key Ingredients & Benefits',
+  content: [
+    '**Silymarin** is an extract of milk thistle (Silybum marianum). Its active compound, silybin, protects liver cells from toxins, stimulates regeneration, and acts as a powerful antioxidant and anti-inflammatory agent.',
+    'It supports bile flow and may prevent or treat gallstones, making it helpful in pets with IBD and triaditis (liver, pancreas, and intestine inflammation).',
+    'Silymarin enhances glutathione levels, a critical antioxidant stored in the liver and vital for slowing cellular aging.',
+    'It may modulate RNA and DNA synthesis, aiding liver cell regeneration, as observed in animal studies.',
+    
+    '**Artichoke Extract** contains cynarin, luteolin, and chlorogenic acid that act as pre- and probiotics, support liver and bile function, and aid digestion.',
+    'Has antioxidant and diuretic properties, protects the liver from oxidative stress, and helps preserve glutathione levels.',
+    'Its phenolic compounds (like caffeoylquinic acid) and flavonoids (like luteolin and apigenin) contribute to liver detoxification and cellular protection.',
+    
+    '**N-Acetylcysteine (NAC)** is a modified form of the amino acid cysteine, rich in sulfur.',
+    'It serves as a precursor and protector of glutathione, the body’s key antioxidant.',
+    'Neutralizes free radicals and spares glutathione for long-term liver defense.',
+    'Especially useful in drug-induced liver damage, such as from acetaminophen (highly toxic to cats).',
+    'Also used in treatment of respiratory disease, chronic renal failure, degenerative myelopathy, and feline immune deficiency virus (FIV).',
+    
+    '**Coenzyme Q10 (CoQ10)** is found in mitochondria and is essential for energy metabolism and antioxidant protection at the cellular level.',
+    'With age or illness, CoQ10 levels drop, making supplementation critical for cellular health.',
+    'Helps in liver regeneration and reduces metabolic stress-induced liver damage through anti-oxidant and anti-inflammatory effects.',
+    'Acts as a key cofactor in the electron transport chain.',
+    
+    '**L-Ornithine L-Aspartate (LOLA)** aids the urea cycle by helping remove excess nitrogen and ammonia from the body.',
+    'Reduces blood ammonia levels, which is vital in treating hepatic encephalopathy and preventing brain dysfunction caused by liver failure.',
+    'Improves peripheral ammonia metabolism and liver detoxification in both chronic and acute liver conditions.',
+    
+    '**Inositol & B-Vitamins (B1, B2, B6)** support fat metabolism, nerve function, and overall cellular health.',
+    'B-vitamins are essential cofactors in liver enzymatic reactions and support the detox pathways.',
+    'Inositol helps in maintaining healthy liver function and metabolic regulation.'
+  ]
+},
+
+    {
+      title: 'Suggested For',
+      content: [
+        'Pets with liver disorders',
+        'Recovery support post infectious diseases',
+        'Drug-induced liver toxicity (e.g., due to NSAIDs or acetaminophen)',
+        'Gallstones',
+        'Irritable Bowel Syndrome (IBS)',
+        'Supportive care in liver cirrhosis, fibrosis, hepatitis, and jaundice'
+      ]
+    },
+    {
+      title: 'Dosage & Administration',
+      content: [
+        '1 to 2 tablets, three times a day or as directed by the veterinarian.'
       ]
     },
     {
       title: 'Packaging',
-      content: ['1 strip of 60 capsules']
-    },
-    {
-      title: 'Safety Information',
-      content: [
-        'Formulated for dogs and cats only.',
-        'Consult your vet before starting supplementation.',
-        'Store in a cool, dry place, away from children.'
-      ]
+      content: ['Each box contains 3 strips of 10 chewable tablets (Total: 30 Tablets)']
     }
   ]
 }
+
 
 
   
