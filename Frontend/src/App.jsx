@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; // ✅ no BrowserRouter here
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Product from './pages/product';
 import About from './pages/About';
@@ -15,13 +15,12 @@ import ShippingPolicies from './pages/footer/ShippingPolicies';
 import PrivacyPolicy from './pages/footer/PrivacyPolicy';
 import TermsOfUse from './pages/footer/TermsOfUse';
 import RefundAndReturn from './pages/footer/RefundAndReturn';
-import ShopContextProvider from './context/ShopContext';
-import ScrollToTop from './components/ScrollToTop'; 
-
+import ShopProvider from './context/ShopContext'; 
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
-    <ShopContextProvider>
+    <ShopProvider>
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -32,7 +31,6 @@ const App = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<Login />} />
         <Route path='/orders' element={<Orders />} />
-       
         <Route path='/ShippingPolicies' element={<ShippingPolicies />} />
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
         <Route path='/TermsOfUse' element={<TermsOfUse />} />
@@ -40,9 +38,8 @@ const App = () => {
         <Route path='/Founder' element={<Founder />} />
         <Route path='/EcoraVideo' element={<EcoraVideo />} />
         <Route path="/placeorder" element={<PlaceOrder />} />
-
       </Routes>
-    </ShopContextProvider>
+    </ShopProvider>
   );
 };
 

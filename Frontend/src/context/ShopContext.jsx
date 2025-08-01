@@ -1,12 +1,15 @@
-// ShopContext.jsx
 import React, { createContext, useEffect, useState } from 'react';
-import { products } from '../assets/assets';
+import { toast } from 'react-toastify';
+import axios from 'axios';
 
 export const ShopContext = createContext();
 
 const ShopContextProvider = ({ children }) => {
   const currency = '₹';
   const deliveryCharges = 50;
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const [products, setProducts] = useState([]);
+  const [bestsellerProducts, setBestsellerProducts] = useState([]);
 
   const [cartItems, setCartItems] = useState(() => {
     const savedCart = localStorage.getItem('cartItems');
@@ -51,6 +54,22 @@ const ShopContextProvider = ({ children }) => {
     }, 0);
   };
 
+  const getProductsData = async () => {
+    try {
+      const response = await axios.get(`${backendUrl}/api/product/list`);
+      const allProducts = response.data;
+
+      setProducts(allProducts);
+      setBestsellerProducts(allProducts.filter(p => p.bestseller));
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    }
+  };
+
+  useEffect(() => {
+    getProductsData();
+  }, []);
+
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
@@ -59,6 +78,7 @@ const ShopContextProvider = ({ children }) => {
     <ShopContext.Provider
       value={{
         products,
+        bestsellerProducts, // now available in context
         currency,
         deliveryCharges,
         cartItems,
@@ -68,6 +88,8 @@ const ShopContextProvider = ({ children }) => {
         removeFromCart,
         getCartCount,
         getCartSubtotal,
+        backendUrl,
+        toast,
       }}
     >
       {children}
