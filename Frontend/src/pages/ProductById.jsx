@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { products } from '../assets/assets';
 import { Maximize2, X } from 'lucide-react';
 import Suggestions from '../components/Suggestion';
 import ReviewSection from '../components/ReviewSection';
@@ -12,7 +11,9 @@ const Tab = ({ label, isActive, onClick }) => (
   <button
     onClick={onClick}
     className={`py-2 px-4 border-b-2 transition ${
-      isActive ? 'border-blue-600 text-blue-600 font-semibold' : 'border-transparent text-gray-600 hover:text-blue-600'
+      isActive
+        ? 'border-blue-600 text-blue-600 font-semibold'
+        : 'border-transparent text-gray-600 hover:text-blue-600'
     }`}
   >
     {label}
@@ -36,7 +37,7 @@ const DropdownSection = ({ title, content }) => {
             <p
               key={idx}
               dangerouslySetInnerHTML={{
-                __html: item.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                __html: item.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'),
               }}
             />
           ))}
@@ -57,20 +58,44 @@ const ProductById = () => {
   const [showViewCart, setShowViewCart] = useState(false);
 
   const { addToCart } = useContext(ShopContext);
-
+  const { backendUrl } = useContext(ShopContext);
   useEffect(() => {
-    const found = products.find((p) => p._id === id);
-    setProduct(found);
-    setMainImage(found?.image?.[0] || '');
-  }, [id]);
+    const fetchProduct = async () => {
+      try {
+        const res = await fetch(`${backendUrl}/api/product/${id}`);
+        if (!res.ok) throw new Error('Product not found');
+        const data = await res.json();
+        setProduct(data.product); // The backend returns an object with a 'product' field
+        setMainImage(data.product.image?.[0] || '');
+      } catch (err) {
+        console.error(err.message);
+        setProduct(null);
+      }
+    };
+    fetchProduct();
+  }, [id, backendUrl]);
 
   const handleAddToCart = () => {
-    addToCart(product._id, quantity);
-    setShowViewCart(true);
+    if (product) {
+      addToCart(product._id, quantity);
+      setShowViewCart(true);
+    }
   };
 
-  if (!product) {
-    return <div className="min-h-screen flex justify-center items-center">Product not found.</div>;
+  if (!product && product !== null) {
+    return (
+      <div className="min-h-screen flex justify-center items-center">
+        Loading...
+      </div>
+    );
+  }
+
+  if (product === null) {
+    return (
+      <div className="min-h-screen flex justify-center items-center">
+        Product not found.
+      </div>
+    );
   }
 
   return (
@@ -80,7 +105,10 @@ const ProductById = () => {
       {showViewCart && (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 mx-auto max-w-6xl mt-4 rounded-md flex justify-between items-center">
           <div>
-            <p className="font-medium">✅ Added <span className="font-bold">{product.name}</span> × {quantity} to cart.</p>
+            <p className="font-medium">
+              ✅ Added <span className="font-bold">{product.name}</span> ×{' '}
+              {quantity} to cart.
+            </p>
           </div>
           <button
             onClick={() => navigate('/cart')}
@@ -93,7 +121,11 @@ const ProductById = () => {
 
       {isZoomed && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-          <img src={mainImage} alt="zoomed" className="max-w-[90%] max-h-[90%] object-contain" />
+          <img
+            src={mainImage}
+            alt="zoomed"
+            className="max-w-[90%] max-h-[90%] object-contain"
+          />
           <button
             onClick={() => setIsZoomed(false)}
             className="absolute top-4 right-4 text-white bg-gray-800 p-2 rounded-full hover:bg-red-600 transition"
@@ -106,7 +138,8 @@ const ProductById = () => {
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="flex lg:flex-col gap-2">
-            {product.image.map((img, i) => (
+            {/* Added optional chaining here */}
+            {product.image?.map((img, i) => (
               <img
                 key={i}
                 src={img}
@@ -133,18 +166,25 @@ const ProductById = () => {
         </div>
 
         <div className="flex-1">
-          <p className="text-sm text-gray-500">Home / Dog / {product.name}</p>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-1">{product.name}</h1>
+          <p className="text-sm text-gray-500">
+            Home / {product.category} / {product.name}
+          </p>
+          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-1">
+            {product.name}
+          </h1>
           <p className="text-gray-600 text-sm mb-1">{product.category}</p>
 
           <div className="flex items-center mb-3">
             {Array.from({ length: 5 }, (_, i) => (
-              <span key={i} className="text-yellow-400">★</span>
+              <span key={i} className="text-yellow-400">
+                ★
+              </span>
             ))}
           </div>
 
           <p className="text-2xl font-semibold text-gray-800 mb-2">
-            ₹{product.price.toFixed(2)} <span className="text-base font-normal">+ Free Shipping</span>
+            ₹{product.price.toFixed(2)}{' '}
+            <span className="text-base font-normal">+ Free Shipping</span>
           </p>
 
           <ul className="list-disc ml-6 text-gray-700 text-sm mb-6 space-y-1">
@@ -156,7 +196,9 @@ const ProductById = () => {
               type="number"
               value={quantity}
               min={1}
-              onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+              onChange={(e) =>
+                setQuantity(Math.max(1, parseInt(e.target.value) || 1))
+              }
               className="w-16 text-center border border-gray-300 rounded-md px-2 py-1"
             />
             <button
@@ -169,7 +211,8 @@ const ProductById = () => {
 
           <p className="mt-4 text-sm text-gray-500">
             Categories:{' '}
-            {product.category.split(',').map((c, i) => (
+            {/* Added conditional check here */}
+            {product.category && product.category.split(',').map((c, i) => (
               <span key={i} className="text-blue-600">
                 {c}
                 {i !== product.category.split(',').length - 1 && ', '}
@@ -194,7 +237,11 @@ const ProductById = () => {
         {tab === 'Description' && (
           <div>
             {product.details?.map((section, index) => (
-              <DropdownSection key={index} title={section.title} content={section.content} />
+              <DropdownSection
+                key={index}
+                title={section.title}
+                content={section.content}
+              />
             ))}
           </div>
         )}
@@ -202,7 +249,10 @@ const ProductById = () => {
         {tab === 'Additional' && product.additional && (
           <div className="text-gray-700 space-y-2">
             {product.additional.map((item, index) => (
-              <div key={index} className="flex justify-between border-b py-2">
+              <div
+                key={index}
+                className="flex justify-between border-b py-2"
+              >
                 <span className="font-medium">{item.label}</span>
                 <span>{item.value}</span>
               </div>

@@ -8,12 +8,14 @@ const ShopContextProvider = ({ children }) => {
   const currency = '₹';
   const deliveryCharges = 50;
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
   const [products, setProducts] = useState([]);
   const [bestsellerProducts, setBestsellerProducts] = useState([]);
+  
 
   const [cartItems, setCartItems] = useState(() => {
-    const savedCart = localStorage.getItem('cartItems');
-    return savedCart ? JSON.parse(savedCart) : {};
+    const saved = localStorage.getItem('cartItems');
+    return saved ? JSON.parse(saved) : {};
   });
 
   const addToCart = (productId, quantity = 1) => {
@@ -47,17 +49,32 @@ const ShopContextProvider = ({ children }) => {
   const getCartCount = () =>
     Object.values(cartItems).reduce((total, qty) => total + qty, 0);
 
-  const getCartSubtotal = () => {
-    return Object.entries(cartItems).reduce((total, [id, qty]) => {
+  const getCartSubtotal = () =>
+    Object.entries(cartItems).reduce((total, [id, qty]) => {
       const product = products.find(p => p._id === id);
       return product ? total + product.price * qty : total;
     }, 0);
-  };
 
   const getProductsData = async () => {
     try {
-      const response = await axios.get(`${backendUrl}/api/product/list`);
-      const allProducts = response.data;
+      if (!backendUrl) {
+        console.error('VITE_BACKEND_URL is not defined in env variables.');
+        return;
+      }
+
+      const token = localStorage.getItem('adminToken'); // Add your token key if required
+      const response = await axios.get(`${backendUrl}/api/product/list`, {
+        headers: {
+          Authorization: token ? `Bearer ${token}` : undefined,
+        },
+      });
+
+      const allProducts = response.data.products;
+
+      if (!Array.isArray(allProducts)) {
+        console.error('Expected products array, got:', allProducts);
+        return;
+      }
 
       setProducts(allProducts);
       setBestsellerProducts(allProducts.filter(p => p.bestseller));
@@ -78,7 +95,7 @@ const ShopContextProvider = ({ children }) => {
     <ShopContext.Provider
       value={{
         products,
-        bestsellerProducts, // now available in context
+        bestsellerProducts,
         currency,
         deliveryCharges,
         cartItems,

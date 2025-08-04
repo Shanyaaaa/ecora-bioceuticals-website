@@ -15,7 +15,7 @@ import ShippingPolicies from './pages/footer/ShippingPolicies';
 import PrivacyPolicy from './pages/footer/PrivacyPolicy';
 import TermsOfUse from './pages/footer/TermsOfUse';
 import RefundAndReturn from './pages/footer/RefundAndReturn';
-import ShopProvider from './context/ShopContext'; 
+import ShopProvider from './Context/ShopContext'; 
 import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductItem from "../components/ProductItem";
-import { ShopContext } from "../context/ShopContext";
+import { ShopContext } from "../Context/ShopContext";
 import { Search, X } from "lucide-react";
 
 const Product = () => {
@@ -39,12 +39,15 @@ const Product = () => {
     }
 
     if (selectedConditions.length > 0) {
-      temp = temp.filter((product) => {
-        const conds = normalizeConditions(product.conditions);
-        return selectedConditions.some((cond) =>
-          conds.map((c) => c.toLowerCase()).includes(cond.toLowerCase())
-        );
-      });
+        temp = temp.filter((product) => {
+            const conds = normalizeConditions(product.conditions);
+            console.log('Product Conditions:', conds.map(c => c.toLowerCase()));
+            console.log('Selected Conditions:', selectedConditions.map(c => c.toLowerCase()));
+
+            return selectedConditions.some((cond) =>
+                conds.map((c) => c.toLowerCase()).includes(cond.toLowerCase())
+            );
+        });
     }
 
     if (selectedCategory) {
@@ -150,7 +153,7 @@ const Product = () => {
             <details className="mb-4">
               <summary className="cursor-pointer text-sm font-medium mb-2">Category</summary>
               <div className="space-y-1 ml-2 mt-2">
-                {["Dogs", "Cats", "Dogs & Cats"].map((category) => (
+                {["Dogs", "Cats", "Dogs,Cats"].map((category) => (
                   <label key={category} className="text-sm block">
                     <input
                       type="radio"
