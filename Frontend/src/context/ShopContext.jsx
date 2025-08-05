@@ -11,7 +11,7 @@ const ShopContextProvider = ({ children }) => {
 
   const [products, setProducts] = useState([]);
   const [bestsellerProducts, setBestsellerProducts] = useState([]);
-  
+  const [token, setToken] = useState('');
 
   const [cartItems, setCartItems] = useState(() => {
     const saved = localStorage.getItem('cartItems');
@@ -88,6 +88,14 @@ const ShopContextProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    if( !token && localStorage.getItem("token")) {
+      setToken(localStorage.getItem("token"));
+    }
+  }, []);
+
+
+
+  useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
@@ -107,6 +115,8 @@ const ShopContextProvider = ({ children }) => {
         getCartSubtotal,
         backendUrl,
         toast,
+        setToken,
+        token,
       }}
     >
       {children}

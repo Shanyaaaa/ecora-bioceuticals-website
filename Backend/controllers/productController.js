@@ -1,5 +1,6 @@
-  import { v2 as cloudinary } from 'cloudinary';
+import { v2 as cloudinary } from 'cloudinary';
 import productModel from '../models/productModel.js';
+
 
 // ADD PRODUCT
 export const addProduct = async (req, res) => {
@@ -45,11 +46,7 @@ export const addProduct = async (req, res) => {
       description,
       category,
       subCategory,
-      conditions: Array.isArray(conditions)
-        ? conditions
-        : conditions
-        ? conditions.split(',').map((c) => c.trim())
-        : [],
+      conditions: fixProductConditions(conditions), // ✅ normalize conditions
       bestseller: bestseller === 'true',
       image: imageUrls,
       sizes: typeof sizes === 'string' ? JSON.parse(sizes) : sizes,
@@ -118,9 +115,9 @@ export const removeProduct = async (req, res) => {
 // SINGLE PRODUCT
 export const singleProduct = async (req, res) => {
   try {
-    const { id } = req.params; // <-- Get ID from URL parameters
+    const { id } = req.params;
 
-    if (!id) { // <-- Check for the new 'id' variable
+    if (!id) {
       return res.status(400).json({
         success: false,
         message: "Product ID is required",
