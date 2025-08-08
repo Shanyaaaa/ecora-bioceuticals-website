@@ -1,22 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { ShopContext } from '../Context/ShopContext';
-import { products } from '../assets/assets';
 import { Trash2, Plus, Minus } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  const { cartItems, updateCartItem, removeFromCart } = useContext(ShopContext);
+  // Destructure all necessary values and functions from ShopContext
+  const { cartItems, products, updateCartItem, removeFromCart, getCartSubtotal, currency, deliveryCharges } = useContext(ShopContext);
   const [removingItems, setRemovingItems] = useState(new Set());
 
-  const getSubtotal = () => {
-    return Object.entries(cartItems).reduce((total, [id, qty]) => {
-      const product = products.find(p => p._id === id);
-      return product ? total + product.price * qty : total;
-    }, 0);
-  };
-
-  const subtotal = getSubtotal();
-  const shippingFee = subtotal <= 500 ? 50 : 0;
+  // Use the getCartSubtotal from context
+  const subtotal = getCartSubtotal();
+  // Use the deliveryCharges from context
+  const shippingFee = subtotal <= 500 ? deliveryCharges : 0;
   const total = subtotal + shippingFee;
 
   const handleRemove = (id) => {
@@ -43,7 +38,7 @@ const Cart = () => {
       {Object.keys(cartItems).length === 0 ? (
         <div className="text-center bg-white p-10 rounded-xl shadow-md max-w-md mx-auto">
           <h2 className="text-xl font-semibold mb-2">Your cart is empty!</h2>
-          <p className="text-gray-500 mb-4">Start exploring our products and fill it up 🎁</p>
+          <p className="text-gray-500 mb-4">Start exploring our products and fill it up </p>
           <Link to="/products">
             <button className="px-6 py-2 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition">
               Browse Products
@@ -55,6 +50,7 @@ const Cart = () => {
           {/* Cart Items */}
           <div className="lg:col-span-2 space-y-4">
             {Object.entries(cartItems).map(([id, qty]) => {
+              // Use the products from context
               const product = products.find(p => p._id === id);
               if (!product) return null;
               const isRemoving = removingItems.has(id);
@@ -74,7 +70,7 @@ const Cart = () => {
                     />
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-                      <p className="text-purple-700 font-medium">₹{product.price.toFixed(2)}</p>
+                      <p className="text-purple-700 font-medium">{currency}{product.price.toFixed(2)}</p>
                     </div>
                   </div>
 
@@ -101,7 +97,7 @@ const Cart = () => {
 
                   <div className="text-right">
                     <p className="text-md font-semibold text-gray-700">
-                      ₹{(product.price * qty).toFixed(2)}
+                      {currency}{(product.price * qty).toFixed(2)}
                     </p>
                     <button
                       onClick={() => handleRemove(id)}
@@ -120,25 +116,23 @@ const Cart = () => {
             <h2 className="text-xl font-bold text-purple-800">Order Summary</h2>
             <div className="flex justify-between border-b pb-2">
               <span>Subtotal</span>
-              <span className="font-medium text-gray-700">₹{subtotal.toFixed(2)}</span>
+              <span className="font-medium text-gray-700">{currency}{subtotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between border-b pb-2">
               <span>Shipping</span>
               <span className={shippingFee > 0 ? '' : 'text-green-600 font-medium'}>
-                {shippingFee > 0 ? `₹${shippingFee.toFixed(2)}` : 'Free'}
+                {shippingFee > 0 ? `${currency}${shippingFee.toFixed(2)}` : 'Free'}
               </span>
             </div>
             <div className="flex justify-between text-lg font-bold pt-2">
               <span>Total</span>
-              <span className="text-purple-700">₹{total.toFixed(2)}</span>
+              <span className="text-purple-700">{currency}{total.toFixed(2)}</span>
             </div>
             <Link to="/placeorder">
-            <button className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
-               Proceed to Checkout
-             </button>
+              <button className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                Proceed to Checkout
+              </button>
             </Link>
-
-              
             <Link to="/products">
               <button className="w-full text-purple-600 border border-purple-300 py-2 rounded-lg font-medium hover:bg-purple-50 transition">
                 Continue Shopping
