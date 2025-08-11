@@ -1,15 +1,15 @@
+// routes/cartRouter.js
 import express from "express";
 import {
-  addToCart,
-  updateCart,
+  setCart,
   getUserCart,
 } from "../controllers/cartController.js";
 import authUser from "../middleware/auth.js";
 
 const cartRouter = express.Router();
 
-cartRouter.post("/add", authUser, addToCart);
-cartRouter.post("/update", authUser, updateCart);
-cartRouter.post("/get", authUser, getUserCart);
+// A single route for all cart modifications (add/update/remove)
+cartRouter.post("/set", authUser, setCart);
+cartRouter.get("/get", authUser, getUserCart);
 
-export default cartRouter;
+export default cartRouter;  
