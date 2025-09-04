@@ -1,20 +1,21 @@
+// middleware/auth.js
 import jwt from "jsonwebtoken";
 
 const authUser = async (req, res, next) => {
-  const { token } = req.headers;
-  if (!token) {
-    return res.json({
-      success: false,
-      message: "Unauthorized Access Login Again",
-    });
-  }
   try {
+    const token = req.headers.token;
+    if (!token) {
+      return res.json({
+        success: false,
+        message: "Unauthorized Access. Please Login Again.",
+      });
+    }
     const token_decode = jwt.verify(token, process.env.JWT_SECRET);
-    req.body.userId = token_decode.id;
+    req.userId = token_decode.id; // Add the user ID to the request object
     next();
   } catch (error) {
     console.log(error);
-    res.json({ success: false, message: error.message });
+    res.json({ success: false, message: "Error with authentication" });
   }
 };
 
