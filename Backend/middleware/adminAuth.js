@@ -1,26 +1,19 @@
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
 
 const adminAuth = async (req, res, next) => {
   try {
-    const authHeader = req.headers.authorization;
-
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return res.json({ success: false, message: 'Not Authorized Login Again' });
+    const { token } = req.headers;
+    if (!token) {
+      return res.json({ success: false, message: "Unauthorized Access" });
     }
-
-    const token = authHeader.split(' ')[1]; // ✅ Extract token from Bearer format
-
-    const token_decode = jwt.verify(token, process.env.JWT_SECRET);
-
-    // You seem to be storing email+password inside the token
-    const expected = process.env.ADMIN_EMAIL + process.env.ADMIN_PASSWORD;
-    if (token_decode !== expected) {
-      return res.json({ success: false, message: 'Not Authorized Login Again' });
+    const tokenDecode = jwt.verify(token, process.env.JWT_SECRET);
+    if (tokenDecode !== process.env.ADMIN_EMAIL + process.env.ADMIN_PASSWORD) {
+      return res.json({ success: false, message: "Unauthorized Access" });
     }
-
     next();
+    // return res.json({ success: true, message: "Access granted" });
   } catch (error) {
-    console.error(error);
+    console.log(error);
     res.json({ success: false, message: error.message });
   }
 };
